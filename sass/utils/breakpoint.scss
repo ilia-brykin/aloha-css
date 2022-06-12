@@ -1,0 +1,37 @@
+$breakpoints: (
+    (
+        class: "mobile",
+        max: "768px",
+    ),
+    (
+        class: "tablet",
+        min: "769px",
+        max: "1023px",
+    ),
+    (
+        class: "touch",
+        max: "1023px",
+    ),
+    (
+        class: "desktop",
+        min: "1024px",
+        max: "1215px",
+    ),
+    (
+        class: "widescreen",
+        min: "1216px",
+        max: "1407px",
+    ),
+    (
+        class: "fullhd",
+        min: "1408px",
+    ),
+) !default;
+
+@function getBreakpointWithPrefix($class) {
+    @if $class {
+        @return "_" + $class;
+    } @else {
+        @return "";
+    }
+}
