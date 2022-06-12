@@ -1,3 +1,4 @@
+@import "aloha_prefix";
 @import "breakpoint";
 @import "mixins";
 @import "funktions";
@@ -56,7 +57,7 @@ $breakpoints-display: prepend($breakpoints, (class: null));
         $display-value: map-get($display, "value");
 
         @include media-width-all($breakpoint-min, $breakpoint-max) {
-            .a_#{ $display-class }#{ getBreakpointWithPrefix($breakpoint-class) } {
+            .#{$aloha-prefix}#{ $display-class }#{ getBreakpointWithPrefix($breakpoint-class) } {
                 display: #{ $display-value };
             }
         }

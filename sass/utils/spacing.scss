@@ -1,0 +1,47 @@
+@import "aloha_prefix";
+
+$spacing-shortcuts: ("margin": "m", "padding": "p") !default;
+$spacing-directions: ("top": "t", "right": "r", "bottom": "b", "left": "l") !default;
+$spacing-horizontal: "x" !default;
+$spacing-vertical: "y" !default;
+$spacing-values: (
+    "1": "0.25rem !important",
+    "2": "0.5rem !important",
+    "3": "0.75rem !important",
+    "4": "1rem !important",
+    "5": "1.5rem !important",
+    "6": "3rem !important",
+    "auto": "auto !important",
+    "0": "0 !important",
+) !default;
+
+@each $property, $shortcut in $spacing-shortcuts {
+    @each $name, $value in $spacing-values {
+        @if $property != "padding" or str-index($value, "auto") == null {
+            // All directions
+            .#{$aloha-prefix}#{$shortcut}_#{$name} {
+                #{$property}: #{$value};
+            }
+            // Cardinal directions
+            @each $direction, $suffix in $spacing-directions {
+                .#{$aloha-prefix}#{$shortcut}#{$suffix}_#{$name} {
+                    #{$property}-#{$direction}: #{$value};
+                }
+            }
+            // Horizontal axis
+            @if $spacing-horizontal != null {
+                .#{$aloha-prefix}#{$shortcut}#{$spacing-horizontal}_#{$name} {
+                    #{$property}-left: #{$value};
+                    #{$property}-right: #{$value};
+                }
+            }
+            // Vertical axis
+            @if $spacing-vertical != null {
+                .#{$aloha-prefix}#{$shortcut}#{$spacing-vertical}_#{$name} {
+                    #{$property}-top: #{$value};
+                    #{$property}-bottom: #{$value};
+                }
+            }
+        }
+    }
+}
