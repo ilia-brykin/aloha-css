@@ -1,0 +1,57 @@
+@import "aloha_prefix";
+
+$primary: #47b883 !default
+$link: blue !default;
+
+$info: #0DCAF0FF !default
+$success: #198754FF !default
+$warning: #FFC107FF !default
+$danger: #DC3545FF !default
+
+$white: #fff !default;
+$black: #000 !default;
+
+
+$colors_global: (
+    primary: $primary,
+    secondary: red,
+    text: red,
+    info: $info,
+    success: $success,
+    warning: $warning,
+    danger: $danger,
+    link: $link,
+    white: $white,
+    black: $black,
+) !default;
+
+$colors: (
+    primary,
+    secondary,
+    text,
+    info,
+    success,
+    warning,
+    danger,
+    link,
+    white,
+    black,
+) !default;
+
+$bg_colors: (
+    primary,
+    secondary,
+    text,
+    info,
+    success,
+    warning,
+    danger,
+    link,
+    white,
+    black,
+) !default;
+
+
+@function getColorVar($value) {
+    @return --#{ $aloha-prefix }color_#{ $value };
+}
