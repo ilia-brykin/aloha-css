@@ -1,5 +1,43 @@
 # ALOHA - CSS FRAMEWORK #
 
+## Colors ##
+
+### Variables ###
++ --a_color_primary: #47b883;
++ --a_color_secondary: red;
++ --a_color_text: red;
++ --a_color_info: #0DCAF0FF;
++ --a_color_success: #198754FF;
++ --a_color_warning: #FFC107FF;
++ --a_color_danger: #DC3545FF;
++ --a_color_link: blue;
++ --a_color_white: #fff;
++ --a_color_black: #000;
+
+### Color `color` ###
++ .a_color_primary
++ .a_color_secondary
++ .a_color_text
++ .a_color_info
++ .a_color_success
++ .a_color_warning
++ .a_color_danger
++ .a_color_link
++ .a_color_white
++ .a_color_black
+
+### Background `background-color` ###
++ .a_bg_primary
++ .a_bg_secondary
++ .a_bg_text
++ .a_bg_info
++ .a_bg_success
++ .a_bg_warning
++ .a_bg_danger
++ .a_bg_link
++ .a_bg_white
++ .a_bg_black
+
 ## Display flex ##
 
 ### Direction `flex-direction` ###
