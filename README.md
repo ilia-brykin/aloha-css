@@ -1,5 +1,17 @@
 # ALOHA - CSS FRAMEWORK #
 
+## Display `display` ##
++ .a_d_inline
++ .a_d_inline_block
++ .a_d_block
++ .a_d_grid
++ .a_d_table
++ .a_d_table_cell
++ .a_d_table_row
++ .a_d_flex
++ .a_d_inline_flex
++ .a_d_none
+
 ## Colors ##
 
 ### Variables ###
