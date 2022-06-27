@@ -188,3 +188,38 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_align_content_between -> `space-between`
 + .a_align_content_around -> `space-around`
 + .a_align_content_stretch -> `stretch`
+
+## Text ##
+
+### Alignment `text-align` ###
++ .a_text_start -> `left`
++ .a_text_center -> `center`
++ .a_text_end -> `right`
+
+### Wrapping ###
++ .a_text_wrap -> `white-space: normal`
++ .a_text_nowrap -> `white-space: nowrap`
++ .a_text_break -> `word-wrap: break-word; word-break: break-word`
+
+### Transform ###
++ .a_text_lowercase -> `text-transform: lowercase`
++ .a_text_uppercase -> `text-transform: uppercase`
++ .a_text_capitalize -> `text-transform: capitalize`
++ .a_text_underline -> `text-decoration: underline`
++ .a_text_italic -> `font-style: italic`
++ .a_text_bold -> `font-weight: 700`
++ .a_text_bolder -> `font-weight: bolder`
++ .a_text_semibold -> `font-weight: 600`
++ .a_text_light -> `font-weight: 300`
++ .a_text_lighter -> `font-weight: lighter`
++ .a_text_normal -> `font-style: normal; text-decoration: none; text-transform: none; font-weight: normal`
+
+### Font size `font-size` ###
++ .a_fs_1 -> `2.5rem`
++ .a_fs_2 -> `2rem`
++ .a_fs_3 -> `1.75rem`
++ .a_fs_4 -> `1.5rem`
++ .a_fs_5 -> `1.25rem`
++ .a_fs_6 -> `1rem`
++ .a_fs_7 -> `0.75rem`
+

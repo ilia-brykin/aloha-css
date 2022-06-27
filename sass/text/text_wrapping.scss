@@ -1,0 +1,14 @@
+@import "../utils/aloha_prefix";
+
+.#{$aloha-prefix}text_wrap {
+  white-space: normal !important;
+}
+
+.#{$aloha-prefix}text_nowrap {
+  white-space: nowrap !important;
+}
+
+.#{$aloha-prefix}text_break {
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+}
