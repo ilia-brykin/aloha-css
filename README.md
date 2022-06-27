@@ -12,6 +12,100 @@
 + .a_d_inline_flex
 + .a_d_none
 
+## Grid ##
++ `.a_columns` -> container
++ `.a_column` -> element
+```
+<div class="a_columns">
+  <div class="a_column">
+    First column
+  </div>
+  <div class="a_column">
+    Second column
+  </div>
+  <div class="a_column">
+    Third column
+  </div>
+  <div class="a_column">
+    Fourth column
+  </div>
+</div>
+```
+
+### Columns gap ###
++ .a_columns_gab_1 -> `0.25rem`
++ .a_columns_gab_2 -> `0.5rem`
++ .a_columns_gab_3 -> `0.75rem`
++ .a_columns_gab_4 -> `1rem`
++ .a_columns_gab_5 -> `1.25rem`
++ .a_columns_gab_6 -> `1.5rem`
++ .a_columns_gab_7 -> `1.75rem`
++ .a_columns_gab_8 -> `2rem`
+```
+<div class="a_columns a_columns_gab_6">
+  <div class="a_column">
+    First column
+  </div>
+  <div class="a_column">
+    Second column
+  </div>
+  <div class="a_column">
+    Third column
+  </div>
+  <div class="a_column">
+    Fourth column
+  </div>
+</div>
+```
+
+### Column sizes ###
+#### for `.a_columns` ####
++ .a_columns_count_1 -> `--columnCount: 1;`
++ .a_columns_count_2 -> `--columnCount: 2;`
++ .a_columns_count_3 -> `--columnCount: 3;`
++ .a_columns_count_4 -> `--columnCount: 4;`
++ .a_columns_count_5 -> `--columnCount: 5;`
++ .a_columns_count_6 -> `--columnCount: 6;`
++ .a_columns_count_7 -> `--columnCount: 7;`
++ .a_columns_count_8 -> `--columnCount: 8;`
++ .a_columns_count_9 -> `--columnCount: 9;`
++ .a_columns_count_10 -> `--columnCount: 10;`
++ .a_columns_count_11 -> `--columnCount: 11;`
++ .a_columns_count_12 -> `--columnCount: 12;`
+
+#### for `.a_column` ####
+```
+width: calc(100% / var(--columnCount) * 8);
+```
++ .a_column_1
++ .a_column_2
++ .a_column_3
++ .a_column_4
++ .a_column_5
++ .a_column_6
++ .a_column_7
++ .a_column_8
++ .a_column_9
++ .a_column_10
++ .a_column_11
++ .a_column_12
+
+#### Offset ####
+```
+margin-left: calc(100% / var(--columnCount) * 1);
+```
++ .a_column_offset_1
++ .a_column_offset_2
++ .a_column_offset_3
++ .a_column_offset_4
++ .a_column_offset_5
++ .a_column_offset_6
++ .a_column_offset_7
++ .a_column_offset_8
++ .a_column_offset_9
++ .a_column_offset_10
++ .a_column_offset_11
+
 ## Colors ##
 
 ### Variables ###
