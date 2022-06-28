@@ -936,6 +936,18 @@
 .a_column_offset_11 {
   margin-left: calc(100% / var(--columnCount) * 11); }
 
+.a_sr_only,
+.a_sr_only_focusable:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important; }
+
 .a_fs_1 {
   font-size: 2.5rem; }
 

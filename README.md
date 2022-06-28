@@ -223,3 +223,11 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_fs_6 -> `1rem`
 + .a_fs_7 -> `0.75rem`
 
+## Screen reader ##
++ .a_sr_only
++ .a_sr_only_focusable
+```
+<h2 class="a_sr_only">Info for screen readers</h2>
+<a class="a_sr_only_focusable" href="#content">Skip to main content</a>
+<div class="a_sr_only_focusable">A container with a <a href="#">focusable element</a>.</div>
+```
