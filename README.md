@@ -265,3 +265,16 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_translate_middle -> `transform: translate(-50%, -50%)`
 + .a_translate_middle_x -> `transform: translateX(-50%)`
 + .a_translate_middle_y -> `transform: translateY(-50%)`
+
+## List ##
++ .a_list_without_styles -> `padding-left: 0; list-style: none;`
+```
+<ul class="list-unstyled">
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ul>  
+```
++ .a_list_inline -> `padding-left: 0; list-style: none;`
++ .a_list_inline_item -> `display: inline-block; margin-right: 0.5rem;`
++ .a_list_inline_item_comma -> `:not(:last-child):after { content: ","; }`

@@ -1,0 +1,28 @@
+@import "aloha_prefix";
+
+.#{$aloha-prefix}list_without_styles {
+  padding-left: 0;
+  list-style: none;
+}
+
+.#{$aloha-prefix}list_inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.#{$aloha-prefix}list_inline_item {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+.#{$aloha-prefix}list_inline_item_comma {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+    &:after {
+      content: ",";
+    }
+  }
+}

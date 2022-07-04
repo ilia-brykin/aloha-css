@@ -1083,6 +1083,26 @@ th {
 .a_translate_middle_y {
   transform: translateY(-50%) !important; }
 
+.a_list_without_styles {
+  padding-left: 0;
+  list-style: none; }
+
+.a_list_inline {
+  padding-left: 0;
+  list-style: none; }
+
+.a_list_inline_item {
+  display: inline-block; }
+  .a_list_inline_item:not(:last-child) {
+    margin-right: 0.5rem; }
+
+.a_list_inline_item_comma {
+  display: inline-block; }
+  .a_list_inline_item_comma:not(:last-child) {
+    margin-right: 0.5rem; }
+    .a_list_inline_item_comma:not(:last-child):after {
+      content: ","; }
+
 .a_fs_1 {
   font-size: 2.5rem; }
 
