@@ -65,6 +65,27 @@ td,
 th {
   padding: 0; }
 
+:root {
+  --a_font_sans_serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --a_font_monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --a_body_font_family: var(--a_font_sans_serif);
+  --a_body_font_size: 1rem;
+  --a_body_font_weight: 400;
+  --a_body_line_height: 1.5;
+  --a_body_color: #212529;
+  --a_body_bg: #fff; }
+
+body {
+  margin: 0;
+  font-family: var(--a_body_font_family);
+  font-size: var(--a_body_font_size);
+  font-weight: var(--a_body_font_weight);
+  line-height: var(--a_body_line_height);
+  color: var(--a_body_color);
+  background-color: var(--a_body_bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
 .a_d_inline {
   display: inline !important; }
 

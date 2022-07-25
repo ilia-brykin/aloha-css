@@ -1,0 +1,24 @@
+@import "aloha_prefix";
+
+:root {
+  --#{$aloha-prefix}font_sans_serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --#{$aloha-prefix}font_monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --#{$aloha-prefix}body_font_family: var(--#{$aloha-prefix}font_sans_serif);
+  --#{$aloha-prefix}body_font_size: 1rem;
+  --#{$aloha-prefix}body_font_weight: 400;
+  --#{$aloha-prefix}body_line_height: 1.5;
+  --#{$aloha-prefix}body_color: #212529;
+  --#{$aloha-prefix}body_bg: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: var(--#{$aloha-prefix}body_font_family);
+  font-size: var(--#{$aloha-prefix}body_font_size);
+  font-weight: var(--#{$aloha-prefix}body_font_weight);
+  line-height: var(--#{$aloha-prefix}body_line_height);
+  color: var(--#{$aloha-prefix}body_color);
+  background-color: var(--#{$aloha-prefix}body_bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
