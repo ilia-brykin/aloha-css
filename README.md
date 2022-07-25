@@ -278,3 +278,5 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_list_inline -> `padding-left: 0; list-style: none;`
 + .a_list_inline_item -> `display: inline-block; margin-right: 0.5rem;`
 + .a_list_inline_item_comma -> `:not(:last-child):after { content: ","; }`
+
+## Styles for `<body>` ##
