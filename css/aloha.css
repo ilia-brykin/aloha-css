@@ -73,7 +73,9 @@ th {
   --a_body_font_weight: 400;
   --a_body_line_height: 1.5;
   --a_body_color: #212529;
-  --a_body_bg: #fff; }
+  --a_body_bg: #fff;
+  --a_link_color: #0d6efd;
+  --a_link_hover_color: #0a58ca; }
 
 body {
   margin: 0;
@@ -1199,3 +1201,177 @@ body {
   text-decoration: none !important;
   text-transform: none !important;
   font-weight: normal !important; }
+
+.a_btn {
+  --a_btn_padding_x: 0.75rem;
+  --a_btn_padding_y: 0.375rem;
+  --a_btn_font_size: 1rem;
+  --a_btn_font_weight: 400;
+  --a_btn_line_height: 1.5;
+  --a_btn_color: #212529;
+  --a_btn_bg: transparent;
+  --a_btn_border_width: 1px;
+  --a_btn_border_color: transparent;
+  --a_btn_border_radius: 0.375rem;
+  --a_btn_box_shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 1px rgba(0, 0, 0, 0.075);
+  --a_btn_disabled_opacity: 0.65;
+  --a_btn_focus_box_shadow: 0 0 0 0.25rem rgba(var(--a_btn_box_shadow), .5);
+  display: inline-block;
+  padding: var(--a_btn_padding_y) var(--a_btn_padding_x);
+  font-family: var(--a_btn_font_family);
+  font-size: var(--a_btn_font_size);
+  font-weight: var(--a_btn_font_weight);
+  line-height: var(--a_btn_line_height);
+  color: var(--a_btn_color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: var(--a_btn_border_width) solid var(--a_btn_border_color);
+  border-radius: var(--a_btn_border_radius);
+  background-color: var(--a_btn_bg); }
+  .a_btn:hover {
+    color: var(--a_btn_hover_color);
+    background-color: var(--a_btn_hover_bg);
+    border-color: var(--a_btn_hover_border_color); }
+  .a_btn:focus {
+    color: var(--a_btn_hover_color);
+    background-color: var(--a_btn_hover_bg);
+    border-color: var(--a_btn_hover_border_color);
+    outline: 0;
+    box-shadow: var(--a_btn_focus_box_shadow); }
+  .a_btn:active, .a_btn.active {
+    color: var(--a_btn_active_color);
+    background-color: var(--a_btn_active_bg);
+    border-color: var(--a_btn_active_border_color); }
+  .a_btn.disabled, .a_btn:disabled,
+  fieldset:disabled .a_btn {
+    color: var(--a_btn_disabled_color);
+    pointer-events: none;
+    background-color: var(--a_btn_disabled_bg);
+    border-color: var(--a_btn_disabled_border_color);
+    opacity: var(--a_btn_disabled_opacity); }
+
+.a_btn_lg {
+  --a_btn_padding_y: 0.5rem;
+  --a_btn_padding_x: 1rem;
+  --a_btn_font_size: 1.25rem;
+  --a_btn_border_radius: 0.5rem; }
+
+.a_btn_sm {
+  --a_btn_padding_y: 0.25rem;
+  --a_btn_padding_x: 0.5rem;
+  --a_btn_font_size: 0.875rem;
+  --a_btn_border_radius: 0.25rem; }
+
+.a_btn_primary {
+  --a_btn_color: #fff;
+  --a_btn_bg: #0d6efd;
+  --a_btn_border_color: #0d6efd;
+  --a_btn_hover_color: #fff;
+  --a_btn_hover_bg: #0b5ed7;
+  --a_btn_hover_border_color: #0a58ca;
+  --a_btn_focus_shadow_rgb: 49,132,253;
+  --a_btn_active_color: #fff;
+  --a_btn_active_bg: #0a58ca;
+  --a_btn_active_border_color: #0a53be;
+  --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --a_btn_disabled_color: #fff;
+  --a_btn_disabled_bg: #0d6efd;
+  --a_btn_disabled_border_color: #0d6efd; }
+
+.a_btn_secondary {
+  --a_btn_color: #fff;
+  --a_btn_bg: #6c757d;
+  --a_btn_border_color: #6c757d;
+  --a_btn_hover_color: #fff;
+  --a_btn_hover_bg: #5c636a;
+  --a_btn_hover_border_color: #565e64;
+  --a_btn_focus_shadow_rgb: 130,138,145;
+  --a_btn_active_color: #fff;
+  --a_btn_active_bg: #565e64;
+  --a_btn_active_border_color: #51585e;
+  --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --a_btn_disabled_color: #fff;
+  --a_btn_disabled_bg: #6c757d;
+  --a_btn_disabled_border_color: #6c757d; }
+
+.a_btn_success {
+  --a_btn_color: #fff;
+  --a_btn_bg: #198754;
+  --a_btn_border_color: #198754;
+  --a_btn_hover_color: #fff;
+  --a_btn_hover_bg: #157347;
+  --a_btn_hover_border_color: #146c43;
+  --a_btn_focus_shadow_rgb: 60,153,110;
+  --a_btn_active_color: #fff;
+  --a_btn_active_bg: #146c43;
+  --a_btn_active_border_color: #13653f;
+  --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --a_btn_disabled_color: #fff;
+  --a_btn_disabled_bg: #198754;
+  --a_btn_disabled_border_color: #198754; }
+
+.a_btn_danger {
+  --a_btn_color: #fff;
+  --a_btn_bg: #dc3545;
+  --a_btn_border_color: #dc3545;
+  --a_btn_hover_color: #fff;
+  --a_btn_hover_bg: #bb2d3b;
+  --a_btn_hover_border_color: #b02a37;
+  --a_btn_focus_shadow_rgb: 225,83,97;
+  --a_btn_active_color: #fff;
+  --a_btn_active_bg: #b02a37;
+  --a_btn_active_border_color: #a52834;
+  --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --a_btn_disabled_color: #fff;
+  --a_btn_disabled_bg: #dc3545;
+  --a_btn_disabled_border_color: #dc3545; }
+
+.a_btn_warning {
+  --a_btn_color: #000;
+  --a_btn_bg: #ffc107;
+  --a_btn_border_color: #ffc107;
+  --a_btn_hover_color: #000;
+  --a_btn_hover_bg: #ffca2c;
+  --a_btn_hover_border_color: #ffc720;
+  --a_btn_focus_shadow_rgb: 217,164,6;
+  --a_btn_active_color: #000;
+  --a_btn_active_bg: #ffcd39;
+  --a_btn_active_border_color: #ffc720;
+  --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --a_btn_disabled_color: #000;
+  --a_btn_disabled_bg: #ffc107;
+  --a_btn_disabled_border_color: #ffc107; }
+
+.a_btn_info {
+  --a_btn_color: #000;
+  --a_btn_bg: #0dcaf0;
+  --a_btn_border_color: #0dcaf0;
+  --a_btn_hover_color: #000;
+  --a_btn_hover_bg: #31d2f2;
+  --a_btn_hover_border_color: #25cff2;
+  --a_btn_focus_shadow_rgb: 11,172,204;
+  --a_btn_active_color: #000;
+  --a_btn_active_bg: #3dd5f3;
+  --a_btn_active_border_color: #25cff2;
+  --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --a_btn_disabled_color: #000;
+  --a_btn_disabled_bg: #0dcaf0;
+  --a_btn_disabled_border_color: #0dcaf0; }
+
+.a_btn_link {
+  --a_btn_font_weight: 400;
+  --a_btn_color: var(--a_link_color);
+  --a_btn_bg: transparent;
+  --a_btn_border_color: transparent;
+  --a_btn_hover_color: var(--a_link_hover_color);
+  --a_btn_hover_border_color: transparent;
+  --a_btn_active_color: var(--a_link_hover_color);
+  --a_btn_active_border_color: transparent;
+  --a_btn_disabled_color: #6c757d;
+  --a_btn_disabled_border_color: transparent;
+  --a_btn_box_shadow: none;
+  --a_btn_focus_shadow_rgb: 49,132,253;
+  text-decoration: underline; }
