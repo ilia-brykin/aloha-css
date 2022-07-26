@@ -280,3 +280,15 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_list_inline_item_comma -> `:not(:last-child):after { content: ","; }`
 
 ## Styles for `<body>` ##
+
+## Buttons ##
++ .a_btn
++ .a_btn_primary
++ .a_btn_secondary
++ .a_btn_success
++ .a_btn_danger
++ .a_btn_warning
++ .a_btn_info
++ .a_btn_link
++ .a_btn_lg
++ .a_btn_sm
