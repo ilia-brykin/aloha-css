@@ -292,3 +292,8 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_btn_link
 + .a_btn_lg
 + .a_btn_sm
+
+## Pagination ##
++ .a_pagination
++ .a_pagination__item
++ .a_pagination__item__link
