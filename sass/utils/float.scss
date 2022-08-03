@@ -1,0 +1,11 @@
+@import "aloha_prefix";
+
+.#{$aloha-prefix}float_start {
+  float: left !important;
+}
+.#{$aloha-prefix}float_end {
+  float: right !important;
+}
+.#{$aloha-prefix}float_none {
+  float: none !important;
+}
