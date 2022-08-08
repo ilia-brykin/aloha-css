@@ -279,6 +279,9 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_list_inline_item -> `display: inline-block; margin-right: 0.5rem;`
 + .a_list_inline_item_comma -> `:not(:last-child):after { content: ","; }`
 
+### DL ###
++ .a_list_dl
+
 ## Styles for `<body>` ##
 
 ## Buttons ##
