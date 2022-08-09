@@ -1,10 +1,11 @@
 @import "aloha_prefix";
 
-$primary: #47b883 !default
+$primary: #0d6efd !default
+$secondary: #6c757d !default
 $link: blue !default;
 
 $info: #0DCAF0FF !default
-$success: #198754FF !default
+$success: #198754 !default
 $warning: #FFC107FF !default
 $danger: #DC3545FF !default
 
@@ -23,11 +24,14 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+
 
 $colors_global: (
     primary: $primary,
-    secondary: red,
-    text: red,
+    secondary: $secondary,
+    text: #212529,
     info: $info,
     success: $success,
     warning: $warning,
@@ -35,6 +39,15 @@ $colors_global: (
     link: $link,
     white: $white,
     black: $black,
+    gray_100: $gray-100,
+    gray_200: $gray-200,
+    gray_300: $gray-300,
+    gray_400: $gray-400,
+    gray_500: $gray-500,
+    gray_600: $gray-600,
+    gray_700: $gray-700,
+    gray_800: $gray-800,
+    gray_900: $gray-900,
 ) !default;
 
 $colors: (
@@ -63,7 +76,32 @@ $bg_colors: (
     black,
 ) !default;
 
+$theme-colors: (
+        "primary":    $primary,
+        "secondary":  $secondary,
+        "success":    $success,
+        "info":       $info,
+        "warning":    $warning,
+        "danger":     $danger,
+        "light":      $light,
+        "dark":       $dark
+) !default;
+
 
 @function getColorVar($value) {
     @return --#{ $aloha-prefix }color_#{ $value };
+}
+
+@function tint-color($color, $weight) {
+    @return mix(white, $color, $weight);
+}
+
+// Shade a color: mix a color with black
+@function shade-color($color, $weight) {
+    @return mix(black, $color, $weight);
+}
+
+// Shade the color if the weight is positive, else tint it
+@function shift-color($color, $weight) {
+    @return if($weight > 0, shade-color($color, $weight), tint-color($color, -$weight));
 }
