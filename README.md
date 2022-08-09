@@ -296,6 +296,9 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_btn_lg
 + .a_btn_sm
 
+### Button close ###
++ .a_btn_close
+
 ## Pagination ##
 + .a_pagination
 + .a_pagination__item
@@ -305,3 +308,15 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_float_start
 + .a_float_end
 + .a_float_none
+
+## Alert ##
++ .a_alert
++ .a_alert_dismissible
++ .a_alert_primary
++ .a_alert_secondary
++ .a_alert_success
++ .a_alert_info
++ .a_alert_warning
++ .a_alert_danger
++ .a_alert_light
++ .a_alert_dark

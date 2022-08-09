@@ -50,7 +50,7 @@ $alert-dismissible-padding-r:   $alert-padding-x * 3 !default;
   //@if (contrast-ratio($alert-background, $alert-color) < $min-contrast-ratio) {
   //  $alert-color: mix($value, color-contrast($alert-background), abs($alert-color-scale));
   //}
-  .alert-#{$state} {
+  .#{$aloha-prefix}alert_#{$state} {
     --#{$aloha-prefix}alert_color: #{$alert-color};
     --#{$aloha-prefix}alert_bg: #{$alert-background};
     --#{$aloha-prefix}alert_border_color: #{$alert-border};
