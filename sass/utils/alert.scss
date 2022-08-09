@@ -16,13 +16,13 @@ $alert-dismissible-padding-r:   $alert-padding-x * 3 !default;
 
 .#{$aloha-prefix}alert {
   --#{$aloha-prefix}alert_bg: transparent;
-  --#{$aloha-prefix}alert_padding_x: $alert-padding-x;
-  --#{$aloha-prefix}alert_padding_y: $alert-padding-y;
-  --#{$aloha-prefix}alert_margin_bottom: $alert-margin-bottom;
+  --#{$aloha-prefix}alert_padding_x: #{$alert-padding-x};
+  --#{$aloha-prefix}alert_padding_y: #{$alert-padding-y};
+  --#{$aloha-prefix}alert_margin_bottom: #{$alert-margin-bottom};
   --#{$aloha-prefix}alert_color: inherit;
   --#{$aloha-prefix}alert_border_color: transparent;
-  --#{$aloha-prefix}alert_border: $alert-border-width solid var(--#{$aloha-prefix}alert_border_color);
-  --#{$aloha-prefix}alert_border-radius: $alert-border-radius;
+  --#{$aloha-prefix}alert_border: #{$alert-border-width} solid var(--#{$aloha-prefix}alert_border_color);
+  --#{$aloha-prefix}alert_border-radius: #{$alert-border-radius};
 
   position: relative;
   padding: var(--#{$aloha-prefix}alert_padding_y) var(--#{$aloha-prefix}alert_padding_x);
