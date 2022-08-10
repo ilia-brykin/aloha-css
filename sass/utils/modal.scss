@@ -154,3 +154,20 @@
     overflow-y: auto;
   }
 }
+.#{$aloha-prefix}modal_backdrop {
+  --#{$aloha-prefix}backdrop_zindex: 1050;
+  --#{$aloha-prefix}backdrop_bg: #000;
+  --#{$aloha-prefix}backdrop_opacity: 0.5;
+
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--#{$aloha-prefix}backdrop_zindex);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--#{$aloha-prefix}backdrop_bg);
+}
+.#{$aloha-prefix}modal_backdrop_show {
+  opacity: var(--#{$aloha-prefix}backdrop_opacity);
+}
