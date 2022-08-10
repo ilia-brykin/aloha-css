@@ -1741,3 +1741,30 @@ body {
 
 .a_modal_backdrop_show {
   opacity: var(--a_backdrop_opacity); }
+
+.a_notification_parent {
+  --a_notification_shadow: 0 0 10px -5px #000;
+  --a_notification_width: calc(100% - 2rem);
+  --a_notification_left: 1rem;
+  --a_notification_top: 1rem;
+  --a_notification_z_index: 1071;
+  --a_notification_text_align: center;
+  position: fixed;
+  width: var(--a_notification_width);
+  left: var(--a_notification_left);
+  top: var(--a_notification_top);
+  z-index: var(--a_notification_z_index);
+  text-align: var(--a_notification_text_align); }
+
+@media (min-width: 1023px) {
+  .a_notification_parent {
+    --a_notification_width: 60%;
+    --a_notification_left: 15%; } }
+
+@media (min-width: 1215px) {
+  .a_notification_parent {
+    --a_notification_width: 40%;
+    --a_notification_left: 30%; } }
+
+.a_notification {
+  box-shadow: var(--a_notification_shadow); }
