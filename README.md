@@ -338,3 +338,7 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_modal_fullscreen
 + .a_modal_backdrop
 + .a_modal_backdrop_show
+
+## Notification ##
++ .a_notification_parent
++ .a_notification
