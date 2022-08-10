@@ -320,3 +320,19 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_alert_danger
 + .a_alert_light
 + .a_alert_dark
+
+## Modal ##
++ .a_modal_open
++ .a_modal
++ .a_modal_show
++ .a_modal_dialog
++ .a_modal_content
++ .a_modal_dialog_scrollable
++ .a_modal_header
++ .a_modal_title
++ .a_modal_body
++ .a_modal_footer
++ .a_modal_small
++ .a_modal_large
++ .a_modal_xl
++ .a_modal_fullscreen

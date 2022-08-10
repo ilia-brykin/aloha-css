@@ -62,7 +62,7 @@
   border: var(--#{$aloha-prefix}modal_border_width) solid var(--#{$aloha-prefix}modal_border_color);
   border-radius: var(--#{$aloha-prefix}modal_border_radius);
   outline: 0;
-  .modal-dialog-scrollable & {
+  .#{$aloha-prefix}modal_dialog_scrollable & {
     max-height: 100%;
     overflow: hidden;
   }
@@ -79,7 +79,7 @@
   border-bottom: var(--#{$aloha-prefix}modal_header_border_width) solid var(--#{$aloha-prefix}modal_header_border_color);
   border-top-left-radius: var(--#{$aloha-prefix}modal_inner_border_radius);
   border-top-right-radius: var(--#{$aloha-prefix}modal_inner_border_radius);
-  .a_btn_close {
+  .#{$aloha-prefix}btn_close {
     padding: calc(var(--#{$aloha-prefix}modal_header_padding_y) * .5) calc(var(--#{$aloha-prefix}modal_header_padding_x) * .5);
     margin: calc(var(--#{$aloha-prefix}modal_header_padding_y) * -.5) calc(var(--#{$aloha-prefix}modal_header_padding_x) * -.5) calc(var(--#{$aloha-prefix}modal_header_padding_y) * -.5) auto;
   }
@@ -121,12 +121,12 @@
     margin-right: auto;
     margin-left: auto;
   }
-  .#{$aloha-prefix}modal_sm {
+  .#{$aloha-prefix}modal_small {
     --#{$aloha-prefix}modal_width: 300px;
   }
 }
 @media (min-width: #{$breakpoint-tablet}) {
-  .#{$aloha-prefix}modal_lg,
+  .#{$aloha-prefix}modal_large,
   .#{$aloha-prefix}modal_xl {
     --#{$aloha-prefix}modal_width: 800px;
   }

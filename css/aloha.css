@@ -1646,7 +1646,7 @@ body {
   border: var(--a_modal_border_width) solid var(--a_modal_border_color);
   border-radius: var(--a_modal_border_radius);
   outline: 0; }
-  .modal-dialog-scrollable .a_modal_content {
+  .a_modal_dialog_scrollable .a_modal_content {
     max-height: 100%;
     overflow: hidden; }
 
@@ -1699,11 +1699,11 @@ body {
     max-width: var(--a_modal_width);
     margin-right: auto;
     margin-left: auto; }
-  .a_modal_sm {
+  .a_modal_small {
     --a_modal_width: 300px; } }
 
 @media (min-width: 1023px) {
-  .a_modal_lg,
+  .a_modal_large,
   .a_modal_xl {
     --a_modal_width: 800px; } }
 
