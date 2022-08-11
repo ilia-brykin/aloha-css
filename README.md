@@ -342,3 +342,11 @@ margin-left: calc(100% / var(--columnCount) * 1);
 ## Notification ##
 + .a_notification_parent
 + .a_notification
+
+## Checkbox and radio ##
++ .a_custom_control
++ .a_custom_radio
++ .a_custom_checkbox
++ .a_custom_control_input
++ .a_custom_control_label
++ .a_custom_control_label_width_auto
