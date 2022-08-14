@@ -350,3 +350,9 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_custom_control_input
 + .a_custom_control_label
 + .a_custom_control_label_width_auto
+
+## Spinner ##
++ .a_spinner
++ .a_spinner_small
++ .a_spinner_large
+
