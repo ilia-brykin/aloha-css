@@ -1,7 +1,7 @@
 @import "aloha_prefix";
 
 .#{$aloha-prefix}custom_control {
-  --#{$aloha-prefix}custom_control_border_radius: 4px;
+  --#{$aloha-prefix}custom_control_border_radius: var(--#{$aloha-prefix}border_radius);
   --#{$aloha-prefix}custom_control_label_padding: .5rem;
   --#{$aloha-prefix}custom_control_label_width: 100%;
   --#{$aloha-prefix}custom_control_label_disabled_color: #9f9185;

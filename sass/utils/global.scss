@@ -13,8 +13,15 @@
   --#{$aloha-prefix}link_color: #0d6efd;
   --#{$aloha-prefix}link_hover_color: #0a58ca;
 
+  --#{$aloha-prefix}border_width: 1px;
   --#{$aloha-prefix}border_color: #dee2e6;
   --#{$aloha-prefix}border_color_translucent: rgba(0, 0, 0, 0.175);
+
+  --#{$aloha-prefix}border_radius: 0.375rem;
+  --#{$aloha-prefix}border_radius_small: 0.25rem;
+  --#{$aloha-prefix}border_radius_large: 0.5rem;
+  --#{$aloha-prefix}border_radius_xl: 1rem;
+  --#{$aloha-prefix}border_radius_2xl: 2rem;
 }
 
 body {

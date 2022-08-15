@@ -15,7 +15,7 @@
   --#{$aloha-prefix}modal_bg: #fff;
   --#{$aloha-prefix}modal_border_color: var(--#{$aloha-prefix}border_color_translucent);
   --#{$aloha-prefix}modal_border_width: 1px;
-  --#{$aloha-prefix}modal_border_radius: 0.5rem;
+  --#{$aloha-prefix}modal_border_radius: --#{$aloha-prefix}border_radius_large;
   --#{$aloha-prefix}modal_box_shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   --#{$aloha-prefix}modal_inner_border_radius: calc(0.5rem - 1px);
   --#{$aloha-prefix}modal_header_padding_x: 1rem;

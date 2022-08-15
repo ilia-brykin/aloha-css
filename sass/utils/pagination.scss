@@ -6,9 +6,9 @@
   --#{$aloha-prefix}pagination_font_size: 1rem;
   --#{$aloha-prefix}pagination_color: var(--#{$aloha-prefix}link-color);
   --#{$aloha-prefix}pagination_bg: #fff;
-  --#{$aloha-prefix}pagination_border_width: 1px;
+  --#{$aloha-prefix}pagination_border_width: var(--#{$aloha-prefix}border_width);
   --#{$aloha-prefix}pagination_border_color: #dee2e6;
-  --#{$aloha-prefix}pagination_border_radius: 0.375rem;
+  --#{$aloha-prefix}pagination_border_radius: var(--#{$aloha-prefix}border_radius);
   --#{$aloha-prefix}pagination_hover_color: var(--#{$aloha-prefix}link-hover-color);
   --#{$aloha-prefix}pagination_hover_bg: #e9ecef;
   --#{$aloha-prefix}pagination_hover_border-color: #dee2e6;
