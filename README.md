@@ -32,6 +32,14 @@
 </div>
 ```
 
+### Breakpoints ####
++ mobile `(max-width: 768px)`
++ tablet `(min-width: 769px) and (max-width: 1023px)`
++ touch `(max-width: 1023px)`
++ desktop `(min-width: 1024px) and (max-width: 1215px)`
++ widescreen `(min-width: 1216px) and (max-width: 1407px)`
+
+
 ### Columns gap ###
 + .a_columns_gab_1 -> `0.25rem`
 + .a_columns_gab_2 -> `0.5rem`
@@ -41,6 +49,20 @@
 + .a_columns_gab_6 -> `1.5rem`
 + .a_columns_gab_7 -> `1.75rem`
 + .a_columns_gab_8 -> `2rem`
+
+#### With breakpoints ####
++ .a_columns_gab_1_mobile
++ .a_columns_gab_1_tablet
++ .a_columns_gab_1_touch
++ .a_columns_gab_1_desktop
++ .a_columns_gab_1_widescreen
++ ...
++ .a_columns_gab_8_mobile
++ .a_columns_gab_8_tablet
++ .a_columns_gab_8_touch
++ .a_columns_gab_8_desktop
++ .a_columns_gab_8_widescreen
+
 ```
 <div class="a_columns a_columns_gab_6">
   <div class="a_column">
@@ -73,6 +95,20 @@
 + .a_columns_count_11 -> `--columnCount: 11;`
 + .a_columns_count_12 -> `--columnCount: 12;`
 
+#### With breakpoints ####
++ .a_columns_count_1_mobile
++ .a_columns_count_1_tablet
++ .a_columns_count_1_touch
++ .a_columns_count_1_desktop
++ .a_columns_count_1_widescreen
++ ...
++ .a_columns_count_12_mobile
++ .a_columns_count_12_tablet
++ .a_columns_count_12_touch
++ .a_columns_count_12_desktop
++ .a_columns_count_12_widescreen
+
+
 #### for `.a_column` ####
 ```
 width: calc(100% / var(--columnCount) * 8);
@@ -90,6 +126,19 @@ width: calc(100% / var(--columnCount) * 8);
 + .a_column_11
 + .a_column_12
 
+#### With breakpoints ####
++ .a_column_1_mobile
++ .a_column_1_tablet
++ .a_column_1_touch
++ .a_column_1_desktop
++ .a_column_1_widescreen
++ ...
++ .a_column_12_mobile
++ .a_column_12_tablet
++ .a_column_12_touch
++ .a_column_12_desktop
++ .a_column_12_widescreen
+
 #### Offset ####
 ```
 margin-left: calc(100% / var(--columnCount) * 1);
@@ -105,6 +154,19 @@ margin-left: calc(100% / var(--columnCount) * 1);
 + .a_column_offset_9
 + .a_column_offset_10
 + .a_column_offset_11
+
+#### With breakpoints ####
++ .a_column_offset_1_mobile
++ .a_column_offset_1_tablet
++ .a_column_offset_1_touch
++ .a_column_offset_1_desktop
++ .a_column_offset_1_widescreen
++ ...
++ .a_column_offset_11_mobile
++ .a_column_offset_11_tablet
++ .a_column_offset_11_touch
++ .a_column_offset_11_desktop
++ .a_column_offset_11_widescreen
 
 ## Colors ##
 
