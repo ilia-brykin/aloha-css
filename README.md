@@ -82,18 +82,18 @@
 
 ### Column sizes ###
 #### for `.a_columns` ####
-+ .a_columns_count_1 -> `--columnCount: 1;`
-+ .a_columns_count_2 -> `--columnCount: 2;`
-+ .a_columns_count_3 -> `--columnCount: 3;`
-+ .a_columns_count_4 -> `--columnCount: 4;`
-+ .a_columns_count_5 -> `--columnCount: 5;`
-+ .a_columns_count_6 -> `--columnCount: 6;`
-+ .a_columns_count_7 -> `--columnCount: 7;`
-+ .a_columns_count_8 -> `--columnCount: 8;`
-+ .a_columns_count_9 -> `--columnCount: 9;`
-+ .a_columns_count_10 -> `--columnCount: 10;`
-+ .a_columns_count_11 -> `--columnCount: 11;`
-+ .a_columns_count_12 -> `--columnCount: 12;`
++ .a_columns_count_1 -> `--column_count: 1;`
++ .a_columns_count_2 -> `--column_count: 2;`
++ .a_columns_count_3 -> `--column_count: 3;`
++ .a_columns_count_4 -> `--column_count: 4;`
++ .a_columns_count_5 -> `--column_count: 5;`
++ .a_columns_count_6 -> `--column_count: 6;`
++ .a_columns_count_7 -> `--column_count: 7;`
++ .a_columns_count_8 -> `--column_count: 8;`
++ .a_columns_count_9 -> `--column_count: 9;`
++ .a_columns_count_10 -> `--column_count: 10;`
++ .a_columns_count_11 -> `--column_count: 11;`
++ .a_columns_count_12 -> `--column_count: 12;`
 
 #### With breakpoints ####
 + .a_columns_count_1_mobile
@@ -111,7 +111,7 @@
 
 #### for `.a_column` ####
 ```
-width: calc(100% / var(--columnCount) * 8);
+width: calc(100% / var(--a_column_count) * 8);
 ```
 + .a_column_1
 + .a_column_2
@@ -141,7 +141,7 @@ width: calc(100% / var(--columnCount) * 8);
 
 #### Offset ####
 ```
-margin-left: calc(100% / var(--columnCount) * 1);
+margin-left: calc(100% / var(--a_column_count) * 1);
 ```
 + .a_column_offset_1
 + .a_column_offset_2
