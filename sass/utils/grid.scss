@@ -64,6 +64,8 @@ $breakpoints-grid: prepend($breakpoints, (class: null));
       .#{$aloha-prefix}column_#{$i}#{ getBreakpointWithPrefix($breakpoint-class) } {
         flex: none;
         width: calc(100% / var(--columnCount) * #{$i});
+        padding-left: var(--columnGap);
+        padding-right: var(--columnGap);
       }
     }
   }
