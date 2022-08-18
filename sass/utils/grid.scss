@@ -18,13 +18,14 @@ $column_gabs: (
 $column_count: 12;
 
 .#{$aloha-prefix}columns {
+  --#{$aloha-prefix}column_gap_x: 0.75rem;
+  --#{$aloha-prefix}column_gap_y: 0.75rem;
   display: flex;
-  --columnGap: 0.75rem;
-  margin-left: calc(-1 * var(--columnGap));
-  margin-right: calc(-1 * var(--columnGap));
+  margin-left: calc(-1 * var(--#{$aloha-prefix}column_gap_x));
+  margin-right: calc(-1 * var(--#{$aloha-prefix}column_gap_x));
   > .#{$aloha-prefix}column {
-    padding-left: var(--columnGap);
-    padding-right: var(--columnGap);
+    padding-left: var(--#{$aloha-prefix}column_gap_x);
+    padding-right: var(--#{$aloha-prefix}column_gap_x);
   }
 }
 .#{$aloha-prefix}column {
@@ -32,6 +33,7 @@ $column_count: 12;
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
+  padding: var(--#{$aloha-prefix}column_gap_y) var(--#{$aloha-prefix}column_gap_x);
 }
 
 
@@ -45,7 +47,7 @@ $breakpoints-grid: prepend($breakpoints, (class: null));
   @for $i from 1 through $column_count {
     @include media-width-all($breakpoint-min, $breakpoint-max) {
       .#{$aloha-prefix}columns_count_#{$i}#{ getBreakpointWithPrefix($breakpoint-class) } {
-        --columnCount: #{$i};
+        --#{$aloha-prefix}column_count: #{$i};
         flex-wrap: wrap;
       }
     }
@@ -54,7 +56,7 @@ $breakpoints-grid: prepend($breakpoints, (class: null));
   @each $gab-key, $gab-value in $column_gabs {
     @include media-width-all($breakpoint-min, $breakpoint-max) {
       .#{$aloha-prefix}columns_gab_#{$gab-key}#{ getBreakpointWithPrefix($breakpoint-class) } {
-        --columnGap: #{$gab-value};
+        --#{$aloha-prefix}column_gap_x: #{$gab-value};
       }
     }
   }
@@ -63,16 +65,14 @@ $breakpoints-grid: prepend($breakpoints, (class: null));
     @include media-width-all($breakpoint-min, $breakpoint-max) {
       .#{$aloha-prefix}column_#{$i}#{ getBreakpointWithPrefix($breakpoint-class) } {
         flex: none;
-        width: calc(100% / var(--columnCount) * #{$i});
-        padding-left: var(--columnGap);
-        padding-right: var(--columnGap);
+        width: calc(100% / var(--#{$aloha-prefix}column_count) * #{$i});
       }
     }
   }
   @for $i from 1 through $column_count - 1 {
     @include media-width-all($breakpoint-min, $breakpoint-max) {
       .#{$aloha-prefix}column_offset_#{$i}#{ getBreakpointWithPrefix($breakpoint-class) } {
-        margin-left: calc(100% / var(--columnCount) * #{$i});
+        margin-left: calc(100% / var(--#{$aloha-prefix}column_count) * #{$i});
       }
     }
   }
