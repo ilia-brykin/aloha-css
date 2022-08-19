@@ -10,8 +10,8 @@
   --#{$aloha-prefix}custom_control_input_bg: var(--#{$aloha-prefix}color_white);
   --#{$aloha-prefix}custom_control_input_margin_right: .5rem;
   --#{$aloha-prefix}custom_control_input_width: 1.5rem;
-  --#{$aloha-prefix}custom_control_input_border_color: var(----#{$aloha-prefix}border_color);
-  --#{$aloha-prefix}custom_control_input_border_width: var(----#{$aloha-prefix}border_width);
+  --#{$aloha-prefix}custom_control_input_border_color: var(--#{$aloha-prefix}border_color);
+  --#{$aloha-prefix}custom_control_input_border_width: var(--#{$aloha-prefix}border_width);
   --#{$aloha-prefix}custom_control_input_checked_color: var(--#{$aloha-prefix}color_white);;
   --#{$aloha-prefix}custom_control_input_checked_border_color: var(--a_color_primary);
   --#{$aloha-prefix}custom_control_input_checked_bg: var(--a_color_primary);
@@ -19,7 +19,6 @@
   --#{$aloha-prefix}custom_control_radio_input_checked_border_color: var(--#{$aloha-prefix}color_white);
   --#{$aloha-prefix}custom_control_radio_input_checked_border_width: 4px;
   --#{$aloha-prefix}custom_control_error_color: var(--#{$aloha-prefix}color_danger);
-
 
   position: relative;
   z-index: 1;
