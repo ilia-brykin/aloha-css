@@ -2,7 +2,7 @@
 
 $primary: #0d6efd !default
 $secondary: #6c757d !default
-$link: blue !default;
+$link: $primary !default;
 
 $info: #0DCAF0FF !default
 $success: #198754 !default
@@ -32,12 +32,18 @@ $colors_global: (
     primary: $primary,
     primary_50: mix(#fff, $primary, 50),
     secondary: $secondary,
+    secondary_50: mix(#fff, $secondary, 50),
     text: #212529,
     info: $info,
+    info_50: mix(#fff, $info, 50),
     success: $success,
+    success_50: mix(#fff, $success, 50),
     warning: $warning,
+    warning_50: mix(#fff, $warning, 50),
     danger: $danger,
+    danger_50: mix(#fff, $danger, 50),
     link: $link,
+    link_50: mix(#fff, $link, 50),
     white: $white,
     black: $black,
     gray_100: $gray-100,
