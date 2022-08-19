@@ -27,6 +27,8 @@ $black:    #000 !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 
+$focus-color: #d0e3a4 !default;
+
 
 $colors_global: (
     primary: $primary,
@@ -55,6 +57,7 @@ $colors_global: (
     gray_700: $gray-700,
     gray_800: $gray-800,
     gray_900: $gray-900,
+    focus: $focus-color,
 ) !default;
 
 $colors: (
