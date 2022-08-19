@@ -30,6 +30,7 @@ $dark:          $gray-900 !default;
 
 $colors_global: (
     primary: $primary,
+    primary_50: mix(#fff, $primary, 50),
     secondary: $secondary,
     text: #212529,
     info: $info,

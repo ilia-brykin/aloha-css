@@ -4,6 +4,7 @@
   --#{$aloha-prefix}custom_control_border_radius: var(--#{$aloha-prefix}border_radius);
   --#{$aloha-prefix}custom_control_label_padding: .5rem;
   --#{$aloha-prefix}custom_control_label_width: 100%;
+  --#{$aloha-prefix}custom_control_label_color: inherit;
   --#{$aloha-prefix}custom_control_label_disabled_color: #9f9185;
   --#{$aloha-prefix}custom_control_hover_bg: #d0e3a4;
   --#{$aloha-prefix}custom_control_input_bg: #fff;
@@ -12,9 +13,9 @@
   --#{$aloha-prefix}custom_control_input_border_color: #3e2f25;
   --#{$aloha-prefix}custom_control_input_border_width: 1px;
   --#{$aloha-prefix}custom_control_input_checked_color: #fff;
-  --#{$aloha-prefix}custom_control_input_checked_border_color: #e3251a;
-  --#{$aloha-prefix}custom_control_input_checked_bg: #e3251a;
-  --#{$aloha-prefix}custom_control_input_checked_disabled_bg:  rgba(227, 21, 26, 0.5);
+  --#{$aloha-prefix}custom_control_input_checked_border_color: var(--a_color_primary);
+  --#{$aloha-prefix}custom_control_input_checked_bg: var(--a_color_primary);
+  --#{$aloha-prefix}custom_control_input_checked_disabled_bg:  var(--a_color_primary_50);
   --#{$aloha-prefix}custom_control_radio_input_checked_border_color: #fff;
   --#{$aloha-prefix}custom_control_radio_input_checked_border_width: 4px;
   --#{$aloha-prefix}custom_control_error_color: var(--#{$aloha-prefix}color_danger);
@@ -28,6 +29,12 @@
   display: flex;
   hyphens: auto;
   word-break: break-word;
+}
+.#{$aloha-prefix}custom_control_invalid {
+  --#{$aloha-prefix}custom_control_input_border_color: var(--#{$aloha-prefix}custom_control_error_color);
+  --#{$aloha-prefix}custom_control_input_checked_bg: var(--#{$aloha-prefix}custom_control_error_color);
+  --#{$aloha-prefix}custom_control_input_checked_border_color: var(--#{$aloha-prefix}custom_control_error_color);
+  --#{$aloha-prefix}custom_control_label_color: var(--#{$aloha-prefix}custom_control_error_color);
 }
 .#{$aloha-prefix}custom_control_input {
   margin: 0;
@@ -53,6 +60,7 @@
   align-items: center;
   width: var(--#{$aloha-prefix}custom_control_label_width);
   border-radius: var(--#{$aloha-prefix}custom_control_border_radius);
+  color: var(--#{$aloha-prefix}custom_control_label_color);
   &:hover,
   .#{$aloha-prefix}custom_control_input:focus ~ &,
   .#{$aloha-prefix}custom_control_input:focus:not(:checked) ~ & {
@@ -117,11 +125,4 @@
 }
 .#{$aloha-prefix}custom_control_label_width_auto {
   --#{$aloha-prefix}custom_control_label_width: auto;
-}
-
-.#{$aloha-prefix}custom_control_input_invalid {
-  border-color: var(--#{$aloha-prefix}custom_control_error_color);
-  & ~ .#{$aloha-prefix}custom_control_label {
-    color: var(--#{$aloha-prefix}custom_control_error_color);
-  }
 }
