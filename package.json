@@ -1,7 +1,7 @@
 {
   "name": "aloha-css",
   "description": "Project aloha-css",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "author": "Ilia Brykin",
   "scripts": {
     "build-css": "node-sass --include-path scss sass/aloha.scss css/aloha.css"
