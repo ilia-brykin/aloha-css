@@ -25,6 +25,8 @@
   color-adjust: exact;
   padding-left: 0;
   display: flex;
+  hyphens: auto;
+  word-break: break-word;
 }
 .#{$aloha-prefix}custom_control_input {
   margin: 0;

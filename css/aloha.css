@@ -2357,7 +2357,9 @@ body {
   min-height: 1.5rem;
   color-adjust: exact;
   padding-left: 0;
-  display: flex; }
+  display: flex;
+  hyphens: auto;
+  word-break: break-word; }
 
 .a_custom_control_input {
   margin: 0;
