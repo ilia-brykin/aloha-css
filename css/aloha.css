@@ -2353,8 +2353,8 @@ body {
   --a_custom_control_input_bg: var(--a_color_white);
   --a_custom_control_input_margin_right: .5rem;
   --a_custom_control_input_width: 1.5rem;
-  --a_custom_control_input_border_color: var(----a_border_color);
-  --a_custom_control_input_border_width: var(----a_border_width);
+  --a_custom_control_input_border_color: var(--a_border_color);
+  --a_custom_control_input_border_width: var(--a_border_width);
   --a_custom_control_input_checked_color: var(--a_color_white);
   --a_custom_control_input_checked_border_color: var(--a_color_primary);
   --a_custom_control_input_checked_bg: var(--a_color_primary);
