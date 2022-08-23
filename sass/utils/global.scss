@@ -1,20 +1,5 @@
 @import "aloha_prefix";
-
-$body-font-size:              1rem !default;
-$body-font-weight:            400 !default;
-$body-line-height:            1.5 !default;
-
-$border-width:                1px !default;
-$border-color:                #dee2e6 !default;
-
-$border-radius:               .375rem !default;
-$border-radius-small:         .25rem !default;
-$border-radius-large:         .5rem !default;
-$border-radius-xl:            1rem !default;
-$border-radius-2xl:           2rem !default;
-
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+@import "global_variables";
 
 :root {
   --#{$aloha-prefix}font_sans_serif: #{$font-family-sans-serif};

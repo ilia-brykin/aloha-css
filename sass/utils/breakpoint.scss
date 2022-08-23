@@ -2,6 +2,8 @@ $breakpoint-mobile: 768px;
 $breakpoint-tablet: 1023px;
 $breakpoint-desktop: 1215px;
 
+$breakpoint-desktop-min: 1024px;
+
 $breakpoints: (
     (
         class: "mobile",
