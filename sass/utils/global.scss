@@ -1,27 +1,40 @@
 @import "aloha_prefix";
 
+$body-font-size:              1rem !default;
+$body-font-weight:            400 !default;
+$body-line-height:            1.5 !default;
+
+$border-width:                1px !default;
+$border-color:                #dee2e6 !default;
+
+$border-radius:               .375rem !default;
+$border-radius-small:         .25rem !default;
+$border-radius-large:         .5rem !default;
+$border-radius-xl:            1rem !default;
+$border-radius-2xl:           2rem !default;
+
+$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
 :root {
-  --#{$aloha-prefix}font_sans_serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --#{$aloha-prefix}font_monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --#{$aloha-prefix}font_sans_serif: #{$font-family-sans-serif};
+  --#{$aloha-prefix}font_monospace: #{$font-family-monospace};
   --#{$aloha-prefix}body_font_family: var(--#{$aloha-prefix}font_sans_serif);
-  --#{$aloha-prefix}body_font_size: 1rem;
-  --#{$aloha-prefix}body_font_weight: 400;
-  --#{$aloha-prefix}body_line_height: 1.5;
-  --#{$aloha-prefix}body_color: #212529;
-  --#{$aloha-prefix}body_bg: #fff;
+  --#{$aloha-prefix}body_font_size: #{$body-font-size};
+  --#{$aloha-prefix}body_font_weight: #{$body-font-weight};
+  --#{$aloha-prefix}body_line_height: #{$body-line-height};
 
-  --#{$aloha-prefix}link_color: #0d6efd;
-  --#{$aloha-prefix}link_hover_color: #0a58ca;
 
-  --#{$aloha-prefix}border_width: 1px;
-  --#{$aloha-prefix}border_color: #dee2e6;
+
+  --#{$aloha-prefix}border_width: #{$border-width};
+  --#{$aloha-prefix}border_color: #{$border-color};
   --#{$aloha-prefix}border_color_translucent: rgba(0, 0, 0, 0.175);
 
-  --#{$aloha-prefix}border_radius: 0.375rem;
-  --#{$aloha-prefix}border_radius_small: 0.25rem;
-  --#{$aloha-prefix}border_radius_large: 0.5rem;
-  --#{$aloha-prefix}border_radius_xl: 1rem;
-  --#{$aloha-prefix}border_radius_2xl: 2rem;
+  --#{$aloha-prefix}border_radius: #{$border-radius};
+  --#{$aloha-prefix}border_radius_small: #{$border-radius-small};
+  --#{$aloha-prefix}border_radius_large: #{$border-radius-large};
+  --#{$aloha-prefix}border_radius_xl: #{$border-radius-xl};
+  --#{$aloha-prefix}border_radius_2xl: #{$border-radius-2xl};
 }
 
 body {
@@ -30,8 +43,8 @@ body {
   font-size: var(--#{$aloha-prefix}body_font_size);
   font-weight: var(--#{$aloha-prefix}body_font_weight);
   line-height: var(--#{$aloha-prefix}body_line_height);
-  color: var(--#{$aloha-prefix}body_color);
-  background-color: var(--#{$aloha-prefix}body_bg);
+  color: var(--#{$aloha-prefix}color_body);
+  background-color: var(--#{$aloha-prefix}color_body_bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

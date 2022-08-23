@@ -66,16 +66,12 @@ th {
   padding: 0; }
 
 :root {
-  --a_font_sans_serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --a_font_monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --a_font_sans_serif: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --a_font_monospace: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   --a_body_font_family: var(--a_font_sans_serif);
   --a_body_font_size: 1rem;
   --a_body_font_weight: 400;
   --a_body_line_height: 1.5;
-  --a_body_color: #212529;
-  --a_body_bg: #fff;
-  --a_link_color: #0d6efd;
-  --a_link_hover_color: #0a58ca;
   --a_border_width: 1px;
   --a_border_color: #dee2e6;
   --a_border_color_translucent: rgba(0, 0, 0, 0.175);
@@ -91,8 +87,8 @@ body {
   font-size: var(--a_body_font_size);
   font-weight: var(--a_body_font_weight);
   line-height: var(--a_body_line_height);
-  color: var(--a_body_color);
-  background-color: var(--a_body_bg);
+  color: var(--a_color_body);
+  background-color: var(--a_color_body_bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
@@ -746,7 +742,9 @@ body {
   --a_color_gray_800: #343a40;
   --a_color_gray_900: #212529;
   --a_color_focus: #d0e3a4;
-  --a_color_text: #212529; }
+  --a_color_text: #212529;
+  --a_color_body: #212529;
+  --a_color_body_bg: #fff; }
 
 .a_color_primary {
   color: var(--a_color_primary) !important; }

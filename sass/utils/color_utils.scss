@@ -34,6 +34,8 @@ $dark:          $gray-900 !default;
 
 $focus-color: #d0e3a4 !default;
 $text-color: #212529 !default;
+$body-color: $text-color !default;
+$body-bg: $white !default;
 
 // rgb
 $primary-rgb: to-rgb($primary);
@@ -87,6 +89,8 @@ $colors_global: (
     gray_900: $gray-900,
     focus: $focus-color,
     text: $text-color,
+    body: $body-color,
+    body_bg: $body-bg,
 ) !default;
 
 $colors: (
