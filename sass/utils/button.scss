@@ -1,6 +1,21 @@
 @import "aloha_prefix";
 @import "color_utils";
 
+$btn-hover-bg-shade-amount:       15% !default;
+$btn-hover-bg-tint-amount:        15% !default;
+$btn-hover-border-shade-amount:   20% !default;
+$btn-hover-border-tint-amount:    10% !default;
+$btn-active-bg-shade-amount:      20% !default;
+$btn-active-bg-tint-amount:       20% !default;
+$btn-active-border-shade-amount:  25% !default;
+$btn-active-border-tint-amount:   10% !default;
+
+$btn-active-box-shadow:           inset 0 3px 5px rgba($black, .125) !default;
+
+$btn-link-color:              var(--#{$aloha-prefix}color_link) !default;
+$btn-link-hover-color:        var(--#{$aloha-prefix}color_link_hover) !default;
+$btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
+
 .#{$aloha-prefix}btn {
   --#{$aloha-prefix}btn_padding_x: 0.75rem;
   --#{$aloha-prefix}btn_padding_y: 0.375rem;
@@ -12,9 +27,8 @@
   --#{$aloha-prefix}btn_border_width: 1px;
   --#{$aloha-prefix}btn_border_color: transparent;
   --#{$aloha-prefix}btn_border_radius: var(--#{$aloha-prefix}border_radius);
-  --#{$aloha-prefix}btn_box_shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 1px rgba(0, 0, 0, 0.075);
   --#{$aloha-prefix}btn_disabled_opacity: 0.65;
-  --#{$aloha-prefix}btn_focus_box_shadow: 0 0 0 0.25rem rgba(var(--#{$aloha-prefix}btn_box_shadow), .5);
+  --#{$aloha-prefix}btn_focus_box_shadow: 0 0 0 0.25rem rgba(var(--#{$aloha-prefix}btn_focus_shadow_rgb), .5);
 
   display: inline-block;
   padding: var(--#{$aloha-prefix}btn_padding_y) var(--#{$aloha-prefix}btn_padding_x);
@@ -31,6 +45,7 @@
   border: var(--#{$aloha-prefix}btn_border_width) solid var(--#{$aloha-prefix}btn_border_color);
   border-radius: var(--#{$aloha-prefix}btn_border_radius);
   background-color: var(--#{$aloha-prefix}btn_bg);
+
 
   &:hover {
     color: var(--#{$aloha-prefix}btn_hover_color);
@@ -78,114 +93,81 @@
   --#{$aloha-prefix}btn_border_radius: var(--#{$aloha-prefix}border_radius_small);
 }
 
+@mixin button-variant(
+  $background,
+  $border,
+  $color: color-contrast($background),
+  $hover-background: if($color == $color-contrast-light, shade-color($background, $btn-hover-bg-shade-amount), tint-color($background, $btn-hover-bg-tint-amount)),
+  $hover-border: if($color == $color-contrast-light, shade-color($border, $btn-hover-border-shade-amount), tint-color($border, $btn-hover-border-tint-amount)),
+  $hover-color: color-contrast($hover-background),
+  $active-background: if($color == $color-contrast-light, shade-color($background, $btn-active-bg-shade-amount), tint-color($background, $btn-active-bg-tint-amount)),
+  $active-border: if($color == $color-contrast-light, shade-color($border, $btn-active-border-shade-amount), tint-color($border, $btn-active-border-tint-amount)),
+  $active-color: color-contrast($active-background),
+  $disabled-background: $background,
+  $disabled-border: $border,
+  $disabled-color: color-contrast($disabled-background)
+) {
+  --#{$aloha-prefix}btn_color: #{$color};
+  --#{$aloha-prefix}btn_bg: #{$background};
+  --#{$aloha-prefix}btn_border_color: #{$border};
+  --#{$aloha-prefix}btn_hover_color: #{$hover-color};
+  --#{$aloha-prefix}btn_hover_bg: #{$hover-background};
+  --#{$aloha-prefix}btn_hover_border_color: #{$hover-border};
+  --#{$aloha-prefix}btn_focus_shadow_rgb: #{to-rgb(mix($color, $border, 15%))};
+  --#{$aloha-prefix}btn_active_color: #{$active-color};
+  --#{$aloha-prefix}btn_active_bg: #{$active-background};
+  --#{$aloha-prefix}btn_active_border_color: #{$active-border};
+  --#{$aloha-prefix}btn_active_shadow: #{$btn-active-box-shadow};
+  --#{$aloha-prefix}btn_disabled_color: #{$disabled-color};
+  --#{$aloha-prefix}btn_disabled_bg: #{$disabled-background};
+  --#{$aloha-prefix}btn_disabled_border_color: #{$disabled-border};
+}
+
 .#{$aloha-prefix}btn_primary {
-  --#{$aloha-prefix}btn_color: #fff;
-  --#{$aloha-prefix}btn_bg: #0d6efd;
-  --#{$aloha-prefix}btn_border_color: #0d6efd;
-  --#{$aloha-prefix}btn_hover_color: #fff;
-  --#{$aloha-prefix}btn_hover_bg: #0b5ed7;
-  --#{$aloha-prefix}btn_hover_border_color: #0a58ca;
-  --#{$aloha-prefix}btn_focus_shadow_rgb: 49,132,253;
-  --#{$aloha-prefix}btn_active_color: #fff;
-  --#{$aloha-prefix}btn_active_bg: #0a58ca;
-  --#{$aloha-prefix}btn_active_border_color: #0a53be;
-  --#{$aloha-prefix}btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --#{$aloha-prefix}btn_disabled_color: #fff;
-  --#{$aloha-prefix}btn_disabled_bg: #0d6efd;
-  --#{$aloha-prefix}btn_disabled_border_color: #0d6efd;
+  @include button-variant($primary, $primary);
 }
 .#{$aloha-prefix}btn_secondary {
-  --#{$aloha-prefix}btn_color: #fff;
-  --#{$aloha-prefix}btn_bg: #6c757d;
-  --#{$aloha-prefix}btn_border_color: #6c757d;
-  --#{$aloha-prefix}btn_hover_color: #fff;
-  --#{$aloha-prefix}btn_hover_bg: #5c636a;
-  --#{$aloha-prefix}btn_hover_border_color: #565e64;
-  --#{$aloha-prefix}btn_focus_shadow_rgb: 130,138,145;
-  --#{$aloha-prefix}btn_active_color: #fff;
-  --#{$aloha-prefix}btn_active_bg: #565e64;
-  --#{$aloha-prefix}btn_active_border_color: #51585e;
-  --#{$aloha-prefix}btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --#{$aloha-prefix}btn_disabled_color: #fff;
-  --#{$aloha-prefix}btn_disabled_bg: #6c757d;
-  --#{$aloha-prefix}btn_disabled_border_color: #6c757d;
+  @include button-variant($secondary, $secondary);
 }
 .#{$aloha-prefix}btn_success {
-  --#{$aloha-prefix}btn_color: #fff;
-  --#{$aloha-prefix}btn_bg: #198754;
-  --#{$aloha-prefix}btn_border_color: #198754;
-  --#{$aloha-prefix}btn_hover_color: #fff;
-  --#{$aloha-prefix}btn_hover_bg: #157347;
-  --#{$aloha-prefix}btn_hover_border_color: #146c43;
-  --#{$aloha-prefix}btn_focus_shadow_rgb: 60,153,110;
-  --#{$aloha-prefix}btn_active_color: #fff;
-  --#{$aloha-prefix}btn_active_bg: #146c43;
-  --#{$aloha-prefix}btn_active_border_color: #13653f;
-  --#{$aloha-prefix}btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --#{$aloha-prefix}btn_disabled_color: #fff;
-  --#{$aloha-prefix}btn_disabled_bg: #198754;
-  --#{$aloha-prefix}btn_disabled_border_color: #198754;
-}
-.#{$aloha-prefix}btn_danger {
-  --#{$aloha-prefix}btn_color: #fff;
-  --#{$aloha-prefix}btn_bg: #dc3545;
-  --#{$aloha-prefix}btn_border_color: #dc3545;
-  --#{$aloha-prefix}btn_hover_color: #fff;
-  --#{$aloha-prefix}btn_hover_bg: #bb2d3b;
-  --#{$aloha-prefix}btn_hover_border_color: #b02a37;
-  --#{$aloha-prefix}btn_focus_shadow_rgb: 225,83,97;
-  --#{$aloha-prefix}btn_active_color: #fff;
-  --#{$aloha-prefix}btn_active_bg: #b02a37;
-  --#{$aloha-prefix}btn_active_border_color: #a52834;
-  --#{$aloha-prefix}btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --#{$aloha-prefix}btn_disabled_color: #fff;
-  --#{$aloha-prefix}btn_disabled_bg: #dc3545;
-  --#{$aloha-prefix}btn_disabled_border_color: #dc3545;
-}
-.#{$aloha-prefix}btn_warning {
-  --#{$aloha-prefix}btn_color: #000;
-  --#{$aloha-prefix}btn_bg: #ffc107;
-  --#{$aloha-prefix}btn_border_color: #ffc107;
-  --#{$aloha-prefix}btn_hover_color: #000;
-  --#{$aloha-prefix}btn_hover_bg: #ffca2c;
-  --#{$aloha-prefix}btn_hover_border_color: #ffc720;
-  --#{$aloha-prefix}btn_focus_shadow_rgb: 217,164,6;
-  --#{$aloha-prefix}btn_active_color: #000;
-  --#{$aloha-prefix}btn_active_bg: #ffcd39;
-  --#{$aloha-prefix}btn_active_border_color: #ffc720;
-  --#{$aloha-prefix}btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --#{$aloha-prefix}btn_disabled_color: #000;
-  --#{$aloha-prefix}btn_disabled_bg: #ffc107;
-  --#{$aloha-prefix}btn_disabled_border_color: #ffc107;
+  @include button-variant($success, $success);
 }
 .#{$aloha-prefix}btn_info {
-  --#{$aloha-prefix}btn_color: #000;
-  --#{$aloha-prefix}btn_bg: #0dcaf0;
-  --#{$aloha-prefix}btn_border_color: #0dcaf0;
-  --#{$aloha-prefix}btn_hover_color: #000;
-  --#{$aloha-prefix}btn_hover_bg: #31d2f2;
-  --#{$aloha-prefix}btn_hover_border_color: #25cff2;
-  --#{$aloha-prefix}btn_focus_shadow_rgb: 11,172,204;
-  --#{$aloha-prefix}btn_active_color: #000;
-  --#{$aloha-prefix}btn_active_bg: #3dd5f3;
-  --#{$aloha-prefix}btn_active_border_color: #25cff2;
-  --#{$aloha-prefix}btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --#{$aloha-prefix}btn_disabled_color: #000;
-  --#{$aloha-prefix}btn_disabled_bg: #0dcaf0;
-  --#{$aloha-prefix}btn_disabled_border_color: #0dcaf0;
+  @include button-variant($info, $info);
 }
+.#{$aloha-prefix}btn_warning {
+  @include button-variant($warning, $warning);
+}
+.#{$aloha-prefix}btn_danger {
+  @include button-variant($danger, $danger);
+}
+
 .#{$aloha-prefix}btn_link {
   --#{$aloha-prefix}btn_font_weight: 400;
-  --#{$aloha-prefix}btn_color: var(--#{$aloha-prefix}link_color);
+  --#{$aloha-prefix}btn_color: #{$btn-link-color};
   --#{$aloha-prefix}btn_bg: transparent;
   --#{$aloha-prefix}btn_border_color: transparent;
-  --#{$aloha-prefix}btn_hover_color: var(--#{$aloha-prefix}link_hover_color);
+  --#{$aloha-prefix}btn_hover_color: #{$btn-link-hover-color};
   --#{$aloha-prefix}btn_hover_border_color: transparent;
-  --#{$aloha-prefix}btn_active_color: var(--#{$aloha-prefix}link_hover_color);
+  --#{$aloha-prefix}btn_active_color: #{$btn-link-hover-color};
   --#{$aloha-prefix}btn_active_border_color: transparent;
-  --#{$aloha-prefix}btn_disabled_color: #6c757d;
+  --#{$aloha-prefix}btn_disabled_color:  #{$btn-link-disabled-color};
   --#{$aloha-prefix}btn_disabled_border_color: transparent;
   --#{$aloha-prefix}btn_box_shadow: none;
-  --#{$aloha-prefix}btn_focus_shadow_rgb: 49,132,253;
-  text-decoration: underline;
+  --#{$aloha-prefix}btn_focus_shadow_rgb: #{to-rgb(mix(color-contrast($primary), $primary, 15%))};
+
+  text-decoration: $link-decoration;
+
+  &:hover,
+  &:focus {
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus {
+    color: var(--#{$aloha-prefix}btn_color);
+  }
+
+  &:hover {
+    color: var(--#{$aloha-prefix}btn_hover_color);
+  }
 }
