@@ -2672,7 +2672,11 @@ h6 {
 
 .a_text_break {
   word-wrap: break-word !important;
-  word-break: break-word !important; }
+  word-break: break-word !important;
+  hyphens: auto !important; }
+
+.a_text_wrap_hyphens {
+  hyphens: auto !important; }
 
 .a_text_lowercase {
   text-transform: lowercase !important; }
@@ -2743,7 +2747,7 @@ h6 {
     background-color: var(--a_btn_hover_bg);
     border-color: var(--a_btn_hover_border_color); }
   .a_btn:focus {
-    color: var(--a_btn_hover_color);
+    color: var(var(--a_btn_focus_color), --a_btn_hover_color);
     background-color: var(--a_btn_hover_bg);
     border-color: var(--a_btn_hover_border_color);
     outline: 0;
@@ -2875,17 +2879,17 @@ h6 {
   --a_btn_border_color: transparent;
   --a_btn_hover_color: var(--a_color_link_hover);
   --a_btn_hover_border_color: transparent;
+  --a_btn_focus_color: var(--a_color_link);
   --a_btn_active_color: var(--a_color_link_hover);
   --a_btn_active_border_color: transparent;
   --a_btn_disabled_color:  var(--a_color_gray_600);
   --a_btn_disabled_border_color: transparent;
   --a_btn_box_shadow: none;
   --a_btn_focus_shadow_rgb: 49, 132, 253;
-  text-decoration: underline; }
-  .a_btn_link:focus {
-    color: var(--a_btn_color); }
-  .a_btn_link:hover {
-    color: var(--a_btn_hover_color); }
+  --a_btn_text_decoration: underline;
+  text-decoration: var(--a_btn_text_decoration); }
+  .a_btn_link:hover, .a_btn_link:focus {
+    --a_btn_text_decoration: ; }
 
 .a_btn_close {
   box-sizing: content-box;

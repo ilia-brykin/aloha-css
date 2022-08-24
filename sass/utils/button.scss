@@ -54,7 +54,7 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
   }
 
   &:focus {
-    color: var(--#{$aloha-prefix}btn_hover_color);
+    color: var(var(--#{$aloha-prefix}btn_focus_color),--#{$aloha-prefix}btn_hover_color);
     background-color: var(--#{$aloha-prefix}btn_hover_bg);
     border-color: var(--#{$aloha-prefix}btn_hover_border_color);
     outline: 0;
@@ -149,25 +149,19 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
   --#{$aloha-prefix}btn_border_color: transparent;
   --#{$aloha-prefix}btn_hover_color: #{$btn-link-hover-color};
   --#{$aloha-prefix}btn_hover_border_color: transparent;
+  --#{$aloha-prefix}btn_focus_color: #{$btn-link-color};
   --#{$aloha-prefix}btn_active_color: #{$btn-link-hover-color};
   --#{$aloha-prefix}btn_active_border_color: transparent;
   --#{$aloha-prefix}btn_disabled_color:  #{$btn-link-disabled-color};
   --#{$aloha-prefix}btn_disabled_border_color: transparent;
   --#{$aloha-prefix}btn_box_shadow: none;
   --#{$aloha-prefix}btn_focus_shadow_rgb: #{to-rgb(mix(color-contrast($primary), $primary, 15%))};
+  --#{$aloha-prefix}btn_text_decoration: #{$link-decoration};
 
-  text-decoration: $link-decoration;
+  text-decoration: var(--#{$aloha-prefix}btn_text_decoration);
 
   &:hover,
   &:focus {
-    text-decoration: $link-hover-decoration;
-  }
-
-  &:focus {
-    color: var(--#{$aloha-prefix}btn_color);
-  }
-
-  &:hover {
-    color: var(--#{$aloha-prefix}btn_hover_color);
+    --#{$aloha-prefix}btn_text_decoration: #{$link-hover-decoration};
   }
 }
