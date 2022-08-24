@@ -254,9 +254,9 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 ## Text ##
 
 ### Alignment `text-align` ###
-+ .a_text_start -> `left`
++ .a_text_left -> `left`
 + .a_text_center -> `center`
-+ .a_text_end -> `right`
++ .a_text_right -> `right`
 
 ### Wrapping ###
 + .a_text_wrap -> `white-space: normal`
@@ -367,8 +367,8 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_pagination__item__link
 
 ## Float ##
-+ .a_float_start
-+ .a_float_end
++ .a_float_left
++ .a_float_right
 + .a_float_none
 
 ## Alert ##

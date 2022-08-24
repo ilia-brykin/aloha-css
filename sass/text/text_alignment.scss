@@ -1,6 +1,6 @@
 @import "../utils/aloha_prefix";
 
-.#{$aloha-prefix}text_start {
+.#{$aloha-prefix}text_left {
   text-align: left !important;
 }
 
@@ -8,6 +8,6 @@
   text-align: center !important;
 }
 
-.#{$aloha-prefix}text_end {
+.#{$aloha-prefix}text_right {
   text-align: right !important;
 }
