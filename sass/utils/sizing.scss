@@ -1,0 +1,107 @@
+@import "aloha_prefix";
+
+$is-sizing-important: true !default;
+$sizing-width: (
+    property: width,
+    class: width,
+    values: (
+        1:  .25rem,
+        2:  .5rem,
+        3:  .75rem,
+        4:  1rem,
+        5:  1.5rem,
+        6:  3rem,
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto,
+    ),
+) !default;
+$sizing-max-width: (
+    property: max-width,
+    class: max_width,
+    values: (
+        100: 100%,
+    ),
+) !default;
+$sizing-viewport-width: (
+    property: width,
+    class: viewport_width,
+    values: (
+        100: 100vw,
+    ),
+) !default;
+$sizing-min-viewport-width: (
+    property: min-width,
+    class: min_viewport_width,
+    values: (
+        100: 100vw,
+    ),
+) !default;
+$sizing-height: (
+    property: height,
+    class: height,
+    values: (
+        1:  .25rem,
+        2:  .5rem,
+        3:  .75rem,
+        4:  1rem,
+        5:  1.5rem,
+        6:  3rem,
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto,
+    ),
+) !default;
+$sizing-max-height: (
+    property: max-height,
+    class: max_height,
+    values: (
+        100: 100%,
+    ),
+) !default;
+$sizing-viewport-height: (
+    property: height,
+    class: viewport_height,
+    values: (
+        100: 100vh,
+    ),
+) !default;
+$sizing-min-viewport-height: (
+    property: min-height,
+    class: min_viewport_height,
+    values: (
+        100: 100vh,
+    ),
+) !default;
+
+$sizing: (
+        "width": $sizing-width,
+        "max-width": $sizing-max-width,
+        "viewport-width": $sizing-viewport-width,
+        "min-viewport-width": $sizing-min-viewport-width,
+        "height": $sizing-height,
+        "max-height": $sizing-max-height,
+        "viewport-height": $sizing-viewport-height,
+        "min-viewport-height": $sizing-min-viewport-height,
+);
+
+$sizing-important-suffix: "";
+@if $is-sizing-important {
+  $sizing-important-suffix: " !important";
+}
+@each $name, $sizing-value in $sizing {
+  $property: map-get($sizing-value, "property");
+  $class: map-get($sizing-value, "class");
+  $values: map-get($sizing-value, "values");
+
+  @each $value-key, $value in $values {
+    @debug $value;
+    .#{$aloha-prefix}#{$class}_#{$value-key} {
+      #{$property}: #{ $value }#{$sizing-important-suffix};
+    }
+  }
+}
