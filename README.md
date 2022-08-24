@@ -261,7 +261,8 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 ### Wrapping ###
 + .a_text_wrap -> `white-space: normal`
 + .a_text_nowrap -> `white-space: nowrap`
-+ .a_text_break -> `word-wrap: break-word; word-break: break-word`
++ .a_text_break -> `word-wrap: break-word; word-break: break-word; hyphens: auto`
++ .a_text_wrap_hyphens -> `hyphens: auto`
 
 ### Transform ###
 + .a_text_lowercase -> `text-transform: lowercase`
