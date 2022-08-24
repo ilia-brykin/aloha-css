@@ -419,3 +419,44 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_spinner_small
 + .a_spinner_large
 
+## Sizing ##
+
+### Width ###
++ .a_width_1 -> `0.25rem`
++ .a_width_2 -> `0.5rem`
++ .a_width_3 -> `0.75rem`
++ .a_width_4 -> `1rem`
++ .a_width_5 -> `1.5rem`
++ .a_width_6 -> `4rem`
++ .a_width_25 -> `25%`
++ .a_width_50 -> `50%`
++ .a_width_75 -> `75%`
++ .a_width_100 -> `100%`
++ .a_width_auto -> `auto`
++ .a_viewport_width_100 -> `100vw`
+
+#### `max-width` ####
++ .a_max_width_100 -> `100%`
+
+#### `min-width` ####
++ .a_min_viewport_width_100 -> `100vw`
+
+### Height ###
++ .a_height_1 -> `0.25rem`
++ .a_height_2 -> `0.5rem`
++ .a_height_3 -> `0.75rem`
++ .a_height_4 -> `1rem`
++ .a_height_5 -> `1.5rem`
++ .a_height_6 -> `4rem`
++ .a_height_25 -> `25%`
++ .a_height_50 -> `50%`
++ .a_height_75 -> `75%`
++ .a_height_100 -> `100%`
++ .a_height_auto -> `auto`
++ .a_viewport_height_100 -> `100vw`
+
+#### `max-height` ####
++ .a_max_height_100 -> `100%`
+
+#### `min-height` ####
++ .a_min_viewport_height_100 -> `100vw`
