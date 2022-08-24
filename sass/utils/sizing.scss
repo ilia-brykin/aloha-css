@@ -99,7 +99,6 @@ $sizing-important-suffix: "";
   $values: map-get($sizing-value, "values");
 
   @each $value-key, $value in $values {
-    @debug $value;
     .#{$aloha-prefix}#{$class}_#{$value-key} {
       #{$property}: #{ $value }#{$sizing-important-suffix};
     }
