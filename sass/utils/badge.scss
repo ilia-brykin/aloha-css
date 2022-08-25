@@ -1,0 +1,32 @@
+@import "aloha_prefix";
+
+$badge-font-size:                   .75em;
+$badge-font-weight:                 700;
+$badge-color:                       var(--#{$aloha-prefix}color_white);
+$badge-padding-y:                   .35em;
+$badge-padding-x:                   .65em;
+$badge-border-radius:               var(--#{$aloha-prefix}border_radius);
+
+.#{$aloha-prefix}badge {
+  --#{$aloha-prefix}badge-padding-x: #{$badge-padding-x};
+  --#{$aloha-prefix}badge-padding-y: #{$badge-padding-y};
+  --#{$aloha-prefix}badge-font-size: #{$badge-font-size};
+  --#{$aloha-prefix}badge-font-weight: #{$badge-font-weight};
+  --#{$aloha-prefix}badge-color: #{$badge-color};
+  --#{$aloha-prefix}badge-border-radius: #{$badge-border-radius};
+
+  display: inline-block;
+  padding: var(--#{$aloha-prefix}badge-padding-y) var(--#{$aloha-prefix}badge-padding-x);
+  font-size: var(--#{$aloha-prefix}badge-font-size);
+  font-weight: var(--#{$aloha-prefix}badge-font-weight);
+  line-height: 1;
+  color: var(--#{$aloha-prefix}badge-color);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: var(--#{$aloha-prefix}badge-border-radius);
+}
+
+.#{$aloha-prefix}pill_rounded {
+  border-radius: var(--#{$aloha-prefix}border_radius_pill) !important;
+}
