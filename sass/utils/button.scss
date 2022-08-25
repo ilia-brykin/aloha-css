@@ -54,7 +54,7 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
   }
 
   &:focus {
-    color: var(var(--#{$aloha-prefix}btn_focus_color),--#{$aloha-prefix}btn_hover_color);
+    color: var(--#{$aloha-prefix}btn_focus_color,--#{$aloha-prefix}btn_hover_color);
     background-color: var(--#{$aloha-prefix}btn_hover_bg);
     border-color: var(--#{$aloha-prefix}btn_hover_border_color);
     outline: 0;
