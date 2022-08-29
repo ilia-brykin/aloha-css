@@ -359,6 +359,14 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_btn_lg
 + .a_btn_sm
 
+### Outline buttons ###
++ .a_btn_outline_primary
++ .a_btn_outline_secondary
++ .a_btn_outline_success
++ .a_btn_outline_info
++ .a_btn_outline_warning
++ .a_btn_outline_danger
+
 ### Button close ###
 + .a_btn_close
 
