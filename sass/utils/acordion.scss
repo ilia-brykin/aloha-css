@@ -1,0 +1,165 @@
+@import "aloha_prefix";
+@import "color_utils";
+@import "funktions";
+@import "global_variables";
+
+$input-btn-focus-width:         .25rem !default;
+$input-btn-focus-color-opacity: .25 !default;
+$input-btn-focus-color:         rgba($primary, $input-btn-focus-color-opacity) !default;
+$input-btn-focus-blur:          0 !default;
+$input-btn-focus-box-shadow:    0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !default;
+
+$input-btn-focus-color-opacity: .25 !default;
+$input-focus-border-color:              tint-color($primary, 50%) !default;
+$btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
+
+$accordion-padding-y:                     1rem !default;
+$accordion-padding-x:                     1.25rem !default;
+$accordion-color:                         var(--#{$aloha-prefix}color_body) !default;
+$accordion-bg:                            $body-bg !default;
+$accordion-border-width:                  $border-width !default;
+$accordion-border-color:                  var(--#{$aloha-prefix}border_color) !default;
+$accordion-border-radius:                 var(--a_border_radius) !default;
+
+$accordion-body-padding-y:                $accordion-padding-y !default;
+$accordion-body-padding-x:                $accordion-padding-x !default;
+
+$accordion-button-padding-y:              $accordion-padding-y !default;
+$accordion-button-padding-x:              $accordion-padding-x !default;
+$accordion-button-color:                  $accordion-color !default;
+$accordion-button-bg:                     var(--#{$aloha-prefix}accordion-bg) !default;
+$accordion-transition:                    $btn-transition, border-radius .15s ease !default;
+$accordion-button-active-bg:              tint-color($primary, 90%) !default;
+$accordion-button-active-color:           shade-color($primary, 10%) !default;
+
+$accordion-button-focus-border-color:     $input-focus-border-color !default;
+$accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
+
+$accordion-icon-width:                    1.25rem !default;
+$accordion-icon-color:                    $accordion-button-color !default;
+$accordion-icon-active-color:             $accordion-button-active-color !default;
+$accordion-icon-transition:               transform .2s ease-in-out !default;
+$accordion-icon-transform:                rotate(-180deg) !default;
+
+$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+
+
+//
+// Base styles
+//
+
+.#{$aloha-prefix}accordion {
+  --a_accordion_color: #{color-contrast($accordion-bg)};
+  --a_accordion_bg: #{$accordion-bg};
+  --a_accordion_transition: #{$accordion-transition};
+  --a_accordion_border_color: #{$accordion-border-color};
+  --a_accordion_border_width: #{$accordion-border-width};
+  --a_accordion_border_radius: #{$accordion-border-radius};
+  --a_accordion_btn_padding_x: #{$accordion-button-padding-x};
+  --a_accordion_btn_padding_y: #{$accordion-button-padding-y};
+  --a_accordion_btn_color: #{$accordion-color};
+  --a_accordion_btn_bg: #{$accordion-button-bg};
+  --a_accordion_btn_icon: #{escape-svg($accordion-button-icon)};
+  --a_accordion_btn_icon_width: #{$accordion-icon-width};
+  --a_accordion_btn_icon_transform: #{$accordion-icon-transform};
+  --a_accordion_btn_icon_transition: #{$accordion-icon-transition};
+  --a_accordion_btn_active_icon: #{escape-svg($accordion-button-active-icon)};
+  --a_accordion_btn_focus_border_color: #{$accordion-button-focus-border-color};
+  --a_accordion_btn_focus_box_shadow: #{$accordion-button-focus-box-shadow};
+  --a_accordion_body_padding_x: #{$accordion-body-padding-x};
+  --a_accordion_body_padding_y: #{$accordion-body-padding-y};
+  --a_accordion_active_color: #{$accordion-button-active-color};
+  --a_accordion_active_bg: #{$accordion-button-active-bg};
+}
+
+.#{$aloha-prefix}accordion__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--a_accordion_btn_padding_y) var(--a_accordion_btn_padding_x);
+  color: var(--a_accordion_btn_color);
+  text-align: left; // Reset button style
+  background-color: var(--a_accordion_btn_bg);
+  border: 0;
+  overflow-anchor: none;
+
+  &:not(.#{$aloha-prefix}accordion__button_collapsed) {
+    color: var(--a_accordion_active_color);
+    background-color: var(--a_accordion_active_bg);
+    box-shadow: inset 0 calc(var(--a_accordion_border_width) * -1) 0 var(--a_accordion_border_color); // stylelint-disable-line function-disallowed-list
+
+    &::after {
+      background-image: var(--a_accordion_btn_active_icon);
+      transform: var(--a_accordion_btn_icon_transform);
+    }
+  }
+
+  // Accordion icon
+  &::after {
+    flex-shrink: 0;
+    width: var(--a_accordion_btn_icon_width);
+    height: var(--a_accordion_btn_icon_width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--a_accordion_btn_icon);
+    background-repeat: no-repeat;
+    background-size: var(--a_accordion_btn_icon_width);
+  }
+
+  &:hover {
+    z-index: 2;
+  }
+
+  &:focus {
+    z-index: 3;
+    border-color: var(--a_accordion_btn_focus_border_color);
+    outline: 0;
+    box-shadow: var(--a_accordion_btn_focus_box_shadow);
+  }
+}
+
+.#{$aloha-prefix}accordion__header {
+  margin-bottom: 0;
+}
+
+.#{$aloha-prefix}accordion__item {
+  color: var(--a_accordion_color);
+  background-color: var(--a_accordion_bg);
+  border: var(--a_accordion_border_width) solid var(--a_accordion_border_color);
+
+  &:first-of-type {
+    border-top-left-radius: var(--a_accordion_border_radius);
+    border-top-right-radius: var(--a_accordion_border_radius);
+    .#{$aloha-prefix}accordion__button {
+      border-top-left-radius: var(--a_accordion_border_radius);
+      border-top-right-radius: var(--a_accordion_border_radius);
+    }
+  }
+
+  &:not(:first-of-type) {
+    border-top: 0;
+  }
+
+  // Only set a border-radius on the last item if the accordion is collapsed
+  &:last-of-type {
+    border-bottom-right-radius: var(--a_accordion_border_radius);
+    border-bottom-left-radius: var(--a_accordion_border_radius);
+    .#{$aloha-prefix}accordion__button_collapsed {
+      border-bottom-right-radius: var(--a_accordion_border_radius);
+      border-bottom-left-radius: var(--a_accordion_border_radius);
+    }
+  }
+}
+
+.#{$aloha-prefix}accordion__body {
+  padding: var(--a_accordion_body_padding_y) var(--a_accordion_body_padding_x);
+}
+
+.#{$aloha-prefix}accordion__collapse_box {
+  display: none;
+}
+.#{$aloha-prefix}accordion__collapse_box_show {
+  display: block;
+}
