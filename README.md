@@ -356,6 +356,8 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_btn_warning
 + .a_btn_info
 + .a_btn_link
++ .a_btn_light
++ .a_btn_dark
 + .a_btn_lg
 + .a_btn_sm
 
@@ -366,6 +368,8 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_btn_outline_info
 + .a_btn_outline_warning
 + .a_btn_outline_danger
++ .a_btn_outline_light
++ .a_btn_outline_dark
 
 ### Button close ###
 + .a_btn_close
