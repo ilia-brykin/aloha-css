@@ -473,3 +473,13 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 
 #### `min-height` ####
 + .a_min_viewport_height_100 -> `100vw`
+
+## Acordion ##
++ .a_accordion
++ .a_accordion__button
++ .a_accordion__button_collapsed
++ .a_accordion__header
++ .a_accordion__item
++ .a_accordion__body
++ .a_accordion__collapse_box
++ .a_accordion__collapse_box_show
