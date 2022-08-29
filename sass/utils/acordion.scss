@@ -27,7 +27,7 @@ $accordion-body-padding-x:                $accordion-padding-x !default;
 $accordion-button-padding-y:              $accordion-padding-y !default;
 $accordion-button-padding-x:              $accordion-padding-x !default;
 $accordion-button-color:                  $accordion-color !default;
-$accordion-button-bg:                     var(--#{$aloha-prefix}accordion-bg) !default;
+$accordion-button-bg:                     var(--#{$aloha-prefix}accordion_bg) !default;
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
 $accordion-button-active-bg:              tint-color($primary, 90%) !default;
 $accordion-button-active-color:           shade-color($primary, 10%) !default;
