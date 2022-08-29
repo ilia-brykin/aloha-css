@@ -123,6 +123,29 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
   --#{$aloha-prefix}btn_disabled_border_color: #{$disabled-border};
 }
 
+@mixin button-outline-variant(
+  $color,
+  $color-hover: color-contrast($color),
+  $active-background: $color,
+  $active-border: $color,
+  $active-color: color-contrast($active-background)
+) {
+  --#{$aloha-prefix}btn_color: #{$color};
+  --#{$aloha-prefix}btn_border_color: #{$color};
+  --#{$aloha-prefix}btn_hover_color: #{$color-hover};
+  --#{$aloha-prefix}btn_hover_bg: #{$active-background};
+  --#{$aloha-prefix}btn_hover_border_color: #{$active-border};
+  --#{$aloha-prefix}btn_focus_shadow_rgb: #{to-rgb($color)};
+  --#{$aloha-prefix}btn_active_color: #{$active-color};
+  --#{$aloha-prefix}btn_active_bg: #{$active-background};
+  --#{$aloha-prefix}btn_active_border_color: #{$active-border};
+  --#{$aloha-prefix}btn_active_shadow: #{$btn-active-box-shadow};
+  --#{$aloha-prefix}btn_disabled_color: #{$color};
+  --#{$aloha-prefix}btn_disabled_bg: transparent;
+  --#{$aloha-prefix}btn_disabled_border_color: #{$color};
+  --#{$aloha-prefix}gradient: none;
+}
+
 .#{$aloha-prefix}btn_primary {
   @include button-variant($primary, $primary);
 }
@@ -140,6 +163,25 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
 }
 .#{$aloha-prefix}btn_danger {
   @include button-variant($danger, $danger);
+}
+
+.#{$aloha-prefix}btn_outline_primary {
+  @include button-outline-variant($primary);
+}
+.#{$aloha-prefix}btn_outline_secondary {
+  @include button-outline-variant($secondary);
+}
+.#{$aloha-prefix}btn_outline_success {
+  @include button-outline-variant($success);
+}
+.#{$aloha-prefix}btn_outline_info {
+  @include button-outline-variant($info);
+}
+.#{$aloha-prefix}btn_outline_warning {
+  @include button-outline-variant($warning);
+}
+.#{$aloha-prefix}btn_outline_danger {
+  @include button-outline-variant($danger);
 }
 
 .#{$aloha-prefix}btn_link {
