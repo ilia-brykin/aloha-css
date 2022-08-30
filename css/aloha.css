@@ -3474,6 +3474,7 @@ h6 {
   --a_accordion_btn_active_icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --a_accordion_btn_focus_border_color: #86b7fe;
   --a_accordion_btn_focus_box_shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --a_accordion_btn_hover_bg: var(--a_color_gray_100);
   --a_accordion_body_padding_x: 1.25rem;
   --a_accordion_body_padding_y: 1rem;
   --a_accordion_active_color: #0c63e4;
@@ -3507,7 +3508,8 @@ h6 {
     background-repeat: no-repeat;
     background-size: var(--a_accordion_btn_icon_width); }
   .a_accordion__button:hover {
-    z-index: 2; }
+    z-index: 2;
+    background-color: var(--a_accordion_btn_hover_bg); }
   .a_accordion__button:focus {
     z-index: 3;
     border-color: var(--a_accordion_btn_focus_border_color);

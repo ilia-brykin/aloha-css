@@ -34,6 +34,7 @@ $accordion-button-active-color:           shade-color($primary, 10%) !default;
 
 $accordion-button-focus-border-color:     $input-focus-border-color !default;
 $accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
+$accordion-button-hover-bg:               var(--#{$aloha-prefix}color_gray_100) !default;
 
 $accordion-icon-width:                    1.25rem !default;
 $accordion-icon-color:                    $accordion-button-color !default;
@@ -67,6 +68,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   --a_accordion_btn_active_icon: #{escape-svg($accordion-button-active-icon)};
   --a_accordion_btn_focus_border_color: #{$accordion-button-focus-border-color};
   --a_accordion_btn_focus_box_shadow: #{$accordion-button-focus-box-shadow};
+  --a_accordion_btn_hover_bg: #{$accordion-button-hover-bg};
   --a_accordion_body_padding_x: #{$accordion-body-padding-x};
   --a_accordion_body_padding_y: #{$accordion-body-padding-y};
   --a_accordion_active_color: #{$accordion-button-active-color};
@@ -110,6 +112,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 
   &:hover {
     z-index: 2;
+    background-color: var(--a_accordion_btn_hover_bg);
   }
 
   &:focus {
