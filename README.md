@@ -478,6 +478,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_accordion
 + .a_accordion__button
 + .a_accordion__button_collapsed
++ .a_accordion__button_has_not_caret
 + .a_accordion__header
 + .a_accordion__item
 + .a_accordion__body
