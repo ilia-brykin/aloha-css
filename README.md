@@ -484,3 +484,10 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_accordion__body
 + .a_accordion__collapse_box
 + .a_accordion__collapse_box_show
+
+## Progress ##
++ .a_progress
++ .a_progress_small
++ .a_progress_medium
++ .a_progress_large
++ .a_progress__bar
