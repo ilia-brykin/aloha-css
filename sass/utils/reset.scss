@@ -1,10 +1,6 @@
 html,
 body,
 p,
-ol,
-ul,
-li,
-dl,
 dt,
 dd,
 blockquote,
@@ -77,4 +73,13 @@ th {
 [type=submit]:not(:disabled),
 button:not(:disabled) {
   cursor: pointer;
+}
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol, ul {
+  padding-left: 2rem;
 }

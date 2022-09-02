@@ -1,10 +1,6 @@
 html,
 body,
 p,
-ol,
-ul,
-li,
-dl,
 dt,
 dd,
 blockquote,
@@ -68,6 +64,13 @@ th {
 [type=submit]:not(:disabled),
 button:not(:disabled) {
   cursor: pointer; }
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+ol, ul {
+  padding-left: 2rem; }
 
 :root {
   --a_font_sans_serif: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
