@@ -3556,6 +3556,17 @@ h6 {
 .a_accordion__collapse_box_show {
   display: block; }
 
+.a_accordion__with_gap {
+  --a_accordion_with_gap_margin_bottom: 1rem; }
+  .a_accordion__with_gap .a_accordion__item {
+    margin-bottom: var(--a_accordion_with_gap_margin_bottom);
+    border: var(--a_accordion_border_width) solid var(--a_accordion_border_color);
+    border-radius: var(--a_accordion_border_radius); }
+  .a_accordion__with_gap .a_accordion__button {
+    border-radius: var(--a_accordion_border_radius) var(--a_accordion_border_radius) 0 0; }
+  .a_accordion__with_gap .a_accordion__button_collapsed {
+    border-radius: var(--a_accordion_border_radius); }
+
 .a_progress {
   --a_progress_height: 1rem;
   --a_progress_font_size: 0.75rem;
