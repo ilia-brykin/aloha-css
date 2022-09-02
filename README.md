@@ -476,6 +476,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 
 ## Acordion ##
 + .a_accordion
++ .a_accordion__with_gap
 + .a_accordion__button
 + .a_accordion__button_collapsed
 + .a_accordion__button_has_not_caret
