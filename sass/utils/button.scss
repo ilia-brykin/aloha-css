@@ -79,14 +79,16 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
   }
 }
 
-.#{$aloha-prefix}btn_lg {
+.#{$aloha-prefix}btn_group_large > .#{$aloha-prefix}btn,
+.#{$aloha-prefix}btn_large {
   --#{$aloha-prefix}btn_padding_y: 0.5rem;
   --#{$aloha-prefix}btn_padding_x: 1rem;
   --#{$aloha-prefix}btn_font_size: 1.25rem;
   --#{$aloha-prefix}btn_border_radius: var(--#{$aloha-prefix}border_radius_large);
 }
 
-.#{$aloha-prefix}btn_sm {
+.#{$aloha-prefix}btn_group_small > .#{$aloha-prefix}btn,
+.#{$aloha-prefix}btn_small {
   --#{$aloha-prefix}btn_padding_y: 0.25rem;
   --#{$aloha-prefix}btn_padding_x: 0.5rem;
   --#{$aloha-prefix}btn_font_size: 0.875rem;

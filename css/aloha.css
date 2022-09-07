@@ -2774,13 +2774,15 @@ h6 {
     border-color: var(--a_btn_disabled_border_color);
     opacity: var(--a_btn_disabled_opacity); }
 
-.a_btn_lg {
+.a_btn_group_large > .a_btn,
+.a_btn_large {
   --a_btn_padding_y: 0.5rem;
   --a_btn_padding_x: 1rem;
   --a_btn_font_size: 1.25rem;
   --a_btn_border_radius: var(--a_border_radius_large); }
 
-.a_btn_sm {
+.a_btn_group_small > .a_btn,
+.a_btn_small {
   --a_btn_padding_y: 0.25rem;
   --a_btn_padding_x: 0.5rem;
   --a_btn_font_size: 0.875rem;
@@ -3060,6 +3062,61 @@ h6 {
   text-decoration: var(--a_btn_text_decoration); }
   .a_btn_link:hover, .a_btn_link:focus {
     --a_btn_text_decoration: underline; }
+
+.a_btn_group,
+.a_btn_group_vertical {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle; }
+  .a_btn_group > .a_btn,
+  .a_btn_group_vertical > .a_btn {
+    position: relative;
+    flex: 1 1 auto; }
+
+.a_btn_group {
+  --a_btn_group_border_radius: var(--a_border_radius);
+  border-radius: var(--a_btn_group_border_radius); }
+  .a_btn_group > .a_btn_group:not(:last-child) > .a_btn,
+  .a_btn_group > .a_btn:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .a_btn_group > .a_btn_group:not(:first-child) > .a_btn,
+  .a_btn_group > .a_btn:nth-child(n+3),
+  .a_btn_group > * + .a_btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .a_btn_group > .a_btn_group:not(:first-child),
+  .a_btn_group > .a_btn:not(:first-child) {
+    margin-left: calc(-1 * var(--a_btn_border_width, var(--a_border_width))); }
+
+.btn-group-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; }
+  .btn-group-vertical > .a_btn,
+  .btn-group-vertical > .a_btn_group {
+    width: 100%; }
+  .btn-group-vertical > .a_btn_group:not(:last-child) > .a_btn,
+  .btn-group-vertical > .a_btn:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .btn-group-vertical > .a_btn_group:not(:first-child) > .a_btn,
+  .btn-group-vertical > .a_btn ~ .a_btn {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .btn-group-vertical > .a_btn_group:not(:first-child),
+  .btn-group-vertical > .a_btn:not(:first-child) {
+    margin-left: calc(-1 * var(--a_btn_border_width, var(--a_border_width))); }
+
+.a_btn_group_vertical > .a_btn.active,
+.a_btn_group_vertical > .a_btn:active,
+.a_btn_group_vertical > .a_btn:focus,
+.a_btn_group_vertical > .a_btn:hover,
+.a_btn_group > .a_btn.active,
+.a_btn_group > .a_btn:active,
+.a_btn_group > .a_btn:focus,
+.a_btn_group > .a_btn:hover {
+  z-index: 1; }
 
 .a_btn_close {
   box-sizing: content-box;
