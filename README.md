@@ -38,6 +38,7 @@
 + touch `(max-width: 1023px)`
 + desktop `(min-width: 1024px) and (max-width: 1215px)`
 + widescreen `(min-width: 1216px) and (max-width: 1407px)`
++ fullhd `(min-width: 1408px)`
 
 
 ### Columns gap ###
@@ -56,12 +57,14 @@
 + .a_columns_gab_1_touch
 + .a_columns_gab_1_desktop
 + .a_columns_gab_1_widescreen
++ .a_columns_gab_1_fullhd
 + ...
 + .a_columns_gab_8_mobile
 + .a_columns_gab_8_tablet
 + .a_columns_gab_8_touch
 + .a_columns_gab_8_desktop
 + .a_columns_gab_8_widescreen
++ .a_columns_gab_8_fullhd
 
 ```
 <div class="a_columns a_columns_gab_6">
@@ -101,12 +104,14 @@
 + .a_columns_count_1_touch
 + .a_columns_count_1_desktop
 + .a_columns_count_1_widescreen
++ .a_columns_count_1_fullhd
 + ...
 + .a_columns_count_12_mobile
 + .a_columns_count_12_tablet
 + .a_columns_count_12_touch
 + .a_columns_count_12_desktop
 + .a_columns_count_12_widescreen
++ .a_columns_count_12_fullhd
 
 
 #### for `.a_column` ####
@@ -132,12 +137,14 @@ width: calc(100% / var(--a_column_count) * 8);
 + .a_column_1_touch
 + .a_column_1_desktop
 + .a_column_1_widescreen
++ .a_column_1_fullhd
 + ...
 + .a_column_12_mobile
 + .a_column_12_tablet
 + .a_column_12_touch
 + .a_column_12_desktop
 + .a_column_12_widescreen
++ .a_column_12_fullhd
 
 #### Offset ####
 ```
@@ -161,12 +168,14 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_column_offset_1_touch
 + .a_column_offset_1_desktop
 + .a_column_offset_1_widescreen
++ .a_column_offset_1_fullhd
 + ...
 + .a_column_offset_11_mobile
 + .a_column_offset_11_tablet
 + .a_column_offset_11_touch
 + .a_column_offset_11_desktop
 + .a_column_offset_11_widescreen
++ .a_column_offset_11_fullhd
 
 ## Colors ##
 
@@ -358,8 +367,8 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_btn_link
 + .a_btn_light
 + .a_btn_dark
-+ .a_btn_lg
-+ .a_btn_sm
++ .a_btn_large
++ .a_btn_small
 
 ### Outline buttons ###
 + .a_btn_outline_primary
@@ -373,6 +382,12 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 
 ### Button close ###
 + .a_btn_close
+
+## Buttons group ##
++ .a_btn_group
++ .a_btn_group_vertical
++ .a_btn_group_large
++ .a_btn_large
 
 ## Pagination ##
 + .a_pagination
