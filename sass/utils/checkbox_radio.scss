@@ -123,7 +123,7 @@
   }
 }
 .#{$aloha-prefix}custom_control_label__text {
-  margin-left: var(--#{$aloha-prefix}custom_control_input_margin_right);
+  margin-left: var(--#{$aloha-prefix}custom_control_label_text_margin_left);
 }
 .#{$aloha-prefix}custom_control_label_width_auto {
   --#{$aloha-prefix}custom_control_label_width: auto;

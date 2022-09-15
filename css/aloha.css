@@ -2549,7 +2549,7 @@ body {
     background-color: var(--a_custom_control_input_checked_disabled_bg); }
 
 .a_custom_control_label__text {
-  margin-left: var(--a_custom_control_input_margin_right); }
+  margin-left: var(--a_custom_control_label_text_margin_left); }
 
 .a_custom_control_label_width_auto {
   --a_custom_control_label_width: auto; }
