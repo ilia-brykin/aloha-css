@@ -6,9 +6,10 @@
   --#{$aloha-prefix}custom_control_label_width: 100%;
   --#{$aloha-prefix}custom_control_label_color: inherit;
   --#{$aloha-prefix}custom_control_label_disabled_color: #9f9185;
+  --#{$aloha-prefix}custom_control_label_text_margin_left: .5rem;
   --#{$aloha-prefix}custom_control_hover_bg: var(--#{$aloha-prefix}color_focus);
   --#{$aloha-prefix}custom_control_input_bg: var(--#{$aloha-prefix}color_white);
-  --#{$aloha-prefix}custom_control_input_margin_right: .5rem;
+
   --#{$aloha-prefix}custom_control_input_width: 1.5rem;
   --#{$aloha-prefix}custom_control_input_border_color: var(--#{$aloha-prefix}border_color);
   --#{$aloha-prefix}custom_control_input_border_width: var(--#{$aloha-prefix}border_width);
@@ -70,7 +71,6 @@
     pointer-events: none;
     content: "";
     background-color: var(--#{$aloha-prefix}custom_control_input_bg);
-    margin-right: var(--#{$aloha-prefix}custom_control_input_margin_right);
     width: var(--#{$aloha-prefix}custom_control_input_width);
     height: var(--#{$aloha-prefix}custom_control_input_width);
     min-width: var(--#{$aloha-prefix}custom_control_input_width);
@@ -121,6 +121,9 @@
   .#{$aloha-prefix}custom_radio .#{$aloha-prefix}custom_control_input:disabled:checked ~ &::before {
     background-color: var(--#{$aloha-prefix}custom_control_input_checked_disabled_bg);
   }
+}
+.#{$aloha-prefix}custom_control_label__text {
+  margin-left: var(--#{$aloha-prefix}custom_control_input_margin_right);
 }
 .#{$aloha-prefix}custom_control_label_width_auto {
   --#{$aloha-prefix}custom_control_label_width: auto;
