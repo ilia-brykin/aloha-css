@@ -1,6 +1,6 @@
 @import "aloha_prefix";
 
-.#{$aloha-prefix}_backdrop {
+.#{$aloha-prefix}backdrop {
   --#{$aloha-prefix}_backdrop_zindex: 1050;
   --#{$aloha-prefix}_backdrop_bg: #000;
   --#{$aloha-prefix}_backdrop_opacity: 0.5;
@@ -12,10 +12,10 @@
   height: 100vh;
   background-color: var(--#{$aloha-prefix}_backdrop_bg);
 }
-.#{$aloha-prefix}_backdrop_fade {
+.#{$aloha-prefix}backdrop_fade {
   transition: opacity .15s linear;
   opacity: 0;
 }
-.#{$aloha-prefix}_backdrop_show {
+.#{$aloha-prefix}backdrop_show {
   opacity: var(--#{$aloha-prefix}_backdrop_opacity);
 }
