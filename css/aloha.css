@@ -3295,9 +3295,28 @@ h6 {
   --a_alert_bg: #d3d3d4;
   --a_alert_border_color: #bcbebf; }
 
+.a__backdrop {
+  --a__backdrop_zindex: 1050;
+  --a__backdrop_bg: #000;
+  --a__backdrop_opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--a__backdrop_zindex);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--a__backdrop_bg); }
+
+.a__backdrop_fade {
+  transition: opacity .15s linear;
+  opacity: 0; }
+
+.a__backdrop_show {
+  opacity: var(--a__backdrop_opacity); }
+
 .a_modal_open {
   overflow: hidden;
-  padding-right: 14px; }
+  padding-right: 15px; }
 
 .a_modal {
   --a_modal_zindex: 1055;

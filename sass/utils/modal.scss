@@ -1,9 +1,10 @@
 @import "aloha_prefix";
 @import "breakpoint";
+@import "backdrop";
 
 .#{$aloha-prefix}modal_open {
   overflow: hidden;
-  padding-right: 14px;
+  padding-right: 15px;
 }
 
 .#{$aloha-prefix}modal {
