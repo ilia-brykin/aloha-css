@@ -3295,7 +3295,7 @@ h6 {
   --a_alert_bg: #d3d3d4;
   --a_alert_border_color: #bcbebf; }
 
-.a__backdrop {
+.a_backdrop {
   --a__backdrop_zindex: 1050;
   --a__backdrop_bg: #000;
   --a__backdrop_opacity: 0.5;
@@ -3307,11 +3307,11 @@ h6 {
   height: 100vh;
   background-color: var(--a__backdrop_bg); }
 
-.a__backdrop_fade {
+.a_backdrop_fade {
   transition: opacity .15s linear;
   opacity: 0; }
 
-.a__backdrop_show {
+.a_backdrop_show {
   opacity: var(--a__backdrop_opacity); }
 
 .a_modal_open {
