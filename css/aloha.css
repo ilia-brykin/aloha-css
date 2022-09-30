@@ -3452,22 +3452,6 @@ h6 {
   .a_modal_fullscreen .a_modal_body {
     overflow-y: auto; }
 
-.a_modal_backdrop {
-  --a_backdrop_zindex: 1050;
-  --a_backdrop_bg: #000;
-  --a_backdrop_opacity: 0.5;
-  opacity: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--a_backdrop_zindex);
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--a_backdrop_bg); }
-
-.a_modal_backdrop_show {
-  opacity: var(--a_backdrop_opacity); }
-
 .a_notification_parent {
   --a_notification_shadow: 0 0 10px -5px #000;
   --a_notification_width: calc(100% - 2rem);

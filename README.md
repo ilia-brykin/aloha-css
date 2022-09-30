@@ -426,8 +426,11 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_modal_large
 + .a_modal_xl
 + .a_modal_fullscreen
-+ .a_modal_backdrop
-+ .a_modal_backdrop_show
+
+### backdrop
++ .a_backdrop
++ .a_backdrop_fade
++ .a_backdrop_show
 
 ## Notification ##
 + .a_notification_parent
