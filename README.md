@@ -190,6 +190,15 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + --a_color_link: blue;
 + --a_color_white: #fff;
 + --a_color_black: #000;
++ --a_color_gray_100: #f8f9fa;
++ --a_color_gray_200: #e9ecef;
++ --a_color_gray_300: #dee2e6;
++ --a_color_gray_400: #ced4da;
++ --a_color_gray_500: #adb5bd;
++ --a_color_gray_600: #6c757d;
++ --a_color_gray_700: #495057;
++ --a_color_gray_800: #343a40;
++ --a_color_gray_900: #212529;
 
 ### Color `color` ###
 + .a_color_primary
@@ -202,6 +211,15 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_color_link
 + .a_color_white
 + .a_color_black
++ .a_color_gray_100
++ .a_color_gray_200
++ .a_color_gray_300
++ .a_color_gray_400
++ .a_color_gray_500
++ .a_color_gray_600
++ .a_color_gray_700
++ .a_color_gray_800
++ .a_color_gray_900
 
 ### Background `background-color` ###
 + .a_bg_primary
@@ -214,6 +232,15 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_bg_link
 + .a_bg_white
 + .a_bg_black
++ .a_bg_gray_100
++ .a_bg_gray_200
++ .a_bg_gray_300
++ .a_bg_gray_400
++ .a_bg_gray_500
++ .a_bg_gray_600
++ .a_bg_gray_700
++ .a_bg_gray_800
++ .a_bg_gray_900
 
 ## Display flex ##
 
