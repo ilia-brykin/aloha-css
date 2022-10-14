@@ -313,6 +313,12 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_text_lighter -> `font-weight: lighter`
 + .a_text_normal -> `font-style: normal; text-decoration: none; text-transform: none; font-weight: normal`
 
+### Line height `line-height`
++ .a_line_height_1 -> `1`
++ .a_line_height_small -> `1.25`
++ .a_line_height_base -> `1.5`
++ .a_line_height_large -> `2`
+
 ### Font size `font-size` ###
 + .a_fs_1 -> `2.5rem`
 + .a_fs_2 -> `2rem`
