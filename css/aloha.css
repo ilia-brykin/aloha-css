@@ -3744,3 +3744,39 @@ h6 {
   white-space: nowrap;
   background-color: var(--a_progress_bar_bg);
   transition: var(--a_progress_bar_transition); }
+
+.a_overflow_auto {
+  overflow: auto !important; }
+
+.a_overflow_hidden {
+  overflow: hidden !important; }
+
+.a_overflow_visible {
+  overflow: visible !important; }
+
+.a_overflow_scroll {
+  overflow: scroll !important; }
+
+.a_overflow_x_auto {
+  overflow-x: auto !important; }
+
+.a_overflow_x_hidden {
+  overflow-x: hidden !important; }
+
+.a_overflow_x_visible {
+  overflow-x: visible !important; }
+
+.a_overflow_x_scroll {
+  overflow-x: scroll !important; }
+
+.a_overflow_y_auto {
+  overflow-y: auto !important; }
+
+.a_overflow_y_hidden {
+  overflow-y: hidden !important; }
+
+.a_overflow_y_visible {
+  overflow-y: visible !important; }
+
+.a_overflow_y_scroll {
+  overflow-y: scroll !important; }
