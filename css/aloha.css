@@ -3697,10 +3697,12 @@ h6 {
       border-bottom-left-radius: var(--a_accordion_border_radius); }
 
 .a_accordion__body {
-  padding: var(--a_accordion_body_padding_y) var(--a_accordion_body_padding_x); }
+  padding: var(--a_accordion_body_padding_y) var(--a_accordion_body_padding_x);
+  border-radius: inherit; }
 
 .a_accordion__collapse_box {
-  display: none; }
+  display: none;
+  border-radius: inherit; }
 
 .a_accordion__collapse_box_show {
   display: block; }

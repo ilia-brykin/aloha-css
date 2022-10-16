@@ -162,10 +162,12 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 
 .#{$aloha-prefix}accordion__body {
   padding: var(--a_accordion_body_padding_y) var(--a_accordion_body_padding_x);
+  border-radius: inherit;
 }
 
 .#{$aloha-prefix}accordion__collapse_box {
   display: none;
+  border-radius: inherit;
 }
 .#{$aloha-prefix}accordion__collapse_box_show {
   display: block;
