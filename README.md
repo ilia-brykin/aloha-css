@@ -405,6 +405,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 
 ### DL ###
 + .a_list_dl
++ .a_list_dl_dt_right
 
 ## Styles for `<body>` ##
 
