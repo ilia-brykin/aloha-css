@@ -30,6 +30,7 @@
 .#{$aloha-prefix}list_dl {
   --#{$aloha-prefix}list_dl_first_column_width: 300px;
   --#{$aloha-prefix}list_dl_last_column_width: 300px;
+  --#{$aloha-prefix}list_dl_dt_text_align: left;
   --#{$aloha-prefix}list_dl_item_padding_x: .5rem;
   --#{$aloha-prefix}list_dl_item_padding_y: .25rem;
   --#{$aloha-prefix}list_dl_bg: #fff;
@@ -45,10 +46,17 @@
   width: calc(var(--#{$aloha-prefix}list_dl_first_column_width) + var(--#{$aloha-prefix}list_dl_last_column_width));
   background-color: var(--#{$aloha-prefix}list_dl_bg);
   margin-bottom: 0;
+  & > dt,
+  & > dd {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    hyphens: auto !important;
+  }
   & > dt {
     width: var(--#{$aloha-prefix}list_dl_first_column_width);
     padding: var(--#{$aloha-prefix}list_dl_item_padding_y) var(--#{$aloha-prefix}list_dl_item_padding_x);
     background-color: var(--#{$aloha-prefix}list_dl_first_column_bg);
+    text-align: var(--#{$aloha-prefix}list_dl_dt_text_align);
     &:not(:nth-last-child(2)) {
       border-bottom: var(--#{$aloha-prefix}list_dl_first_column_border_width) solid var(--#{$aloha-prefix}list_dl_first_column_border_color);
     }
@@ -61,4 +69,8 @@
       border-bottom: var(--#{$aloha-prefix}list_dl_last_column_border_width) solid var(--#{$aloha-prefix}list_dl_last_column_border_color);
     }
   }
+}
+
+.#{$aloha-prefix}list_dl_dt_right {
+  --#{$aloha-prefix}list_dl_dt_text_align: right;
 }
