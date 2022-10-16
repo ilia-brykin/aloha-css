@@ -329,6 +329,24 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_fs_6 -> `1rem`
 + .a_fs_7 -> `0.75rem`
 
+## Overflow ##
++ .a_overflow_auto -> `overflow: auto`
++ .a_overflow_hidden -> `overflow: hidden`
++ .a_overflow_visible -> `overflow: visible`
++ .a_overflow_scroll -> `overflow: scroll`
+
+### Overflow-X ###
++ .a_overflow_x_auto -> `overflow-x: auto`
++ .a_overflow_x_hidden -> `overflow-x: hidden`
++ .a_overflow_x_visible -> `overflow-x: visible`
++ .a_overflow_x_scroll -> `overflow-x: scroll`
+
+### Overflow-Y ###
++ .a_overflow_y_auto -> `overflow-y: auto`
++ .a_overflow_y_hidden -> `overflow-y: hidden`
++ .a_overflow_y_visible -> `overflow-y: visible`
++ .a_overflow_y_scroll -> `overflow-y: scroll`
+
 ## Screen reader ##
 + .a_sr_only
 + .a_sr_only_focusable
