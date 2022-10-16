@@ -2746,6 +2746,11 @@ h6 {
 .a_text_wrap_hyphens {
   hyphens: auto !important; }
 
+.a_text_truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 .a_text_lowercase {
   text-transform: lowercase !important; }
 
@@ -3619,7 +3624,8 @@ h6 {
   --a_accordion_body_padding_x: 1.25rem;
   --a_accordion_body_padding_y: 1rem;
   --a_accordion_active_color: #0c63e4;
-  --a_accordion_active_bg: #e7f1ff; }
+  --a_accordion_active_bg: #e7f1ff;
+  font-size: inherit; }
 
 .a_accordion__button {
   position: relative;
@@ -3631,7 +3637,8 @@ h6 {
   text-align: left;
   background-color: var(--a_accordion_btn_bg);
   border: 0;
-  overflow-anchor: none; }
+  overflow-anchor: none;
+  font-size: inherit; }
   .a_accordion__button:not(.a_accordion__button_collapsed) {
     color: var(--a_accordion_active_color);
     background-color: var(--a_accordion_active_bg);

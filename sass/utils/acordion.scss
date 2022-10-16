@@ -20,6 +20,7 @@ $accordion-bg:                            $body-bg !default;
 $accordion-border-width:                  $border-width !default;
 $accordion-border-color:                  var(--#{$aloha-prefix}border_color) !default;
 $accordion-border-radius:                 var(--a_border_radius) !default;
+$accordion-font-size:                     inherit !default;
 
 $accordion-body-padding-y:                $accordion-padding-y !default;
 $accordion-body-padding-x:                $accordion-padding-x !default;
@@ -73,6 +74,8 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   --a_accordion_body_padding_y: #{$accordion-body-padding-y};
   --a_accordion_active_color: #{$accordion-button-active-color};
   --a_accordion_active_bg: #{$accordion-button-active-bg};
+
+  font-size: #{ $accordion-font-size };
 }
 
 .#{$aloha-prefix}accordion__button {
@@ -86,6 +89,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   background-color: var(--a_accordion_btn_bg);
   border: 0;
   overflow-anchor: none;
+  font-size: inherit;
 
   &:not(.#{$aloha-prefix}accordion__button_collapsed) {
     color: var(--a_accordion_active_color);
