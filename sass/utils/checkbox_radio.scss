@@ -17,6 +17,7 @@
   --#{$aloha-prefix}custom_control_input_checked_border_color: var(--a_color_primary);
   --#{$aloha-prefix}custom_control_input_checked_bg: var(--a_color_primary);
   --#{$aloha-prefix}custom_control_input_checked_disabled_bg:  var(--a_color_primary_50);
+  --#{$aloha-prefix}custom_control_input_disabled_bg:  var(--a_color_gray_200);
   --#{$aloha-prefix}custom_control_radio_input_checked_border_color: var(--#{$aloha-prefix}color_white);
   --#{$aloha-prefix}custom_control_radio_input_checked_border_width: 4px;
   --#{$aloha-prefix}custom_control_error_color: var(--#{$aloha-prefix}color_danger);
@@ -102,6 +103,9 @@
 
   .#{$aloha-prefix}custom_control_input:disabled ~ & {
     color: var(--#{$aloha-prefix}custom_control_label_disabled_color);
+  }
+  .#{$aloha-prefix}custom_checkbox .#{$aloha-prefix}custom_control_input:disabled ~ &:before {
+    background-color: var(--#{$aloha-prefix}custom_control_input_disabled_bg);
   }
 
   .#{$aloha-prefix}custom_checkbox .#{$aloha-prefix}custom_control_input:disabled:indeterminate ~ &:before,

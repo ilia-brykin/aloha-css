@@ -2513,6 +2513,7 @@ body {
   --a_custom_control_input_checked_border_color: var(--a_color_primary);
   --a_custom_control_input_checked_bg: var(--a_color_primary);
   --a_custom_control_input_checked_disabled_bg:  var(--a_color_primary_50);
+  --a_custom_control_input_disabled_bg:  var(--a_color_gray_200);
   --a_custom_control_radio_input_checked_border_color: var(--a_color_white);
   --a_custom_control_radio_input_checked_border_width: 4px;
   --a_custom_control_error_color: var(--a_color_danger);
@@ -2591,6 +2592,8 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3e%3cpath stroke='%23fff' d='M0 2h4'/%3e%3c/svg%3e"); }
   .a_custom_control_input:disabled ~ .a_custom_control_label {
     color: var(--a_custom_control_label_disabled_color); }
+  .a_custom_checkbox .a_custom_control_input:disabled ~ .a_custom_control_label:before {
+    background-color: var(--a_custom_control_input_disabled_bg); }
   .a_custom_checkbox .a_custom_control_input:disabled:indeterminate ~ .a_custom_control_label:before,
   .a_custom_checkbox .a_custom_control_input:disabled:checked ~ .a_custom_control_label:before {
     background-color: var(--a_custom_control_input_checked_disabled_bg); }
