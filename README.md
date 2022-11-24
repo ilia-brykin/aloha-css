@@ -407,6 +407,11 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_list_dl
 + .a_list_dl_dt_right
 
+## List group ##
++ .a_list_group
++ .a_list_group__item
++ .a_list_group_gap
+
 ## Styles for `<body>` ##
 
 ## Buttons ##
