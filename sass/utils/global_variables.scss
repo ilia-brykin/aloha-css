@@ -16,3 +16,7 @@ $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Hel
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+$a_z_index_modal:             1055 !default;
+$a_z_index_confirm:           1057 !default;
+$a_z_index_dropdown:          1058 !default;
