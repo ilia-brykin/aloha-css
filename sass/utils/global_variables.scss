@@ -17,6 +17,8 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
+$a_z_index_backdrop:          1050 !default;
 $a_z_index_modal:             1055 !default;
-$a_z_index_confirm:           1057 !default;
-$a_z_index_dropdown:          1058 !default;
+$a_z_index_backdrop_confirm:  1058 !default;
+$a_z_index_confirm:           1059 !default;
+$a_z_index_dropdown:          1060 !default;

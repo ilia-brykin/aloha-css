@@ -23,7 +23,9 @@
   --#{$aloha-prefix}border_radius_pill: #{$border-radius-pill};
 
 
+  --#{$aloha-prefix}z_index_backdrop: #{$a_z_index_backdrop};
   --#{$aloha-prefix}z_index_modal: #{$a_z_index_modal};
+  --#{$aloha-prefix}z_index_backdrop_confirm: #{$a_z_index_backdrop_confirm};
   --#{$aloha-prefix}z_index_confirm: #{$a_z_index_confirm};
   --#{$aloha-prefix}z_index_dropdown: #{$a_z_index_dropdown};
 }

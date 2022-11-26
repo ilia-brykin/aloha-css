@@ -134,10 +134,16 @@
   .#{$aloha-prefix}modal_xl {
     --#{$aloha-prefix}modal_width: 800px;
   }
+  .#{$aloha-prefix}modal_xxl {
+    --#{$aloha-prefix}modal_width: 90vw;
+  }
 }
 @media (min-width: #{$breakpoint-desktop}) {
   .#{$aloha-prefix}modal_xl {
     --#{$aloha-prefix}modal_width: 1140px;
+  }
+  .#{$aloha-prefix}modal_xxl {
+    --#{$aloha-prefix}modal_width: 90vw;
   }
 }
 .#{$aloha-prefix}modal_fullscreen {

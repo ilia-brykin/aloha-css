@@ -484,10 +484,12 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_modal_small
 + .a_modal_large
 + .a_modal_xl
++ .a_modal_xxl
 + .a_modal_fullscreen
 
 ### backdrop
 + .a_backdrop
++ .a_backdrop_confirm
 + .a_backdrop_fade
 + .a_backdrop_show
 
