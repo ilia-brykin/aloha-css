@@ -472,6 +472,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 ## Modal ##
 + .a_modal_open
 + .a_modal
++ .a_modal_confirm
 + .a_modal_show
 + .a_modal_dialog
 + .a_modal_content
@@ -568,3 +569,12 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_progress_medium
 + .a_progress_large
 + .a_progress__bar
+
+## Dropdown ##
++ .a_dropdown
++ .a_dropdown__caret
++ .a_dropdown__menu
++ .a_dropdown__item
++ .a_dropdown__item_text
++ .a_dropdown__item_text
++ .a_dropdown__item_header 
