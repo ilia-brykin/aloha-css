@@ -14,6 +14,9 @@
   background-color: var(--a_progress_bg);
   border-radius: var(--a_progress_border_radius);
 }
+.a_progress_revers {
+  flex-direction: row-reverse;
+}
 .a_progress_small {
   --a_progress_height: .75rem;
   --a_progress_font_size: .6rem;

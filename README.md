@@ -570,7 +570,9 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_progress_small
 + .a_progress_medium
 + .a_progress_large
++ .a_progress_revers
 + .a_progress__bar
+
 
 ## Dropdown ##
 + .a_dropdown
