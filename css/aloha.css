@@ -3353,7 +3353,7 @@ h6 {
     border-top-right-radius: 0; }
   .a_btn_group_vertical > .a_btn_group:not(:first-child),
   .a_btn_group_vertical > .a_btn:not(:first-child) {
-    margin-left: calc(-1 * var(--a_btn_border_width, var(--a_border_width))); }
+    margin-top: calc(-1 * var(--a_btn_border_width, var(--a_border_width))); }
 
 .a_btn_group_vertical > .a_btn.active,
 .a_btn_group_vertical > .a_btn:active,

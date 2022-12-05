@@ -54,7 +54,7 @@
 
   & > .#{$aloha-prefix}btn_group:not(:first-child),
   & > .#{$aloha-prefix}btn:not(:first-child) {
-    margin-left: calc(-1 * var(--#{$aloha-prefix}btn_border_width, var(--#{$aloha-prefix}border_width)));
+    margin-top: calc(-1 * var(--#{$aloha-prefix}btn_border_width, var(--#{$aloha-prefix}border_width)));
   }
 }
 
