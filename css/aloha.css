@@ -3336,23 +3336,23 @@ h6 {
   .a_btn_group > .a_btn:not(:first-child) {
     margin-left: calc(-1 * var(--a_btn_border_width, var(--a_border_width))); }
 
-.btn-group-vertical {
+.a_btn_group_vertical {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
-  .btn-group-vertical > .a_btn,
-  .btn-group-vertical > .a_btn_group {
+  .a_btn_group_vertical > .a_btn,
+  .a_btn_group_vertical > .a_btn_group {
     width: 100%; }
-  .btn-group-vertical > .a_btn_group:not(:last-child) > .a_btn,
-  .btn-group-vertical > .a_btn:not(:last-child) {
+  .a_btn_group_vertical > .a_btn_group:not(:last-child) > .a_btn,
+  .a_btn_group_vertical > .a_btn:not(:last-child) {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .a_btn_group:not(:first-child) > .a_btn,
-  .btn-group-vertical > .a_btn ~ .a_btn {
+  .a_btn_group_vertical > .a_btn_group:not(:first-child) > .a_btn,
+  .a_btn_group_vertical > .a_btn ~ .a_btn {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
-  .btn-group-vertical > .a_btn_group:not(:first-child),
-  .btn-group-vertical > .a_btn:not(:first-child) {
+  .a_btn_group_vertical > .a_btn_group:not(:first-child),
+  .a_btn_group_vertical > .a_btn:not(:first-child) {
     margin-left: calc(-1 * var(--a_btn_border_width, var(--a_border_width))); }
 
 .a_btn_group_vertical > .a_btn.active,
