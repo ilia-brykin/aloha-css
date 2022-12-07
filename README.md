@@ -427,6 +427,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_btn_dark
 + .a_btn_large
 + .a_btn_small
++ .a_btn_not_active
 
 ### Outline buttons ###
 + .a_btn_outline_primary
