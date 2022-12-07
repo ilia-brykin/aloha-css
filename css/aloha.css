@@ -3009,7 +3009,7 @@ h6 {
     border-color: var(--a_btn_hover_border_color);
     outline: 0;
     box-shadow: var(--a_btn_focus_box_shadow); }
-  .a_btn:active, .a_btn.active {
+  .a_btn:active:not(.a_btn_not_active), .a_btn.active {
     color: var(--a_btn_active_color);
     background-color: var(--a_btn_active_bg);
     border-color: var(--a_btn_active_border_color); }

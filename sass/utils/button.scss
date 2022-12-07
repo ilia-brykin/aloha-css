@@ -64,7 +64,7 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
     box-shadow: var(--#{$aloha-prefix}btn_focus_box_shadow);
   }
 
-  &:active,
+  &:active:not(.#{$aloha-prefix}btn_not_active),
   &.active {
     color: var(--#{$aloha-prefix}btn_active_color);
     background-color: var(--#{$aloha-prefix}btn_active_bg);
