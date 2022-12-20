@@ -583,3 +583,8 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_dropdown__item_text
 + .a_dropdown__item_text
 + .a_dropdown__item_header 
+
+
+## Tooltip ##
++ .a_tooltip__container
++ .a_tooltip__arrow
