@@ -287,6 +287,15 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_align_content_around -> `space-around`
 + .a_align_content_stretch -> `stretch`
 
+### Fill ###
++ .a_flex_fill -> `flex: 1 1 auto`
+
+### Grow and shrink ###
++ .a_flex_grow_0 -> `flex-grow: 0`
++ .a_flex_grow_1 -> `flex-grow: 1`
++ .a_flex_shrink_0 -> `flex-shrink: 0`
++ .a_flex_shrink_1 -> `flex-shrink: 1`
+
 ## Text ##
 
 ### Alignment `text-align` ###
