@@ -27,7 +27,7 @@
   }
 
   & > &:not(:first-child),
-  & > .#{$aloha-prefix}btn:not(.#{$aloha-prefix}_btn_check:first-child) + .#{$aloha-prefix}btn {
+  & > .#{$aloha-prefix}btn:not(.#{$aloha-prefix}btn_check:first-child) + .#{$aloha-prefix}btn {
     margin-left: calc(-1 * var(--#{$aloha-prefix}btn_border_width, var(--#{$aloha-prefix}border_width)));
   }
 }
