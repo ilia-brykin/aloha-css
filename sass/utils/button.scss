@@ -52,11 +52,18 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
     background-color: var(--#{$aloha-prefix}btn_hover_bg);
     border-color: var(--#{$aloha-prefix}btn_hover_border_color);
   }
+  .a_btn_check + &:hover {
+    // override for the checkbox/radio buttons
+    color: var(--#{$aloha-prefix}btn_color);
+    background-color: var(--#{$aloha-prefix}btn_bg);
+    border-color: var(--#{$aloha-prefix}btn_border_color);
+  }
+
   &:not(.a_btn_link):hover {
     text-decoration: none;
   }
 
-  &:focus {
+  &:focus-visible {
     color: var(--#{$aloha-prefix}btn_focus_color, var(--#{$aloha-prefix}btn_hover_color));
     background-color: var(--#{$aloha-prefix}btn_hover_bg);
     border-color: var(--#{$aloha-prefix}btn_hover_border_color);
@@ -64,6 +71,15 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
     box-shadow: var(--#{$aloha-prefix}btn_focus_box_shadow);
   }
 
+  .a_btn_check:focus-visible + & {
+    border-color: var(--#{$aloha-prefix}btn_hover_border_color);
+    outline: 0;
+    box-shadow: var(--#{$aloha-prefix}btn_focus_box_shadow);
+  }
+
+  .a_btn_check:checked + &,
+  :not(.a_btn_check) + &:active,
+  &:first-child:active,
   &:active:not(.#{$aloha-prefix}btn_not_active),
   &.active {
     color: var(--#{$aloha-prefix}btn_active_color);
@@ -236,5 +252,20 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
   &:hover,
   &:focus {
     --#{$aloha-prefix}btn_text_decoration: #{$link-hover-decoration};
+  }
+}
+
+.a_btn_check {
+  position: absolute;
+  clip: rect(0,0,0,0);
+  pointer-events: none;
+
+  &[disabled],
+  &:disabled {
+    + .btn {
+      pointer-events: none;
+      filter: none;
+      opacity: .65;
+    }
   }
 }
