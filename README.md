@@ -598,3 +598,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 ## Tooltip ##
 + .a_tooltip__container
 + .a_tooltip__arrow
+
+## Badges ##
++ .a_badge
++ .a_pill_rounded
