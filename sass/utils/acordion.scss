@@ -175,12 +175,12 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 }
 
 // Gap
-.#{$aloha-prefix}accordion__item_with_gap {
+.#{$aloha-prefix}accordion__item.#{$aloha-prefix}accordion__item_with_gap {
   margin-bottom: var(--a_accordion_with_gap_margin_bottom);
   border: var(--a_accordion_border_width) solid var(--a_accordion_border_color);
   border-radius: var(--a_accordion_border_radius);
 }
-.#{$aloha-prefix}accordion__button_with_gap {
+.#{$aloha-prefix}accordion__button.#{$aloha-prefix}accordion__button_with_gap {
   border-radius: var(--a_accordion_border_radius) var(--a_accordion_border_radius) 0 0;
   &.#{$aloha-prefix}accordion__button_collapsed {
     border-radius: var(--a_accordion_border_radius);
