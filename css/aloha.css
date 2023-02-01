@@ -3023,7 +3023,7 @@ h6 {
     border-color: var(--a_btn_border_color); }
   .a_btn:not(.a_btn_link):hover {
     text-decoration: none; }
-  .a_btn:focus-visible {
+  .a_btn:focus {
     color: var(--a_btn_focus_color, var(--a_btn_hover_color));
     background-color: var(--a_btn_hover_bg);
     border-color: var(--a_btn_hover_border_color);
@@ -3367,7 +3367,7 @@ h6 {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
   .a_btn_group > .a_btn_group:not(:first-child),
-  .a_btn_group > .a_btn:not(.a_btn_check:first-child) + .a_btn {
+  .a_btn_group > :not(.a_btn_check:first-child) + .a_btn {
     margin-left: calc(-1 * var(--a_btn_border_width, var(--a_border_width))); }
 
 .a_btn_group_vertical {
@@ -3839,6 +3839,7 @@ h6 {
   --a_accordion_body_padding_y: 1rem;
   --a_accordion_active_color: #0c63e4;
   --a_accordion_active_bg: #e7f1ff;
+  --a_accordion_with_gap_margin_bottom: 1rem;
   font-size: inherit; }
 
 .a_accordion__button {
@@ -3911,15 +3912,14 @@ h6 {
 .a_accordion__collapse_box_show {
   display: block; }
 
-.a_accordion__with_gap {
-  --a_accordion_with_gap_margin_bottom: 1rem; }
-  .a_accordion__with_gap .a_accordion__item {
-    margin-bottom: var(--a_accordion_with_gap_margin_bottom);
-    border: var(--a_accordion_border_width) solid var(--a_accordion_border_color);
-    border-radius: var(--a_accordion_border_radius); }
-  .a_accordion__with_gap .a_accordion__button {
-    border-radius: var(--a_accordion_border_radius) var(--a_accordion_border_radius) 0 0; }
-  .a_accordion__with_gap .a_accordion__button_collapsed {
+.a_accordion__item_with_gap {
+  margin-bottom: var(--a_accordion_with_gap_margin_bottom);
+  border: var(--a_accordion_border_width) solid var(--a_accordion_border_color);
+  border-radius: var(--a_accordion_border_radius); }
+
+.a_accordion__button_with_gap {
+  border-radius: var(--a_accordion_border_radius) var(--a_accordion_border_radius) 0 0; }
+  .a_accordion__button_with_gap.a_accordion__button_collapsed {
     border-radius: var(--a_accordion_border_radius); }
 
 .a_progress {
