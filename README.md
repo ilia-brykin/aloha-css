@@ -603,3 +603,15 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 ## Badges ##
 + .a_badge
 + .a_pill_rounded
+
+## Border Radius ##
+```border-radius:```
++ .a_rounded_inherit
++ .a_rounded_top_inherit
++ .a_rounded_right_inherit
++ .a_rounded_bottom_inherit
++ .a_rounded_left_inherit
++ .a_rounded_top_left_inherit
++ .a_rounded_top_right_inherit
++ .a_rounded_bottom_right_inherit
++ .a_rounded_bottom_left_inherit
