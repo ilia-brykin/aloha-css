@@ -88,13 +88,18 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
   }
 
   &.disabled,
+  &.inactive,
   &:disabled,
   fieldset:disabled & {
     color: var(--#{$aloha-prefix}btn_disabled_color);
-    pointer-events: none;
     background-color: var(--#{$aloha-prefix}btn_disabled_bg);
     border-color: var(--#{$aloha-prefix}btn_disabled_border_color);
     opacity: var(--#{$aloha-prefix}btn_disabled_opacity);
+  }
+  &.disabled,
+  &:disabled,
+  fieldset:disabled & {
+    pointer-events: none;
   }
 }
 

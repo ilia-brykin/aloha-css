@@ -3038,13 +3038,15 @@ h6 {
     color: var(--a_btn_active_color);
     background-color: var(--a_btn_active_bg);
     border-color: var(--a_btn_active_border_color); }
-  .a_btn.disabled, .a_btn:disabled,
+  .a_btn.disabled, .a_btn.inactive, .a_btn:disabled,
   fieldset:disabled .a_btn {
     color: var(--a_btn_disabled_color);
-    pointer-events: none;
     background-color: var(--a_btn_disabled_bg);
     border-color: var(--a_btn_disabled_border_color);
     opacity: var(--a_btn_disabled_opacity); }
+  .a_btn.disabled, .a_btn:disabled,
+  fieldset:disabled .a_btn {
+    pointer-events: none; }
 
 .a_btn_group_large > .a_btn,
 .a_btn_large {
