@@ -3043,7 +3043,8 @@ h6 {
     color: var(--a_btn_disabled_color);
     background-color: var(--a_btn_disabled_bg);
     border-color: var(--a_btn_disabled_border_color);
-    opacity: var(--a_btn_disabled_opacity); }
+    opacity: var(--a_btn_disabled_opacity);
+    cursor: initial; }
   .a_btn.disabled, .a_btn:disabled,
   fieldset:disabled .a_btn {
     pointer-events: none; }
