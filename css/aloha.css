@@ -3044,7 +3044,7 @@ h6 {
     background-color: var(--a_btn_disabled_bg);
     border-color: var(--a_btn_disabled_border_color);
     opacity: var(--a_btn_disabled_opacity);
-    cursor: initial; }
+    cursor: not-allowed; }
   .a_btn.disabled, .a_btn:disabled,
   fieldset:disabled .a_btn {
     pointer-events: none; }
