@@ -8,6 +8,7 @@
 
 .a_dropdown__menu {
   --a_dropdown_min_width: 10rem;
+  --a_dropdown_max_height: 500px;
   --a_dropdown_padding_x: 0;
   --a_dropdown_padding_y: 0.5rem;
   --a_dropdown_spacer: 0.125rem;
@@ -34,6 +35,7 @@
 
   z-index: var(--a_z_index_dropdown);
   min-width: var(--a_dropdown_min_width);
+  max-height: var(--a_dropdown_max_height);
   padding: var(--a_dropdown_padding_y) var(--a_dropdown_padding_x);
   margin: 0;
   font-size: var(--a_dropdown_font_size);
@@ -45,6 +47,7 @@
   border: var(--a_dropdown_border_width) solid var(--a_dropdown_border_color);
   border-radius: var(--a_dropdown_border_radius);
   overflow-x: auto;
+  overflow-y: auto;
   display: none;
 }
 .a_dropdown__menu_show {
