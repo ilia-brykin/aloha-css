@@ -2793,9 +2793,11 @@ body {
   background-clip: padding-box;
   border: var(--a_dropdown_border_width) solid var(--a_dropdown_border_color);
   border-radius: var(--a_dropdown_border_radius);
-  overflow-x: auto; }
-  .a_dropdown__menu:not([data-popper-placement]) {
-    display: none; }
+  overflow-x: auto;
+  display: none; }
+
+.a_dropdown__menu_show {
+  display: block; }
 
 .a_dropdown__item {
   display: block;

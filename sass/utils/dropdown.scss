@@ -47,9 +47,10 @@
   border: var(--a_dropdown_border_width) solid var(--a_dropdown_border_color);
   border-radius: var(--a_dropdown_border_radius);
   overflow-x: auto;
-  &:not([data-popper-placement]) {
-    display: none;
-  }
+  display: none;
+}
+.a_dropdown__menu_show {
+  display: block;
 }
 .a_dropdown__item {
   display: block;
