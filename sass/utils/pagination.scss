@@ -22,6 +22,8 @@
   --#{$aloha-prefix}pagination_disabled_bg: #fff;
   --#{$aloha-prefix}pagination_disabled_border_color: #dee2e6;
   display: flex;
+  justify-content: center;
+  width: 100%;
   padding-left: 0;
   list-style: none;
 }
