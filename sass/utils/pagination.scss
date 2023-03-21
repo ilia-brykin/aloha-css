@@ -27,6 +27,9 @@
   padding-left: 0;
   list-style: none;
 }
+.#{$aloha-prefix}pagination__item {
+  white-space: nowrap;
+}
 
 .#{$aloha-prefix}pagination__item__link {
   position: relative;
