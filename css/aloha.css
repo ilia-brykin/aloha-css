@@ -3864,7 +3864,10 @@ h6 {
   background-color: var(--a_accordion_btn_bg);
   border: 0;
   overflow-anchor: none;
-  font-size: inherit; }
+  font-size: inherit;
+  cursor: pointer; }
+  .a_accordion__button.readonly, .a_accordion__button.disabled {
+    cursor: inherit; }
   .a_accordion__button:not(.a_accordion__button_collapsed) {
     color: var(--a_accordion_active_color);
     background-color: var(--a_accordion_active_bg);

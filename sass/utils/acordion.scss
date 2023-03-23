@@ -91,6 +91,11 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   border: 0;
   overflow-anchor: none;
   font-size: inherit;
+  cursor: pointer;
+  &.readonly,
+  &.disabled {
+    cursor: inherit;
+  }
 
   &:not(.#{$aloha-prefix}accordion__button_collapsed) {
     color: var(--a_accordion_active_color);
