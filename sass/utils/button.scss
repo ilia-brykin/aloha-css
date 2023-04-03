@@ -275,3 +275,7 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
     }
   }
 }
+
+.a_btn_link {
+  user-select: auto;
+}

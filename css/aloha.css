@@ -4024,11 +4024,11 @@ h6 {
   --a_tooltip_arrow_width: 8px;
   --a_tooltip_arrow_height: 8px;
   --a_tooltip_arrow_shift: -4px;
+  --a_tooltip_max_height: 400px;
   z-index: var(--a_z_index_tooltip);
   background-color: var(--a_tooltip_bg);
   color: var(--a_tooltip_color);
   border-radius: var(--a_tooltip_border_radius);
-  padding: var(--a_tooltip_padding_y) var(--a_tooltip_padding_x);
   font-size: var(--a_tooltip_font_size);
   display: inline-block; }
   .a_tooltip__container[data-popper-placement^='top'] > .a_tooltip__arrow {
@@ -4053,6 +4053,11 @@ h6 {
     visibility: visible;
     content: '';
     transform: rotate(45deg); }
+
+.a_tooltip__wrapper {
+  max-height: var(--a_tooltip_max_height);
+  overflow-y: auto;
+  padding: var(--a_tooltip_padding_y) var(--a_tooltip_padding_x); }
 
 .a_rounded_inherit {
   border-radius: inherit !important; }
