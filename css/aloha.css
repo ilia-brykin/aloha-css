@@ -3350,6 +3350,9 @@ h6 {
     filter: none;
     opacity: .65; }
 
+.a_btn_link {
+  user-select: auto; }
+
 .a_btn_group,
 .a_btn_group_vertical {
   position: relative;
@@ -3760,7 +3763,9 @@ h6 {
   left: var(--a_notification_left);
   top: var(--a_notification_top);
   z-index: var(--a_notification_z_index);
-  text-align: var(--a_notification_text_align); }
+  text-align: var(--a_notification_text_align);
+  max-height: 100vh;
+  overflow-y: auto; }
 
 @media (min-width: 1023px) {
   .a_notification_parent {

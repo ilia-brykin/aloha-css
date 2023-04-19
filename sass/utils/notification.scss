@@ -15,6 +15,8 @@
   top: var(--#{$aloha-prefix}notification_top);
   z-index: var(--#{$aloha-prefix}notification_z_index);
   text-align: var(--#{$aloha-prefix}notification_text_align);
+  max-height: 100vh;
+  overflow-y: auto;
 }
 @media (min-width: #{$breakpoint-tablet}) {
   .#{$aloha-prefix}notification_parent {
