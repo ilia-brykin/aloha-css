@@ -616,3 +616,4 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_rounded_top_right_inherit
 + .a_rounded_bottom_right_inherit
 + .a_rounded_bottom_left_inherit
++ .a_rounded_0
