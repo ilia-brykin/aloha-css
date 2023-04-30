@@ -22,6 +22,8 @@ $alert-dismissible-padding-r:   $alert-padding-x * 3 !default;
   --#{$aloha-prefix}alert_border_color: transparent;
   --#{$aloha-prefix}alert_border: var(--#{$aloha-prefix}border_width) solid var(--#{$aloha-prefix}alert_border_color);
   --#{$aloha-prefix}alert_border-radius: var(--#{$aloha-prefix}border_radius);
+  --#{$aloha-prefix}alert_icon_size: 1.5rem;
+  --#{$aloha-prefix}alert_icon_margin_right: .5rem;
 
   position: relative;
   padding: var(--#{$aloha-prefix}alert_padding_y) var(--#{$aloha-prefix}alert_padding_x);
@@ -30,6 +32,8 @@ $alert-dismissible-padding-r:   $alert-padding-x * 3 !default;
   background-color: var(--#{$aloha-prefix}alert_bg);
   border: var(--#{$aloha-prefix}alert_border);
   border-radius: var(--#{$aloha-prefix}alert_border-radius);
+  display: flex;
+  align-items: center;
 }
 .#{$aloha-prefix}alert_dismissible {
   padding-right: $alert-dismissible-padding-r;
@@ -54,4 +58,10 @@ $alert-dismissible-padding-r:   $alert-padding-x * 3 !default;
     --#{$aloha-prefix}alert_bg: #{$alert-background};
     --#{$aloha-prefix}alert_border_color: #{$alert-border};
   }
+}
+
+.#{$aloha-prefix}alert__icon {
+  width: var(--#{$aloha-prefix}alert_icon_size);
+  height: var(--#{$aloha-prefix}alert_icon_size);
+  margin-right: var(--#{$aloha-prefix}alert_icon_margin_right);
 }
