@@ -471,6 +471,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 ## Alert ##
 + .a_alert
 + .a_alert_dismissible
++ .alert__icon
 + .a_alert_primary
 + .a_alert_secondary
 + .a_alert_success
