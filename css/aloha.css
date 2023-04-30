@@ -3538,6 +3538,10 @@ h6 {
   border-radius: var(--a_alert_border-radius);
   display: flex;
   align-items: center; }
+  .a_alert .a_alert__icon {
+    width: var(--a_alert_icon_size);
+    height: var(--a_alert_icon_size);
+    margin-right: var(--a_alert_icon_margin_right); }
 
 .a_alert_dismissible {
   padding-right: 3rem; }
@@ -3587,11 +3591,6 @@ h6 {
   --a_alert_color: #141619;
   --a_alert_bg: #d3d3d4;
   --a_alert_border_color: #bcbebf; }
-
-.a_alert__icon {
-  width: var(--a_alert_icon_size);
-  height: var(--a_alert_icon_size);
-  margin-right: var(--a_alert_icon_margin_right); }
 
 .a_backdrop {
   --a__backdrop_zindex: var(--a_z_index_backdrop);

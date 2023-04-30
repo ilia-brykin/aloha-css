@@ -34,6 +34,12 @@ $alert-dismissible-padding-r:   $alert-padding-x * 3 !default;
   border-radius: var(--#{$aloha-prefix}alert_border-radius);
   display: flex;
   align-items: center;
+
+  .#{$aloha-prefix}alert__icon {
+    width: var(--#{$aloha-prefix}alert_icon_size);
+    height: var(--#{$aloha-prefix}alert_icon_size);
+    margin-right: var(--#{$aloha-prefix}alert_icon_margin_right);
+  }
 }
 .#{$aloha-prefix}alert_dismissible {
   padding-right: $alert-dismissible-padding-r;
@@ -58,10 +64,4 @@ $alert-dismissible-padding-r:   $alert-padding-x * 3 !default;
     --#{$aloha-prefix}alert_bg: #{$alert-background};
     --#{$aloha-prefix}alert_border_color: #{$alert-border};
   }
-}
-
-.#{$aloha-prefix}alert__icon {
-  width: var(--#{$aloha-prefix}alert_icon_size);
-  height: var(--#{$aloha-prefix}alert_icon_size);
-  margin-right: var(--#{$aloha-prefix}alert_icon_margin_right);
 }
