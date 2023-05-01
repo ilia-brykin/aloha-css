@@ -10,7 +10,7 @@ $alert-border-width:            $border-width !default;
 $alert-bg-scale:                -80% !default;
 $alert-border-scale:            -70% !default;
 $alert-color-scale:             40% !default;
-$alert-dismissible-padding-r:   $alert-padding-x * 3 !default;
+$alert-closable-padding-r:      $alert-padding-x * 3 !default;
 
 
 .#{$aloha-prefix}alert {
@@ -41,8 +41,8 @@ $alert-dismissible-padding-r:   $alert-padding-x * 3 !default;
     margin-right: var(--#{$aloha-prefix}alert_icon_margin_right);
   }
 }
-.#{$aloha-prefix}alert_dismissible {
-  padding-right: $alert-dismissible-padding-r;
+.#{$aloha-prefix}alert_closable {
+  padding-right: $alert-closable-padding-r;
   .#{$aloha-prefix}btn_close {
     position: absolute;
     top: 0;

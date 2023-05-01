@@ -3543,9 +3543,9 @@ h6 {
     height: var(--a_alert_icon_size);
     margin-right: var(--a_alert_icon_margin_right); }
 
-.a_alert_dismissible {
+.a_alert_closable {
   padding-right: 3rem; }
-  .a_alert_dismissible .a_btn_close {
+  .a_alert_closable .a_btn_close {
     position: absolute;
     top: 0;
     right: 0;
