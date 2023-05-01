@@ -3552,6 +3552,9 @@ h6 {
     z-index: 2;
     padding: 1.25rem 1rem; }
 
+.a_alert__content {
+  width: 100%; }
+
 .a_alert_primary {
   --a_alert_color: #084298;
   --a_alert_bg: #cfe2ff;
