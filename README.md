@@ -470,7 +470,8 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 
 ## Alert ##
 + .a_alert
-+ .a_alert_closable
++ .a_alert__parent
++ .a_alert__parent_closable
 + .a_alert__content
 + .alert__icon
 + .a_alert_primary
