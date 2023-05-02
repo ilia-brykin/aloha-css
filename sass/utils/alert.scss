@@ -24,6 +24,7 @@ $alert-closable-padding-r:      $alert-padding-x * 3 !default;
   --#{$aloha-prefix}alert_border-radius: var(--#{$aloha-prefix}border_radius);
   --#{$aloha-prefix}alert_icon_size: 1.5rem;
   --#{$aloha-prefix}alert_icon_margin_right: .5rem;
+  --#{$aloha-prefix}alert_text_align: left;
 
   position: relative;
   padding: var(--#{$aloha-prefix}alert_padding_y) var(--#{$aloha-prefix}alert_padding_x);
@@ -34,6 +35,7 @@ $alert-closable-padding-r:      $alert-padding-x * 3 !default;
   border-radius: var(--#{$aloha-prefix}alert_border-radius);
   display: flex;
   align-items: center;
+  text-align: var(--#{$aloha-prefix}alert_text_align);
 
   .#{$aloha-prefix}alert__icon {
     width: var(--#{$aloha-prefix}alert_icon_size);
@@ -41,9 +43,13 @@ $alert-closable-padding-r:      $alert-padding-x * 3 !default;
     margin-right: var(--#{$aloha-prefix}alert_icon_margin_right);
   }
 }
-.#{$aloha-prefix}alert_closable {
-  padding-right: $alert-closable-padding-r;
-  .#{$aloha-prefix}btn_close {
+
+.#{$aloha-prefix}alert__parent_closable {
+  position: relative;
+  .#{$aloha-prefix}alert {
+    padding-right: $alert-closable-padding-r;
+  }
+  .a_btn_close {
     position: absolute;
     top: 0;
     right: 0;

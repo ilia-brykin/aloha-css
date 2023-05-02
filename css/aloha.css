@@ -3529,6 +3529,7 @@ h6 {
   --a_alert_border-radius: var(--a_border_radius);
   --a_alert_icon_size: 1.5rem;
   --a_alert_icon_margin_right: .5rem;
+  --a_alert_text_align: left;
   position: relative;
   padding: var(--a_alert_padding_y) var(--a_alert_padding_x);
   margin-bottom: var(--a_alert_margin_bottom);
@@ -3537,15 +3538,18 @@ h6 {
   border: var(--a_alert_border);
   border-radius: var(--a_alert_border-radius);
   display: flex;
-  align-items: center; }
+  align-items: center;
+  text-align: var(--a_alert_text_align); }
   .a_alert .a_alert__icon {
     width: var(--a_alert_icon_size);
     height: var(--a_alert_icon_size);
     margin-right: var(--a_alert_icon_margin_right); }
 
-.a_alert_closable {
-  padding-right: 3rem; }
-  .a_alert_closable .a_btn_close {
+.a_alert__parent_closable {
+  position: relative; }
+  .a_alert__parent_closable .a_alert {
+    padding-right: 3rem; }
+  .a_alert__parent_closable .a_btn_close {
     position: absolute;
     top: 0;
     right: 0;
