@@ -3485,17 +3485,17 @@ h6 {
     background-color: var(--a_pagination_focus_bg);
     outline: 0;
     box-shadow: var(--a_pagination_focus_box_shadow); }
-  .active > .a_pagination__item__link, .a_pagination__item__link.active {
-    z-index: 3;
-    color: var(--a_pagination_active_color);
-    background-color: var(--a_pagination_active_bg);
-    border-color: var(--a_pagination_active_border_color); }
   .disabled > .a_pagination__item__link, .a_pagination__item__link.disabled {
     color: var(--a_pagination_disabled_color);
     pointer-events: none;
     background-color: var(--a_pagination_disabled_bg);
     border-color: var(--a_pagination_disabled_border_color);
     cursor: default; }
+  .active > .a_pagination__item__link, .a_pagination__item__link.active {
+    z-index: 3;
+    color: var(--a_pagination_active_color);
+    background-color: var(--a_pagination_active_bg);
+    border-color: var(--a_pagination_active_border_color); }
 
 .pagination_lg {
   --a_pagination_padding_x: 1.5rem;
