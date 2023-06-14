@@ -1,20 +1,20 @@
 @import "aloha_prefix";
 @import "color_utils";
 
-$btn-hover-bg-shade-amount:       15% !default;
-$btn-hover-bg-tint-amount:        15% !default;
-$btn-hover-border-shade-amount:   20% !default;
-$btn-hover-border-tint-amount:    10% !default;
-$btn-active-bg-shade-amount:      20% !default;
-$btn-active-bg-tint-amount:       20% !default;
-$btn-active-border-shade-amount:  25% !default;
-$btn-active-border-tint-amount:   10% !default;
+$a_btn_hover_bg_shade_amount:       15% !default;
+$a_btn_hover_bg_tint_amount:        15% !default;
+$a_btn_hover_border_shade_amount:   20% !default;
+$a_btn_hover_border_tint_amount:    10% !default;
+$a_btn_active_bg_shade_amount:      20% !default;
+$a_btn_active_bg_tint_amount:       20% !default;
+$a_btn_active_border_shade_amount:  25% !default;
+$a_btn_active_border_tint_amount:   10% !default;
 
-$btn-active-box-shadow:           inset 0 3px 5px rgba($black, .125) !default;
+$a_btn_active_box_shadow:           inset 0 3px 5px rgba($a_black, .125) !default;
 
-$btn-link-color:              var(--#{$aloha-prefix}color_link) !default;
-$btn-link-hover-color:        var(--#{$aloha-prefix}color_link_hover) !default;
-$btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
+$a_btn_link_color:              var(--#{$aloha-prefix}color_link) !default;
+$a_btn_link_hover_color:        var(--#{$aloha-prefix}color_link_hover) !default;
+$a_btn_link_disabled_color:     var(--#{$aloha-prefix}color_gray_600) !default;
 
 .#{$aloha-prefix}btn {
   --#{$aloha-prefix}btn_padding_x: 0.75rem;
@@ -124,11 +124,11 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
   $background,
   $border,
   $color: color-contrast($background),
-  $hover-background: if($color == $color-contrast-light, shade-color($background, $btn-hover-bg-shade-amount), tint-color($background, $btn-hover-bg-tint-amount)),
-  $hover-border: if($color == $color-contrast-light, shade-color($border, $btn-hover-border-shade-amount), tint-color($border, $btn-hover-border-tint-amount)),
+  $hover-background: if($color == $a_color_contrast_light, shade-color($background, $a_btn_hover_bg_shade_amount), tint-color($background, $a_btn_hover_bg_tint_amount)),
+  $hover-border: if($color == $a_color_contrast_light, shade-color($border, $a_btn_hover_border_shade_amount), tint-color($border, $a_btn_hover_border_tint_amount)),
   $hover-color: color-contrast($hover-background),
-  $active-background: if($color == $color-contrast-light, shade-color($background, $btn-active-bg-shade-amount), tint-color($background, $btn-active-bg-tint-amount)),
-  $active-border: if($color == $color-contrast-light, shade-color($border, $btn-active-border-shade-amount), tint-color($border, $btn-active-border-tint-amount)),
+  $active-background: if($color == $a_color_contrast_light, shade-color($background, $a_btn_active_bg_shade_amount), tint-color($background, $a_btn_active_bg_tint_amount)),
+  $active-border: if($color == $a_color_contrast_light, shade-color($border, $a_btn_active_border_shade_amount), tint-color($border, $a_btn_active_border_tint_amount)),
   $active-color: color-contrast($active-background),
   $disabled-background: $background,
   $disabled-border: $border,
@@ -144,7 +144,7 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
   --#{$aloha-prefix}btn_active_color: #{$active-color};
   --#{$aloha-prefix}btn_active_bg: #{$active-background};
   --#{$aloha-prefix}btn_active_border_color: #{$active-border};
-  --#{$aloha-prefix}btn_active_shadow: #{$btn-active-box-shadow};
+  --#{$aloha-prefix}btn_active_shadow: #{$a_btn_active_box_shadow};
   --#{$aloha-prefix}btn_disabled_color: #{$disabled-color};
   --#{$aloha-prefix}btn_disabled_bg: #{$disabled-background};
   --#{$aloha-prefix}btn_disabled_border_color: #{$disabled-border};
@@ -166,7 +166,7 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
   --#{$aloha-prefix}btn_active_color: #{$active-color};
   --#{$aloha-prefix}btn_active_bg: #{$active-background};
   --#{$aloha-prefix}btn_active_border_color: #{$active-border};
-  --#{$aloha-prefix}btn_active_shadow: #{$btn-active-box-shadow};
+  --#{$aloha-prefix}btn_active_shadow: #{$a_btn_active_box_shadow};
   --#{$aloha-prefix}btn_disabled_color: #{$color};
   --#{$aloha-prefix}btn_disabled_bg: transparent;
   --#{$aloha-prefix}btn_disabled_border_color: #{$color};
@@ -174,90 +174,90 @@ $btn-link-disabled-color:     var(--#{$aloha-prefix}color_gray_600) !default;
 }
 
 .#{$aloha-prefix}btn_primary {
-  @include button-variant($primary, $primary);
+  @include button-variant($a_primary, $a_primary);
 }
 .#{$aloha-prefix}btn_secondary {
-  @include button-variant($secondary, $secondary);
+  @include button-variant($a_secondary, $a_secondary);
 }
 .#{$aloha-prefix}btn_success {
-  @include button-variant($success, $success);
+  @include button-variant($a_success, $a_success);
 }
 .#{$aloha-prefix}btn_info {
-  @include button-variant($info, $info);
+  @include button-variant($a_info, $a_info);
 }
 .#{$aloha-prefix}btn_warning {
-  @include button-variant($warning, $warning);
+  @include button-variant($a_warning, $a_warning);
 }
 .#{$aloha-prefix}btn_danger {
-  @include button-variant($danger, $danger);
+  @include button-variant($a_danger, $a_danger);
 }
 .#{$aloha-prefix}btn_light {
   @include button-variant(
-    $light,
-    $light,
-    $hover-background: shade-color($light, $btn-hover-bg-shade-amount),
-    $hover-border: shade-color($light, $btn-hover-border-shade-amount),
-    $active-background: shade-color($light, $btn-active-bg-shade-amount),
-    $active-border: shade-color($light, $btn-active-border-shade-amount)
+    $a_light,
+    $a_light,
+    $hover-background: shade-color($a_light, $a_btn_hover_bg_shade_amount),
+    $hover-border: shade-color($a_light, $a_btn_hover_border_shade_amount),
+    $active-background: shade-color($a_light, $a_btn_active_bg_shade_amount),
+    $active-border: shade-color($a_light, $a_btn_active_border_shade_amount)
   );
 }
 .#{$aloha-prefix}btn_dark {
   @include button-variant(
-    $dark,
-    $dark,
-    $hover-background: tint-color($dark, $btn-hover-bg-tint-amount),
-    $hover-border: tint-color($dark, $btn-hover-border-tint-amount),
-    $active-background: tint-color($dark, $btn-active-bg-tint-amount),
-    $active-border: tint-color($dark, $btn-active-border-tint-amount)
+    $a_dark,
+    $a_dark,
+    $hover-background: tint-color($a_dark, $a_btn_hover_bg_tint_amount),
+    $hover-border: tint-color($a_dark, $a_btn_hover_border_tint_amount),
+    $active-background: tint-color($a_dark, $a_btn_active_bg_tint_amount),
+    $active-border: tint-color($a_dark, $a_btn_active_border_tint_amount)
   );
 }
 
 .#{$aloha-prefix}btn_outline_primary {
-  @include button-outline-variant($primary);
+  @include button-outline-variant($a_primary);
 }
 .#{$aloha-prefix}btn_outline_secondary {
-  @include button-outline-variant($secondary);
+  @include button-outline-variant($a_secondary);
 }
 .#{$aloha-prefix}btn_outline_success {
-  @include button-outline-variant($success);
+  @include button-outline-variant($a_success);
 }
 .#{$aloha-prefix}btn_outline_info {
-  @include button-outline-variant($info);
+  @include button-outline-variant($a_info);
 }
 .#{$aloha-prefix}btn_outline_warning {
-  @include button-outline-variant($warning);
+  @include button-outline-variant($a_warning);
 }
 .#{$aloha-prefix}btn_outline_danger {
-  @include button-outline-variant($danger);
+  @include button-outline-variant($a_danger);
 }
 .#{$aloha-prefix}btn_outline_light {
-  @include button-outline-variant($light);
+  @include button-outline-variant($a_light);
 }
 .#{$aloha-prefix}btn_outline_dark {
-  @include button-outline-variant($dark);
+  @include button-outline-variant($a_dark);
 }
 
 .#{$aloha-prefix}btn_link {
   --#{$aloha-prefix}btn_font_weight: 400;
-  --#{$aloha-prefix}btn_color: #{$btn-link-color};
+  --#{$aloha-prefix}btn_color: #{$a_btn_link_color};
   --#{$aloha-prefix}btn_bg: transparent;
   --#{$aloha-prefix}btn_border_color: transparent;
-  --#{$aloha-prefix}btn_hover_color: #{$btn-link-hover-color};
+  --#{$aloha-prefix}btn_hover_color: #{$a_btn_link_hover_color};
   --#{$aloha-prefix}btn_hover_border_color: transparent;
-  --#{$aloha-prefix}btn_focus_color: #{$btn-link-color};
-  --#{$aloha-prefix}btn_active_color: #{$btn-link-hover-color};
+  --#{$aloha-prefix}btn_focus_color: #{$a_btn_link_color};
+  --#{$aloha-prefix}btn_active_color: #{$a_btn_link_hover_color};
   --#{$aloha-prefix}btn_active_border_color: transparent;
-  --#{$aloha-prefix}btn_disabled_color:  #{$btn-link-disabled-color};
+  --#{$aloha-prefix}btn_disabled_color:  #{$a_btn_link_disabled_color};
   --#{$aloha-prefix}btn_disabled_border_color: transparent;
   --#{$aloha-prefix}btn_box_shadow: none;
-  --#{$aloha-prefix}btn_focus_shadow_rgb: #{to-rgb(mix(color-contrast($primary), $primary, 15%))};
-  --#{$aloha-prefix}btn_text_decoration: #{$link-decoration};
+  --#{$aloha-prefix}btn_focus_shadow_rgb: #{to-rgb(mix(color-contrast($a_primary), $a_primary, 15%))};
+  --#{$aloha-prefix}btn_text_decoration: #{$a_link_decoration};
 
   text-decoration: var(--#{$aloha-prefix}btn_text_decoration);
 
   &:hover,
   &:focus {
-    --#{$aloha-prefix}btn_text_decoration: #{$link-hover-decoration};
+    --#{$aloha-prefix}btn_text_decoration: #{$a_link_hover_decoration};
   }
 }
 

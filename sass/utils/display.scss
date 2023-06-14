@@ -3,7 +3,7 @@
 @import "mixins";
 @import "funktions";
 
-$displays: (
+$a_displays: (
     (
         class: "d_inline",
         value: "inline !important",
@@ -46,13 +46,13 @@ $displays: (
     ),
 ) !default;
 
-$breakpoints-display: prepend($breakpoints, (class: null));
+$a_breakpoints_display: prepend($a_breakpoints, (class: null));
 
-@each $breakpoint in $breakpoints-display {
+@each $breakpoint in $a_breakpoints_display {
     $breakpoint-class: map-get($breakpoint, "class");
     $breakpoint-min: map-get($breakpoint, "min");
     $breakpoint-max: map-get($breakpoint, "max");
-    @each $display in $displays {
+    @each $display in $a_displays {
         $display-class: map-get($display, "class");
         $display-value: map-get($display, "value");
 

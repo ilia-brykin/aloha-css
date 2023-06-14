@@ -115,7 +115,7 @@
     margin: calc(var(--#{$aloha-prefix}modal_footer_gap) * 0.5);
   }
 }
-@media (min-width: #{$breakpoint-mobile}) {
+@media (min-width: #{$a_breakpoint_mobile}) {
   .#{$aloha-prefix}modal {
     --#{$aloha-prefix}modal_margin: 1.75rem;
     --#{$aloha-prefix}modal_box_shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -129,7 +129,7 @@
     --#{$aloha-prefix}modal_width: 300px;
   }
 }
-@media (min-width: #{$breakpoint-tablet}) {
+@media (min-width: #{$a_breakpoint_tablet}) {
   .#{$aloha-prefix}modal_large,
   .#{$aloha-prefix}modal_xl {
     --#{$aloha-prefix}modal_width: 800px;
@@ -138,7 +138,7 @@
     --#{$aloha-prefix}modal_width: 90vw;
   }
 }
-@media (min-width: #{$breakpoint-desktop}) {
+@media (min-width: #{$a_breakpoint_desktop}) {
   .#{$aloha-prefix}modal_xl {
     --#{$aloha-prefix}modal_width: 1140px;
   }

@@ -1,10 +1,10 @@
-$breakpoint-mobile: 768px;
-$breakpoint-tablet: 1023px;
-$breakpoint-desktop: 1215px;
+$a_breakpoint_mobile: 768px;
+$a_breakpoint_tablet: 1023px;
+$a_breakpoint_desktop: 1215px;
 
-$breakpoint-desktop-min: 1024px;
+$a_breakpoint_desktop_min: 1024px;
 
-$breakpoints: (
+$a_breakpoints: (
     (
         class: "mobile",
         max: "768px",

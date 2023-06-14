@@ -1,10 +1,10 @@
 @import "aloha_prefix";
 
-$spacing-shortcuts: ("margin": "m", "padding": "p") !default;
-$spacing-directions: ("top": "t", "right": "r", "bottom": "b", "left": "l") !default;
-$spacing-horizontal: "x" !default;
-$spacing-vertical: "y" !default;
-$spacing-values: (
+$a_spacing_shortcuts: ("margin": "m", "padding": "p") !default;
+$a_spacing_directions: ("top": "t", "right": "r", "bottom": "b", "left": "l") !default;
+$a_spacing_horizontal: "x" !default;
+$a_spacing_vertical: "y" !default;
+$a_spacing_values: (
     "1": "0.25rem !important",
     "2": "0.5rem !important",
     "3": "0.75rem !important",
@@ -15,29 +15,29 @@ $spacing-values: (
     "0": "0 !important",
 ) !default;
 
-@each $property, $shortcut in $spacing-shortcuts {
-    @each $name, $value in $spacing-values {
+@each $property, $shortcut in $a_spacing_shortcuts {
+    @each $name, $value in $a_spacing_values {
         @if $property != "padding" or str-index($value, "auto") == null {
             // All directions
             .#{$aloha-prefix}#{$shortcut}_#{$name} {
                 #{$property}: #{$value};
             }
             // Cardinal directions
-            @each $direction, $suffix in $spacing-directions {
+            @each $direction, $suffix in $a_spacing_directions {
                 .#{$aloha-prefix}#{$shortcut}#{$suffix}_#{$name} {
                     #{$property}-#{$direction}: #{$value};
                 }
             }
             // Horizontal axis
-            @if $spacing-horizontal != null {
-                .#{$aloha-prefix}#{$shortcut}#{$spacing-horizontal}_#{$name} {
+            @if $a_spacing_horizontal != null {
+                .#{$aloha-prefix}#{$shortcut}#{$a_spacing_horizontal}_#{$name} {
                     #{$property}-left: #{$value};
                     #{$property}-right: #{$value};
                 }
             }
             // Vertical axis
-            @if $spacing-vertical != null {
-                .#{$aloha-prefix}#{$shortcut}#{$spacing-vertical}_#{$name} {
+            @if $a_spacing_vertical != null {
+                .#{$aloha-prefix}#{$shortcut}#{$a_spacing_vertical}_#{$name} {
                     #{$property}-top: #{$value};
                     #{$property}-bottom: #{$value};
                 }

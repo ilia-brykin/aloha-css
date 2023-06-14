@@ -1,28 +1,13 @@
-$spacer: 1rem !default;
+$a_spacer: 1rem !default;
 
-$border-radius:               .25rem !default;
-$border-radius-sm:            .2rem !default;
-$border-radius-lg:            .3rem !default;
-$border-radius-pill:          50rem !default;
+$a_border_radius:               .25rem !default;
+$a_border_radius_pill:          50rem !default;
 
-$font-weight-lighter:         lighter !default;
-$font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
-$font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
+$a_font_weight_bold:            700 !default;
 
-$font-weight-base:            $font-weight-normal !default;
 
-$border-width:                1px !default;
-$border-widths: (
-        1: 1px,
-        2: 2px,
-        3: 3px,
-        4: 4px,
-        5: 5px
-) !default;
+$a_border_width:                1px !default;
 
-$stretched-link-pseudo-element:           after !default;
-$stretched-link-z-index:                  1 !default;
+$a_stretched_link_z_index:                  1 !default;
 
-$min-contrast-ratio:   4.5 !default;
+$a_min_contrast_ratio:   4.5 !default;

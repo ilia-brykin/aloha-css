@@ -1,99 +1,96 @@
 @import "aloha_prefix";
 @import "funktions";
 
-$primary: #0d6efd !default
-$secondary: #6c757d !default
-$link-color:                              $primary !default;
-$link-decoration:                         underline !default;
-$link-shade-percentage:                   20% !default;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
-$link-hover-decoration:                   underline !default;
+$a_primary: #0d6efd !default
+$a_secondary: #6c757d !default
+$a_link_color:                              $a_primary !default;
+$a_link_decoration:                         underline !default;
+$a_link_shade_percentage:                   20% !default;
+$a_link_hover_color:                        shift-color($a_link_color, $a_link_shade_percentage) !default;
+$a_link_hover_decoration:                   underline !default;
 
-$info: #0DCAF0FF !default
-$success: #198754 !default
-$warning: #FFC107FF !default
-$danger: #DC3545FF !default
+$a_info: #0DCAF0FF !default
+$a_success: #198754 !default
+$a_warning: #FFC107FF !default
+$a_danger: #DC3545FF !default
 
-$white: #fff !default;
-$black: #000 !default;
+$a_white:    #fff !default;
+$a_gray_100: #f8f9fa !default;
+$a_gray_200: #e9ecef !default;
+$a_gray_300: #dee2e6 !default;
+$a_gray_400: #ced4da !default;
+$a_gray_500: #adb5bd !default;
+$a_gray_600: #6c757d !default;
+$a_gray_700: #495057 !default;
+$a_gray_800: #343a40 !default;
+$a_gray_900: #212529 !default;
+$a_black:    #000 !default;
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+$a_light:         $a_gray_100 !default;
+$a_dark:          $a_gray_900 !default;
 
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
-
-$focus-color: #d0e3a4 !default;
-$text-color: #212529 !default;
-$body-color: $text-color !default;
-$body-bg: $white !default;
+$a_focus_color: #d0e3a4 !default;
+$a_text_color: #212529 !default;
+$a_body_color: $a_text_color !default;
+$a_body_bg: $a_white !default;
 
 // rgb
-$primary-rgb: to-rgb($primary);
-$secondary-rgb: to-rgb($secondary);
-$link-rgb: to-rgb($link-color);
-$info-rgb: to-rgb($info);
-$success-rgb: to-rgb($success);
-$warning-rgb: to-rgb($warning);
-$danger-rgb: to-rgb($danger);
+$a_primary_rgb: to-rgb($a_primary);
+$a_secondary_rgb: to-rgb($a_secondary);
+$a_link_rgb: to-rgb($a_link_color);
+$a_info_rgb: to-rgb($a_info);
+$a_success_rgb: to-rgb($a_success);
+$a_warning_rgb: to-rgb($a_warning);
+$a_danger_rgb: to-rgb($a_danger);
 
-$color-contrast-dark:      $black !default;
-$color-contrast-light:     $white !default;
+$a_color_contrast_dark:      $a_black !default;
+$a_color_contrast_light:     $a_white !default;
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
-$min-contrast-ratio:   4.5 !default;
+$a_min_contrast_ratio:   4.5 !default;
 
-$colors_global: (
-    primary: $primary,
-    primary_50: mix(#fff, $primary, 50),
-    primary_rgb: $primary-rgb,
-    secondary: $secondary,
-    secondary_50: mix(#fff, $secondary, 50),
-    secondary_rgb: $secondary-rgb,
-    link: $link-color,
-    link_hover: $link-hover-color,
-    link_50: mix(#fff, $link-color, 50),
-    link_rgb: $link-rgb,
-    info: $info,
-    info_50: mix(#fff, $info, 50),
-    info_rgb: $info-rgb,
-    success: $success,
-    success_50: mix(#fff, $success, 50),
-    success_rgb: $success-rgb,
-    warning: $warning,
-    warning_50: mix(#fff, $warning, 50),
-    warning_rgb: $warning-rgb,
-    danger: $danger,
-    danger_50: mix(#fff, $danger, 50),
-    danger_rgb: $danger-rgb,
-    white: $white,
-    black: $black,
-    gray_100: $gray-100,
-    gray_200: $gray-200,
-    gray_300: $gray-300,
-    gray_400: $gray-400,
-    gray_500: $gray-500,
-    gray_600: $gray-600,
-    gray_700: $gray-700,
-    gray_800: $gray-800,
-    gray_900: $gray-900,
-    focus: $focus-color,
-    text: $text-color,
-    body: $body-color,
-    body_bg: $body-bg,
+$a_colors_global: (
+    primary: $a_primary,
+    primary_50: mix(#fff, $a_primary, 50),
+    primary_rgb: $a_primary_rgb,
+    secondary: $a_secondary,
+    secondary_50: mix(#fff, $a_secondary, 50),
+    secondary_rgb: $a_secondary_rgb,
+    link: $a_link_color,
+    link_hover: $a_link_hover_color,
+    link_50: mix(#fff, $a_link_color, 50),
+    link_rgb: $a_link_rgb,
+    info: $a_info,
+    info_50: mix(#fff, $a_info, 50),
+    info_rgb: $a_info_rgb,
+    success: $a_success,
+    success_50: mix(#fff, $a_success, 50),
+    success_rgb: $a_success_rgb,
+    warning: $a_warning,
+    warning_50: mix(#fff, $a_warning, 50),
+    warning_rgb: $a_warning_rgb,
+    danger: $a_danger,
+    danger_50: mix(#fff, $a_danger, 50),
+    danger_rgb: $a_danger_rgb,
+    white: $a_white,
+    black: $a_black,
+    gray_100: $a_gray_100,
+    gray_200: $a_gray_200,
+    gray_300: $a_gray_300,
+    gray_400: $a_gray_400,
+    gray_500: $a_gray_500,
+    gray_600: $a_gray_600,
+    gray_700: $a_gray_700,
+    gray_800: $a_gray_800,
+    gray_900: $a_gray_900,
+    focus: $a_focus_color,
+    text: $a_text_color,
+    body: $a_body_color,
+    body_bg: $a_body_bg,
 ) !default;
 
-$colors: (
+$a_colors: (
     primary,
     secondary,
     text,
@@ -115,7 +112,7 @@ $colors: (
     gray_900,
 ) !default;
 
-$bg_colors: (
+$a_bg_colors: (
     primary,
     secondary,
     text,
@@ -137,15 +134,15 @@ $bg_colors: (
     gray_900,
 ) !default;
 
-$theme-colors: (
-        "primary":    $primary,
-        "secondary":  $secondary,
-        "success":    $success,
-        "info":       $info,
-        "warning":    $warning,
-        "danger":     $danger,
-        "light":      $light,
-        "dark":       $dark
+$a_theme_colors: (
+        "primary":    $a_primary,
+        "secondary":  $a_secondary,
+        "success":    $a_success,
+        "info":       $a_info,
+        "warning":    $a_warning,
+        "danger":     $a_danger,
+        "light":      $a_light,
+        "dark":       $a_dark
 ) !default;
 
 

@@ -1,7 +1,7 @@
 @import "aloha_prefix";
 
-$is-sizing-important: true !default;
-$sizing-width: (
+$a_is_sizing_important: true !default;
+$a_sizing_width: (
     property: width,
     class: width,
     values: (
@@ -18,28 +18,28 @@ $sizing-width: (
         auto: auto,
     ),
 ) !default;
-$sizing-max-width: (
+$a_sizing_max_width: (
     property: max-width,
     class: max_width,
     values: (
         100: 100%,
     ),
 ) !default;
-$sizing-viewport-width: (
+$a_sizing_viewport_width: (
     property: width,
     class: viewport_width,
     values: (
         100: 100vw,
     ),
 ) !default;
-$sizing-min-viewport-width: (
+$a_sizing_min_viewport_width: (
     property: min-width,
     class: min_viewport_width,
     values: (
         100: 100vw,
     ),
 ) !default;
-$sizing-height: (
+$a_sizing_height: (
     property: height,
     class: height,
     values: (
@@ -56,21 +56,21 @@ $sizing-height: (
         auto: auto,
     ),
 ) !default;
-$sizing-max-height: (
+$a_sizing_max_height: (
     property: max-height,
     class: max_height,
     values: (
         100: 100%,
     ),
 ) !default;
-$sizing-viewport-height: (
+$a_sizing_viewport_height: (
     property: height,
     class: viewport_height,
     values: (
         100: 100vh,
     ),
 ) !default;
-$sizing-min-viewport-height: (
+$a_sizing_min_viewport_height: (
     property: min-height,
     class: min_viewport_height,
     values: (
@@ -78,29 +78,29 @@ $sizing-min-viewport-height: (
     ),
 ) !default;
 
-$sizing: (
-        "width": $sizing-width,
-        "max-width": $sizing-max-width,
-        "viewport-width": $sizing-viewport-width,
-        "min-viewport-width": $sizing-min-viewport-width,
-        "height": $sizing-height,
-        "max-height": $sizing-max-height,
-        "viewport-height": $sizing-viewport-height,
-        "min-viewport-height": $sizing-min-viewport-height,
+$a_sizing: (
+        "width": $a_sizing_width,
+        "max-width": $a_sizing_max_width,
+        "viewport-width": $a_sizing_viewport_width,
+        "min-viewport-width": $a_sizing_min_viewport_width,
+        "height": $a_sizing_height,
+        "max-height": $a_sizing_max_height,
+        "viewport-height": $a_sizing_viewport_height,
+        "min-viewport-height": $a_sizing_min_viewport_height,
 );
 
-$sizing-important-suffix: "";
-@if $is-sizing-important {
-  $sizing-important-suffix: " !important";
+$a_sizing_important_suffix: "";
+@if $a_is_sizing_important {
+  $a_sizing_important_suffix: " !important";
 }
-@each $name, $sizing-value in $sizing {
+@each $name, $sizing-value in $a_sizing {
   $property: map-get($sizing-value, "property");
   $class: map-get($sizing-value, "class");
   $values: map-get($sizing-value, "values");
 
   @each $value-key, $value in $values {
     .#{$aloha-prefix}#{$class}_#{$value-key} {
-      #{$property}: #{ $value }#{$sizing-important-suffix};
+      #{$property}: #{ $value }#{$a_sizing_important_suffix};
     }
   }
 }

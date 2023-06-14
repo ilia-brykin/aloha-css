@@ -3,7 +3,7 @@
 @import "mixins";
 @import "funktions";
 
-$column_gabs: (
+$a_column_gabs: (
   0: 0rem,
   1: 0.25rem,
   2: 0.5rem,
@@ -15,7 +15,7 @@ $column_gabs: (
   8: 2rem,
 ) !default;
 
-$column_count: 12;
+$a_column_count: 12;
 
 .#{$aloha-prefix}columns {
   --#{$aloha-prefix}column_gap_x: 0.75rem;
@@ -37,14 +37,14 @@ $column_count: 12;
 }
 
 
-$breakpoints-grid: prepend($breakpoints, (class: null));
+$a_breakpoints_grid: prepend($a_breakpoints, (class: null));
 
-@each $breakpoint in $breakpoints-grid {
+@each $breakpoint in $a_breakpoints_grid {
   $breakpoint-class: map-get($breakpoint, "class");
   $breakpoint-min: map-get($breakpoint, "min");
   $breakpoint-max: map-get($breakpoint, "max");
 
-  @for $i from 1 through $column_count {
+  @for $i from 1 through $a_column_count {
     @include media-width-all($breakpoint-min, $breakpoint-max) {
       .#{$aloha-prefix}columns_count_#{$i}#{ getBreakpointWithPrefix($breakpoint-class) } {
         --#{$aloha-prefix}column_count: #{$i};
@@ -53,7 +53,7 @@ $breakpoints-grid: prepend($breakpoints, (class: null));
     }
   }
 
-  @each $gab-key, $gab-value in $column_gabs {
+  @each $gab-key, $gab-value in $a_column_gabs {
     @include media-width-all($breakpoint-min, $breakpoint-max) {
       .#{$aloha-prefix}columns_gab_#{$gab-key}#{ getBreakpointWithPrefix($breakpoint-class) } {
         --#{$aloha-prefix}column_gap_x: #{$gab-value};
@@ -61,7 +61,7 @@ $breakpoints-grid: prepend($breakpoints, (class: null));
     }
   }
 
-  @for $i from 1 through $column_count {
+  @for $i from 1 through $a_column_count {
     @include media-width-all($breakpoint-min, $breakpoint-max) {
       .#{$aloha-prefix}column_#{$i}#{ getBreakpointWithPrefix($breakpoint-class) } {
         flex: none;
@@ -69,7 +69,7 @@ $breakpoints-grid: prepend($breakpoints, (class: null));
       }
     }
   }
-  @for $i from 1 through $column_count - 1 {
+  @for $i from 1 through $a_column_count - 1 {
     @include media-width-all($breakpoint-min, $breakpoint-max) {
       .#{$aloha-prefix}column_offset_#{$i}#{ getBreakpointWithPrefix($breakpoint-class) } {
         margin-left: calc(100% / var(--#{$aloha-prefix}column_count) * #{$i});

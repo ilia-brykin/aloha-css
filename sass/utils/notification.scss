@@ -18,13 +18,13 @@
   max-height: 100vh;
   overflow-y: auto;
 }
-@media (min-width: #{$breakpoint-tablet}) {
+@media (min-width: #{$a_breakpoint_tablet}) {
   .#{$aloha-prefix}notification_parent {
     --#{$aloha-prefix}notification_width: 60%;
     --#{$aloha-prefix}notification_left: 15%;
   }
 }
-@media (min-width: #{$breakpoint-desktop}) {
+@media (min-width: #{$a_breakpoint_desktop}) {
   .#{$aloha-prefix}notification_parent {
     --#{$aloha-prefix}notification_width: 40%;
     --#{$aloha-prefix}notification_left: 30%;

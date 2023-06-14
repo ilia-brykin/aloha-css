@@ -1,19 +1,19 @@
 @import "aloha_prefix";
 
-$badge-font-size:                   .75em;
-$badge-font-weight:                 700;
-$badge-color:                       var(--#{$aloha-prefix}color_white);
-$badge-padding-y:                   .35em;
-$badge-padding-x:                   .65em;
-$badge-border-radius:               var(--#{$aloha-prefix}border_radius);
+$a_badge_font_size:                   .75em;
+$a_badge_font_weight:                 700;
+$a_badge_color:                       var(--#{$aloha-prefix}color_white);
+$a_badge_padding_y:                   .35em;
+$a_badge_padding_x:                   .65em;
+$a_badge_border_radius:               var(--#{$aloha-prefix}border_radius);
 
 .#{$aloha-prefix}badge {
-  --#{$aloha-prefix}badge-padding-x: #{$badge-padding-x};
-  --#{$aloha-prefix}badge-padding-y: #{$badge-padding-y};
-  --#{$aloha-prefix}badge-font-size: #{$badge-font-size};
-  --#{$aloha-prefix}badge-font-weight: #{$badge-font-weight};
-  --#{$aloha-prefix}badge-color: #{$badge-color};
-  --#{$aloha-prefix}badge-border-radius: #{$badge-border-radius};
+  --#{$aloha-prefix}badge-padding-x: #{$a_badge_padding_x};
+  --#{$aloha-prefix}badge-padding-y: #{$a_badge_padding_y};
+  --#{$aloha-prefix}badge-font-size: #{$a_badge_font_size};
+  --#{$aloha-prefix}badge-font-weight: #{$a_badge_font_weight};
+  --#{$aloha-prefix}badge-color: #{$a_badge_color};
+  --#{$aloha-prefix}badge-border-radius: #{$a_badge_border_radius};
 
   display: inline-block;
   padding: var(--#{$aloha-prefix}badge-padding-y) var(--#{$aloha-prefix}badge-padding-x);

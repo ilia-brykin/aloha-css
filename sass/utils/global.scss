@@ -2,25 +2,25 @@
 @import "global_variables";
 
 :root {
-  --#{$aloha-prefix}font_sans_serif: #{$font-family-sans-serif};
-  --#{$aloha-prefix}font_monospace: #{$font-family-monospace};
+  --#{$aloha-prefix}font_sans_serif: #{$a_font_family_sans_serif};
+  --#{$aloha-prefix}font_monospace: #{$a_font_family_monospace};
   --#{$aloha-prefix}body_font_family: var(--#{$aloha-prefix}font_sans_serif);
-  --#{$aloha-prefix}body_font_size: #{$body-font-size};
-  --#{$aloha-prefix}body_font_weight: #{$body-font-weight};
-  --#{$aloha-prefix}body_line_height: #{$body-line-height};
+  --#{$aloha-prefix}body_font_size: #{$a_body_font_size};
+  --#{$aloha-prefix}body_font_weight: #{$a_body_font_weight};
+  --#{$aloha-prefix}body_line_height: #{$a_body_line_height};
 
 
 
-  --#{$aloha-prefix}border_width: #{$border-width};
-  --#{$aloha-prefix}border_color: #{$border-color};
+  --#{$aloha-prefix}border_width: #{$a_border_width};
+  --#{$aloha-prefix}border_color: #{$a_border_color};
   --#{$aloha-prefix}border_color_translucent: rgba(0, 0, 0, 0.175);
 
-  --#{$aloha-prefix}border_radius: #{$border-radius};
-  --#{$aloha-prefix}border_radius_small: #{$border-radius-small};
-  --#{$aloha-prefix}border_radius_large: #{$border-radius-large};
-  --#{$aloha-prefix}border_radius_xl: #{$border-radius-xl};
-  --#{$aloha-prefix}border_radius_2xl: #{$border-radius-2xl};
-  --#{$aloha-prefix}border_radius_pill: #{$border-radius-pill};
+  --#{$aloha-prefix}border_radius: #{$a_border_radius};
+  --#{$aloha-prefix}border_radius_small: #{$a_border_radius_small};
+  --#{$aloha-prefix}border_radius_large: #{$a_border_radius_large};
+  --#{$aloha-prefix}border_radius_xl: #{$a_border_radius_xl};
+  --#{$aloha-prefix}border_radius_2xl: #{$a_border_radius_2xl};
+  --#{$aloha-prefix}border_radius_pill: #{$a_border_radius_pill};
 
 
   --#{$aloha-prefix}z_index_backdrop: #{$a_z_index_backdrop};
