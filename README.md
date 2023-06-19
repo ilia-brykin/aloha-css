@@ -620,3 +620,121 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_rounded_bottom_right_inherit
 + .a_rounded_bottom_left_inherit
 + .a_rounded_0
+
+## Margin ##
+```margin```
++ .a_m_1 -> ```margin: 0.25rem```
++ .a_mt_1 -> ```margin-top: 0.25rem```
++ .a_mr_1 -> ```margin-right: 0.25rem```
++ .a_mb_1 -> ```margin-bottom: 0.25rem```
++ .a_ml_1 -> ```margin-left: 0.25rem```
++ .a_mx_1 -> ```margin-left: 0.25rem; margin-right: 0.25rem```
++ .a_my_1 -> ```margin-top: 0.25rem; margin-bottom: 0.25rem```
++ .a_m_2 -> ```margin: 0.5rem```
++ .a_mt_2 -> ```margin-top: 0.5rem```
++ .a_mr_2 -> ```margin-right: 0.5rem```
++ .a_mb_2 -> ```margin-bottom: 0.5rem```
++ .a_ml_2 -> ```margin-left: 0.5rem```
++ .a_mx_2 -> ```margin-left: 0.5rem; margin-right: 0.5rem```
++ .a_my_2 -> ```margin-top: 0.5rem; margin-bottom: 0.5rem```
++ .a_m_3 -> ```margin: 0.75rem```
++ .a_mt_3 -> ```margin-top: 0.75rem```
++ .a_mr_3 -> ```margin-right: 0.75rem```
++ .a_mb_3 -> ```margin-bottom: 0.75rem```
++ .a_ml_3 -> ```margin-left: 0.75rem```
++ .a_mx_3 -> ```margin-left: 0.75rem; margin-right: 0.75rem```
++ .a_my_3 -> ```margin-top: 0.75rem; margin-bottom: 0.75rem```
++ .a_m_4 -> ```margin: 1rem```
++ .a_mt_4 -> ```margin-top: 1rem```
++ .a_mr_4 -> ```margin-right: 1rem```
++ .a_mb_4 -> ```margin-bottom: 1rem```
++ .a_ml_4 -> ```margin-left: 1rem```
++ .a_mx_4 -> ```margin-left: 1rem; margin-right: 1rem```
++ .a_my_4 -> ```margin-top: 1rem; margin-bottom: 1rem```
++ .a_m_5 -> ```margin: 1.5rem```
++ .a_mt_5 -> ```margin-top: 1.5rem```
++ .a_mr_5 -> ```margin-right: 1.5rem```
++ .a_mb_5 -> ```margin-bottom: 1.5rem```
++ .a_ml_5 -> ```margin-left: 1.5rem```
++ .a_mx_5 -> ```margin-left: 1.5rem; margin-right: 1.5rem```
++ .a_my_5 -> ```margin-top: 1.5rem; margin-bottom: 1.5rem```
++ .a_m_6 -> ```margin: 3rem```
++ .a_mt_6 -> ```margin-top: 3rem```
++ .a_mr_6 -> ```margin-right: 3rem```
++ .a_mb_6 -> ```margin-bottom: 3rem```
++ .a_ml_6 -> ```margin-left: 3rem```
++ .a_mx_6 -> ```margin-left: 3rem; margin-right: 3rem```
++ .a_my_6 -> ```margin-top: 3rem; margin-bottom: 3rem```
++ .a_m_auto -> ```margin: auto```
++ .a_mt_auto -> ```margin-top: auto```
++ .a_mr_auto -> ```margin-right: auto```
++ .a_mb_auto -> ```margin-bottom: auto```
++ .a_ml_auto -> ```margin-left: auto```
++ .a_mx_auto -> ```margin-left: auto; margin-right: auto```
++ .a_my_auto -> ```margin-top: auto; margin-bottom: auto```
++ .a_m_0 -> ```margin: 0```
++ .a_mt_0 -> ```margin-top: 0```
++ .a_mr_0 -> ```margin-right: 0```
++ .a_mb_0 -> ```margin-bottom: 0```
++ .a_ml_0 -> ```margin-left: 0```
++ .a_mx_0 -> ```margin-left: 0; margin-right: 0```
++ .a_my_0 -> ```margin-top: 0; margin-bottom: 0```
+
+## Padding ##
+```padding```
++ .a_p_1 -> ```padding: 0.25rem```
++ .a_pt_1 -> ```padding-top: 0.25rem```
++ .a_pr_1 -> ```padding-right: 0.25rem```
++ .a_pb_1 -> ```padding-bottom: 0.25rem```
++ .a_pl_1 -> ```padding-left: 0.25rem```
++ .a_px_1 -> ```padding-left: 0.25rem; padding-right: 0.25rem```
++ .a_py_1 -> ```padding-top: 0.25rem; padding-bottom: 0.25rem```
++ .a_p_2 -> ```padding: 0.5rem```
++ .a_pt_2 -> ```padding-top: 0.5rem```
++ .a_pr_2 -> ```padding-right: 0.5rem```
++ .a_pb_2 -> ```padding-bottom: 0.5rem```
++ .a_pl_2 -> ```padding-left: 0.5rem```
++ .a_px_2 -> ```padding-left: 0.5rem; padding-right: 0.5rem```
++ .a_py_2 -> ```padding-top: 0.5rem; padding-bottom: 0.5rem```
++ .a_p_3 -> ```padding: 0.75rem```
++ .a_pt_3 -> ```padding-top: 0.75rem```
++ .a_pr_3 -> ```padding-right: 0.75rem```
++ .a_pb_3 -> ```padding-bottom: 0.75rem```
++ .a_pl_3 -> ```padding-left: 0.75rem```
++ .a_px_3 -> ```padding-left: 0.75rem; padding-right: 0.75rem```
++ .a_py_3 -> ```padding-top: 0.75rem; padding-bottom: 0.75rem```
++ .a_p_4 -> ```padding: 1rem```
++ .a_pt_4 -> ```padding-top: 1rem```
++ .a_pr_4 -> ```padding-right: 1rem```
++ .a_pb_4 -> ```padding-bottom: 1rem```
++ .a_pl_4 -> ```padding-left: 1rem```
++ .a_px_4 -> ```padding-left: 1rem; padding-right: 1rem```
++ .a_py_4 -> ```padding-top: 1rem; padding-bottom: 1rem```
++ .a_p_5 -> ```padding: 1.5rem```
++ .a_pt_5 -> ```padding-top: 1.5rem```
++ .a_pr_5 -> ```padding-right: 1.5rem```
++ .a_pb_5 -> ```padding-bottom: 1.5rem```
++ .a_pl_5 -> ```padding-left: 1.5rem```
++ .a_px_5 -> ```padding-left: 1.5rem; padding-right: 1.5rem```
++ .a_py_5 -> ```padding-top: 1.5rem; padding-bottom: 1.5rem```
++ .a_p_6 -> ```padding: 3rem```
++ .a_pt_6 -> ```padding-top: 3rem```
++ .a_pr_6 -> ```padding-right: 3rem```
++ .a_pb_6 -> ```padding-bottom: 3rem```
++ .a_pl_6 -> ```padding-left: 3rem```
++ .a_px_6 -> ```padding-left: 3rem; padding-right: 3rem```
++ .a_py_6 -> ```padding-top: 3rem; padding-bottom: 3rem```
++ .a_p_auto -> ```padding: auto```
++ .a_pt_auto -> ```padding-top: auto```
++ .a_pr_auto -> ```padding-right: auto```
++ .a_pb_auto -> ```padding-bottom: auto```
++ .a_pl_auto -> ```padding-left: auto```
++ .a_px_auto -> ```padding-left: auto; padding-right: auto```
++ .a_py_auto -> ```padding-top: auto; padding-bottom: auto```
++ .a_p_0 -> ```padding: 0```
++ .a_pt_0 -> ```padding-top: 0```
++ .a_pr_0 -> ```padding-right: 0```
++ .a_pb_0 -> ```padding-bottom: 0```
++ .a_pl_0 -> ```padding-left: 0```
++ .a_px_0 -> ```padding-left: 0; padding-right: 0```
++ .a_py_0 -> ```padding-top: 0; padding-bottom: 0```
