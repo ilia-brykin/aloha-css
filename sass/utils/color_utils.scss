@@ -1,8 +1,9 @@
 @import "aloha_prefix";
 @import "funktions";
 
-$a_primary: #0d6efd !default
-$a_secondary: #6c757d !default
+$a_primary:                                 #0d6efd !default;
+$a_secondary:                               #6c757d !default;
+$a_tertiary:                                #da6c8e !default;
 $a_link_color:                              $a_primary !default;
 $a_link_decoration:                         underline !default;
 $a_link_shade_percentage:                   20% !default;
@@ -37,6 +38,7 @@ $a_body_bg: $a_white !default;
 // rgb
 $a_primary_rgb: to-rgb($a_primary);
 $a_secondary_rgb: to-rgb($a_secondary);
+$a_tertiary_rgb: to-rgb($a_secondary);
 $a_link_rgb: to-rgb($a_link_color);
 $a_info_rgb: to-rgb($a_info);
 $a_success_rgb: to-rgb($a_success);
@@ -57,6 +59,9 @@ $a_colors_global: (
     secondary: $a_secondary,
     secondary_50: mix(#fff, $a_secondary, 50),
     secondary_rgb: $a_secondary_rgb,
+    tertiary: $a_tertiary,
+    tertiary_50: mix(#fff, $a_tertiary, 50),
+    tertiary_rgb: $a_tertiary_rgb,
     link: $a_link_color,
     link_hover: $a_link_hover_color,
     link_50: mix(#fff, $a_link_color, 50),
@@ -93,6 +98,7 @@ $a_colors_global: (
 $a_colors: (
     primary,
     secondary,
+    tertiary,
     text,
     info,
     success,
@@ -115,6 +121,7 @@ $a_colors: (
 $a_bg_colors: (
     primary,
     secondary,
+    tertiary,
     text,
     info,
     success,
@@ -137,6 +144,7 @@ $a_bg_colors: (
 $a_theme_colors: (
         "primary":    $a_primary,
         "secondary":  $a_secondary,
+        "tertiary":   $a_tertiary,
         "success":    $a_success,
         "info":       $a_info,
         "warning":    $a_warning,

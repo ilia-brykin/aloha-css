@@ -179,6 +179,9 @@ $a_btn_link_disabled_color:     var(--#{$aloha-prefix}color_gray_600) !default;
 .#{$aloha-prefix}btn_secondary {
   @include button-variant($a_secondary, $a_secondary);
 }
+.#{$aloha-prefix}btn_tertiary {
+  @include button-variant($a_tertiary, $a_tertiary);
+}
 .#{$aloha-prefix}btn_success {
   @include button-variant($a_success, $a_success);
 }
@@ -217,6 +220,9 @@ $a_btn_link_disabled_color:     var(--#{$aloha-prefix}color_gray_600) !default;
 }
 .#{$aloha-prefix}btn_outline_secondary {
   @include button-outline-variant($a_secondary);
+}
+.#{$aloha-prefix}btn_outline_tertiary {
+  @include button-outline-variant($a_tertiary);
 }
 .#{$aloha-prefix}btn_outline_success {
   @include button-outline-variant($a_success);

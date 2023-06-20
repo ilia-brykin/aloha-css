@@ -180,9 +180,10 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 ## Colors ##
 
 ### Variables ###
-+ --a_color_primary: #47b883;
-+ --a_color_secondary: red;
-+ --a_color_text: red;
++ --a_color_primary: #0d6efd;
++ --a_color_secondary: #6c757d;
++ --a_color_tertiary: #da6c8e;
++ --a_color_text: #212529;
 + --a_color_info: #0DCAF0FF;
 + --a_color_success: #198754FF;
 + --a_color_warning: #FFC107FF;
@@ -203,6 +204,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 ### Color `color` ###
 + .a_color_primary
 + .a_color_secondary
++ .a_color_tertiary
 + .a_color_text
 + .a_color_info
 + .a_color_success
@@ -224,6 +226,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 ### Background `background-color` ###
 + .a_bg_primary
 + .a_bg_secondary
++ .a_bg_tertiary
 + .a_bg_text
 + .a_bg_info
 + .a_bg_success
@@ -427,6 +430,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_btn
 + .a_btn_primary
 + .a_btn_secondary
++ .a_btn_tertiary
 + .a_btn_success
 + .a_btn_danger
 + .a_btn_warning
@@ -442,6 +446,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 ### Outline buttons ###
 + .a_btn_outline_primary
 + .a_btn_outline_secondary
++ .a_btn_outline_tertiary
 + .a_btn_outline_success
 + .a_btn_outline_info
 + .a_btn_outline_warning
@@ -476,6 +481,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .alert__icon
 + .a_alert_primary
 + .a_alert_secondary
++ .a_alert_tertiary
 + .a_alert_success
 + .a_alert_info
 + .a_alert_warning
