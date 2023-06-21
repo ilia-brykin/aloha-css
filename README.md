@@ -453,6 +453,8 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_btn_outline_danger
 + .a_btn_outline_light
 + .a_btn_outline_dark
++ .a_btn_switch
++ .a_btn_switch_active
 
 ### Button close ###
 + .a_btn_close
