@@ -17,6 +17,7 @@ $a_btn_link_hover_color:        var(--#{$aloha-prefix}color_link_hover) !default
 $a_btn_link_disabled_color:     var(--#{$aloha-prefix}color_gray_600) !default;
 
 $a_btn_switch_color:                #ffffff !default;
+$a_btn_switch_border_color:         $a_gray_500 !default;
 $a_btn_switch_active_color:         #b8d476 !default;
 
 .#{$aloha-prefix}btn {
@@ -218,7 +219,14 @@ $a_btn_switch_active_color:         #b8d476 !default;
   );
 }
 .#{$aloha-prefix}btn_switch {
-  @include button-variant($a_btn_switch_color, $a_btn_switch_color);
+  @include button-variant(
+    $a_btn_switch_color,
+    $a_btn_switch_border_color,
+    $hover-background: shade-color($a_btn_switch_color, $a_btn_hover_bg_shade_amount),
+    $hover-border: shade-color($a_btn_switch_color, $a_btn_hover_border_shade_amount),
+    $active-background: shade-color($a_btn_switch_color, $a_btn_active_bg_shade_amount),
+    $active-border: shade-color($a_btn_switch_color, $a_btn_active_border_shade_amount)
+  );
 }
 .#{$aloha-prefix}btn_switch_active {
   @include button-variant($a_btn_switch_active_color, $a_btn_switch_active_color);

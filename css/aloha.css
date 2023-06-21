@@ -3222,18 +3222,18 @@ h6 {
 .a_btn_switch {
   --a_btn_color: #000;
   --a_btn_bg: #ffffff;
-  --a_btn_border_color: #ffffff;
+  --a_btn_border_color: #adb5bd;
   --a_btn_hover_color: #000;
-  --a_btn_hover_bg: white;
-  --a_btn_hover_border_color: white;
-  --a_btn_focus_shadow_rgb: 217, 217, 217;
+  --a_btn_hover_bg: #d9d9d9;
+  --a_btn_hover_border_color: #cccccc;
+  --a_btn_focus_shadow_rgb: 147, 154, 161;
   --a_btn_active_color: #000;
-  --a_btn_active_bg: white;
-  --a_btn_active_border_color: white;
+  --a_btn_active_bg: #cccccc;
+  --a_btn_active_border_color: #bfbfbf;
   --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --a_btn_disabled_color: #000;
   --a_btn_disabled_bg: #ffffff;
-  --a_btn_disabled_border_color: #ffffff; }
+  --a_btn_disabled_border_color: #adb5bd; }
 
 .a_btn_switch_active {
   --a_btn_color: #000;
