@@ -16,6 +16,9 @@ $a_btn_link_color:              var(--#{$aloha-prefix}color_link) !default;
 $a_btn_link_hover_color:        var(--#{$aloha-prefix}color_link_hover) !default;
 $a_btn_link_disabled_color:     var(--#{$aloha-prefix}color_gray_600) !default;
 
+$a_btn_switch_color:                #ffffff !default;
+$a_btn_switch_active_color:         #b8d476 !default;
+
 .#{$aloha-prefix}btn {
   --#{$aloha-prefix}btn_padding_x: 0.75rem;
   --#{$aloha-prefix}btn_padding_y: 0.375rem;
@@ -213,6 +216,12 @@ $a_btn_link_disabled_color:     var(--#{$aloha-prefix}color_gray_600) !default;
     $active-background: tint-color($a_dark, $a_btn_active_bg_tint_amount),
     $active-border: tint-color($a_dark, $a_btn_active_border_tint_amount)
   );
+}
+.#{$aloha-prefix}btn_switch {
+  @include button-variant($a_btn_switch_color, $a_btn_switch_color);
+}
+.#{$aloha-prefix}btn_switch_active {
+  @include button-variant($a_btn_switch_active_color, $a_btn_switch_active_color);
 }
 
 .#{$aloha-prefix}btn_outline_primary {
