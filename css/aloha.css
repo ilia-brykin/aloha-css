@@ -4190,3 +4190,31 @@ h6 {
 
 .a_rounded_0 {
   border-radius: 0 !important; }
+
+.a_rounded_top_0 {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important; }
+
+.a_rounded_right_0 {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important; }
+
+.a_rounded_bottom_0 {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important; }
+
+.a_rounded_left_0 {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important; }
+
+.a_rounded_top_left_0 {
+  border-top-left-radius: 0 !important; }
+
+.a_rounded_top_right_0 {
+  border-top-right-radius: 0 !important; }
+
+.a_rounded_bottom_right_0 {
+  border-bottom-right-radius: 0 !important; }
+
+.a_rounded_bottom_left_0 {
+  border-bottom-left-radius: 0 !important; }
