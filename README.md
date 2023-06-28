@@ -628,6 +628,14 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_rounded_bottom_right_inherit
 + .a_rounded_bottom_left_inherit
 + .a_rounded_0
++ .a_rounded_top_0
++ .a_rounded_right_0
++ .a_rounded_bottom_0
++ .a_rounded_left_0
++ .a_rounded_top_left_0
++ .a_rounded_top_right_0
++ .a_rounded_bottom_right_0
++ .a_rounded_bottom_left_0
 
 ## Margin ##
 ```margin```
