@@ -44,6 +44,8 @@ $a_info_rgb: to-rgb($a_info);
 $a_success_rgb: to-rgb($a_success);
 $a_warning_rgb: to-rgb($a_warning);
 $a_danger_rgb: to-rgb($a_danger);
+$a_light_rgb: to-rgb($a_light);
+$a_dark_rgb: to-rgb($a_dark);
 
 $a_color_contrast_dark:      $a_black !default;
 $a_color_contrast_light:     $a_white !default;
@@ -78,6 +80,10 @@ $a_colors_global: (
     danger: $a_danger,
     danger_50: mix(#fff, $a_danger, 50),
     danger_rgb: $a_danger_rgb,
+    light: $a_light,
+    light_rgb: $a_light_rgb,
+    dark: $a_dark,
+    dark_rgb: $a_dark_rgb,
     white: $a_white,
     black: $a_black,
     gray_100: $a_gray_100,
