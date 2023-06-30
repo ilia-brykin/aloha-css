@@ -616,6 +616,28 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_badge
 + .a_pill_rounded
 
+## Border ##
+```border```
++ .a_border -> `border: var(--a_border_width) var(--a_border_style) var(--a_border_color)`
++ .a_border_primary -> `border-color: rgba(var(--a_color_primary_rgb), var(--a_border_opacity))`
++ .a_border_secondary -> `border-color: rgba(var(--a_color_secondary_rgb), var(--a_border_opacity))`
++ .a_border_tertiary -> `border-color: rgba(var(--a_color_tertiary_rgb), var(--a_border_opacity))`
++ .a_border_success -> `border-color: rgba(var(--a_color_success_rgb), var(--a_border_opacity))`
++ .a_border_info -> `border-color: rgba(var(--a_color_info_rgb), var(--a_border_opacity))`
++ .a_border_warning -> `border-color: rgba(var(--a_color_warning_rgb), var(--a_border_opacity))`
++ .a_border_danger -> `border-color: rgba(var(--a_color_danger_rgb), var(--a_border_opacity))`
++ .a_border_light -> `border-color: rgba(var(--a_color_light_rgb), var(--a_border_opacity))`
++ .a_border_dark -> `border-color: rgba(var(--a_color_dark_rgb), var(--a_border_opacity))`
++ .a_border_1 -> `border-width: 1px`
++ .a_border_2 -> `border-width: 2px`
++ .a_border_3 -> `border-width: 3px`
++ .a_border_4 -> `border-width: 4px`
++ .a_border_5 -> `border-width: 5px`
++ .a_border_0 -> `border-top: 0`
++ .a_border_right_0 -> `border-right: 0`
++ .a_border_bottom_0 -> `border-bottom: 0`
++ .a_border_left_0 -> `border-left: 0`
+
 ## Border Radius ##
 ```border-radius:```
 + .a_rounded_inherit
