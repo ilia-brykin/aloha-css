@@ -15,6 +15,18 @@ $a_border_colors: (
 .a_border {
   border: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important;
 }
+.a_border_top {
+  border-top: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important;
+}
+.a_border_right {
+  border-right: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important;
+}
+.a_border_bottom {
+  border-bottom: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important;
+}
+.a_border_left {
+  border-left: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important;
+}
 
 @each $state, $value in $a_border_colors {
   .a_border_#{$state} {

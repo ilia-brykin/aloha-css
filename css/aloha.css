@@ -4227,6 +4227,18 @@ h6 {
 .a_border {
   border: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important; }
 
+.a_border_top {
+  border-top: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important; }
+
+.a_border_right {
+  border-right: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important; }
+
+.a_border_bottom {
+  border-bottom: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important; }
+
+.a_border_left {
+  border-left: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important; }
+
 .a_border_primary {
   --a_border_opacity: 1;
   border-color: rgba(var(--a_color_primary_rgb), var(--a_border_opacity)) !important; }
