@@ -619,6 +619,10 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 ## Border ##
 ```border```
 + .a_border -> `border: var(--a_border_width) var(--a_border_style) var(--a_border_color)`
++ .a_border_top -> `border-top: var(--a_border_width) var(--a_border_style) var(--a_border_color)`
++ .a_border_right -> `border-right: var(--a_border_width) var(--a_border_style) var(--a_border_color)`
++ .a_border_bottom -> `border-bottom: var(--a_border_width) var(--a_border_style) var(--a_border_color)`
++ .a_border_left -> `border-left: var(--a_border_width) var(--a_border_style) var(--a_border_color)`
 + .a_border_primary -> `border-color: rgba(var(--a_color_primary_rgb), var(--a_border_opacity))`
 + .a_border_secondary -> `border-color: rgba(var(--a_color_secondary_rgb), var(--a_border_opacity))`
 + .a_border_tertiary -> `border-color: rgba(var(--a_color_tertiary_rgb), var(--a_border_opacity))`
