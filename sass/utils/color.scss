@@ -19,3 +19,10 @@
         background-color: var(#{ getColorVar($bg_color) }) !important;
     }
 }
+
+.a_color_transparent {
+    color: transparent !important;
+}
+.a_bg_transparent {
+    background-color: transparent !important;
+}

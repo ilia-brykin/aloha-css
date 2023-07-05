@@ -972,6 +972,12 @@ body {
 .a_bg_gray_900 {
   background-color: var(--a_color_gray_900) !important; }
 
+.a_color_transparent {
+  color: transparent !important; }
+
+.a_bg_transparent {
+  background-color: transparent !important; }
+
 .a_flex_row {
   flex-direction: row !important; }
 
