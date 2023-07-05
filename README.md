@@ -222,6 +222,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_color_gray_700
 + .a_color_gray_800
 + .a_color_gray_900
++ .a_color_transparent
 
 ### Background `background-color` ###
 + .a_bg_primary
@@ -244,6 +245,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_bg_gray_700
 + .a_bg_gray_800
 + .a_bg_gray_900
++ .a_bg_transparent
 
 ## Display flex ##
 
