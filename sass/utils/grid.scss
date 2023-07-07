@@ -69,10 +69,14 @@ $a_breakpoints_grid: prepend($a_breakpoints, (class: null));
       }
     }
   }
-  @for $i from 1 through $a_column_count - 1 {
+  @for $i from 0 through $a_column_count - 1 {
     @include media-width-all($breakpoint-min, $breakpoint-max) {
       .#{$aloha-prefix}column_offset_#{$i}#{ getBreakpointWithPrefix($breakpoint-class) } {
-        margin-left: calc(100% / var(--#{$aloha-prefix}column_count) * #{$i});
+        @if $i == 0 {
+          margin-left: 0;
+        } @else {
+          margin-left: calc(100% / var(--#{$aloha-prefix}column_count) * #{$i});
+        }
       }
     }
   }

@@ -1223,6 +1223,9 @@ body {
   flex: none;
   width: calc(100% / var(--a_column_count) * 12); }
 
+.a_column_offset_0 {
+  margin-left: 0; }
+
 .a_column_offset_1 {
   margin-left: calc(100% / var(--a_column_count) * 1); }
 
@@ -1411,6 +1414,10 @@ body {
   .a_column_12_mobile {
     flex: none;
     width: calc(100% / var(--a_column_count) * 12); } }
+
+@media screen and (max-width: 768px) {
+  .a_column_offset_0_mobile {
+    margin-left: 0; } }
 
 @media screen and (max-width: 768px) {
   .a_column_offset_1_mobile {
@@ -1613,6 +1620,10 @@ body {
     width: calc(100% / var(--a_column_count) * 12); } }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+  .a_column_offset_0_tablet {
+    margin-left: 0; } }
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   .a_column_offset_1_tablet {
     margin-left: calc(100% / var(--a_column_count) * 1); } }
 
@@ -1811,6 +1822,10 @@ body {
   .a_column_12_touch {
     flex: none;
     width: calc(100% / var(--a_column_count) * 12); } }
+
+@media screen and (max-width: 1023px) {
+  .a_column_offset_0_touch {
+    margin-left: 0; } }
 
 @media screen and (max-width: 1023px) {
   .a_column_offset_1_touch {
@@ -2013,6 +2028,10 @@ body {
     width: calc(100% / var(--a_column_count) * 12); } }
 
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .a_column_offset_0_desktop {
+    margin-left: 0; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
   .a_column_offset_1_desktop {
     margin-left: calc(100% / var(--a_column_count) * 1); } }
 
@@ -2213,6 +2232,10 @@ body {
     width: calc(100% / var(--a_column_count) * 12); } }
 
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
+  .a_column_offset_0_widescreen {
+    margin-left: 0; } }
+
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
   .a_column_offset_1_widescreen {
     margin-left: calc(100% / var(--a_column_count) * 1); } }
 
@@ -2411,6 +2434,10 @@ body {
   .a_column_12_fullhd {
     flex: none;
     width: calc(100% / var(--a_column_count) * 12); } }
+
+@media screen and (min-width: 1408px) {
+  .a_column_offset_0_fullhd {
+    margin-left: 0; } }
 
 @media screen and (min-width: 1408px) {
   .a_column_offset_1_fullhd {
