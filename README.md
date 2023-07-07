@@ -307,6 +307,24 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_text_left -> `left`
 + .a_text_center -> `center`
 + .a_text_right -> `right`
++ .a_text_left_mobile
++ .a_text_center_mobile
++ .a_text_right_mobile
++ .a_text_left_tablet
++ .a_text_center_tablet
++ .a_text_right_tablet
++ .a_text_left_touch
++ .a_text_center_touch
++ .a_text_right_touch
++ .a_text_left_desktop
++ .a_text_center_desktop
++ .a_text_right_desktop
++ .a_text_left_widescreen
++ .a_text_center_widescreen
++ .a_text_right_widescreen
++ .a_text_left_fullhd
++ .a_text_center_fullhd
++ .a_text_right_fullhd
 
 ### Wrapping ###
 + .a_text_wrap -> `white-space: normal`
