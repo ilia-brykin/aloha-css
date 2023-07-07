@@ -150,6 +150,7 @@ width: calc(100% / var(--a_column_count) * 8);
 ```
 margin-left: calc(100% / var(--a_column_count) * 1);
 ```
++ .a_column_offset_0
 + .a_column_offset_1
 + .a_column_offset_2
 + .a_column_offset_3
@@ -163,6 +164,12 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_column_offset_11
 
 #### With breakpoints ####
++ .a_column_offset_0_mobile
++ .a_column_offset_0_tablet
++ .a_column_offset_0_touch
++ .a_column_offset_0_desktop
++ .a_column_offset_0_widescreen
++ .a_column_offset_0_fullhd
 + .a_column_offset_1_mobile
 + .a_column_offset_1_tablet
 + .a_column_offset_1_touch
