@@ -2941,6 +2941,54 @@ h6 {
 .a_text_right {
   text-align: right !important; }
 
+@media screen and (max-width: 768px) {
+  .a_text_left_mobile {
+    text-align: left !important; }
+  .a_text_center_mobile {
+    text-align: center !important; }
+  .a_text_right_mobile {
+    text-align: right !important; } }
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .a_text_left_tablet {
+    text-align: left !important; }
+  .a_text_center_tablet {
+    text-align: center !important; }
+  .a_text_right_tablet {
+    text-align: right !important; } }
+
+@media screen and (max-width: 1023px) {
+  .a_text_left_touch {
+    text-align: left !important; }
+  .a_text_center_touch {
+    text-align: center !important; }
+  .a_text_right_touch {
+    text-align: right !important; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .a_text_left_desktop {
+    text-align: left !important; }
+  .a_text_center_desktop {
+    text-align: center !important; }
+  .a_text_right_desktop {
+    text-align: right !important; } }
+
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+  .a_text_left_widescreen {
+    text-align: left !important; }
+  .a_text_center_widescreen {
+    text-align: center !important; }
+  .a_text_right_widescreen {
+    text-align: right !important; } }
+
+@media screen and (min-width: 1408px) {
+  .a_text_left_fullhd {
+    text-align: left !important; }
+  .a_text_center_fullhd {
+    text-align: center !important; }
+  .a_text_right_fullhd {
+    text-align: right !important; } }
+
 .a_text_wrap {
   white-space: normal !important; }
 
