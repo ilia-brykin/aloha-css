@@ -58,3 +58,13 @@
     border-radius: var(--a_list_group_item_last_border_radius);
   }
 }
+
+.a_list_group_edge {
+  --a_list_group_border_radius: 0;
+  > .a_list_group__item {
+    border-width: 0 0 var(--a_list_group_border_width);
+    &:last-child {
+      border-bottom-width: 0;
+    }
+  }
+}
