@@ -177,6 +177,31 @@ $a_btn_switch_active_color:         #b8d476 !default;
   --#{$aloha-prefix}gradient: none;
 }
 
+@mixin button-transparent-variant(
+  $color,
+  $background: $a_gray_200,
+  $hover-background: if($color == $a_color_contrast_light, shade-color($a_gray_200, $a_btn_hover_bg_shade_amount), tint-color($a_gray_200, $a_btn_hover_bg_tint_amount)),
+  // $hover-color: color-contrast($hover-background),
+  $hover-color: $color,
+  $active-background: transparent,
+  // $active-color: color-contrast($active-background),
+  $active-color: $color,
+  $disabled-background: transparent,
+  $disabled-color: color-contrast($color)
+) {
+  --#{$aloha-prefix}btn_color: #{$color};
+  --#{$aloha-prefix}btn_bg: transparent;
+  --#{$aloha-prefix}btn_hover_color: #{$hover-color};
+  --#{$aloha-prefix}btn_hover_bg: #{$hover-background};
+  --#{$aloha-prefix}btn_focus_shadow_rgb: #{to-rgb(mix($color, $color, 15%))};
+  --#{$aloha-prefix}btn_active_color: #{$active-color};
+  --#{$aloha-prefix}btn_active_bg: #{$active-background};
+  --#{$aloha-prefix}btn_active_shadow: #{$a_btn_active_box_shadow};
+  --#{$aloha-prefix}btn_disabled_color: #{$disabled-color};
+  --#{$aloha-prefix}btn_disabled_bg: #{$disabled-background};
+  --#{$aloha-prefix}btn_border_width: 0;
+}
+
 .#{$aloha-prefix}btn_primary {
   @include button-variant($a_primary, $a_primary);
 }
@@ -259,6 +284,35 @@ $a_btn_switch_active_color:         #b8d476 !default;
 .#{$aloha-prefix}btn_outline_dark {
   @include button-outline-variant($a_dark);
 }
+
+.#{$aloha-prefix}btn_transparent_primary {
+  @include button-transparent-variant($a_primary);
+}
+.#{$aloha-prefix}btn_transparent_secondary {
+  @include button-transparent-variant($a_secondary);
+}
+.#{$aloha-prefix}btn_transparent_tertiary {
+  @include button-transparent-variant($a_tertiary);
+}
+.#{$aloha-prefix}btn_transparent_success {
+  @include button-transparent-variant($a_success);
+}
+.#{$aloha-prefix}btn_transparent_info {
+  @include button-transparent-variant($a_info);
+}
+.#{$aloha-prefix}btn_transparent_warning {
+  @include button-transparent-variant($a_warning);
+}
+.#{$aloha-prefix}btn_transparent_danger {
+  @include button-transparent-variant($a_danger);
+}
+.#{$aloha-prefix}btn_transparent_light {
+  @include button-transparent-variant($a_light);
+}
+.#{$aloha-prefix}btn_transparent_dark {
+  @include button-transparent-variant($a_dark);
+}
+
 
 .#{$aloha-prefix}btn_link {
   --#{$aloha-prefix}btn_font_weight: 400;
