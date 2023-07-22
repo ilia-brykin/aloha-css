@@ -187,7 +187,7 @@ $a_btn_switch_active_color:         #b8d476 !default;
   // $active-color: color-contrast($active-background),
   $active-color: $color,
   $disabled-background: transparent,
-  $disabled-color: color-contrast($color)
+  $disabled-color: $color
 ) {
   --#{$aloha-prefix}btn_color: #{$color};
   --#{$aloha-prefix}btn_border_color: transparent;

@@ -3500,7 +3500,7 @@ h6 {
   --a_btn_active_bg: transparent;
   --a_btn_active_border_color: transparent;
   --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --a_btn_disabled_color: #fff;
+  --a_btn_disabled_color: #0d6efd;
   --a_btn_disabled_border_color: transparent;
   --a_btn_disabled_bg: transparent; }
 
@@ -3516,7 +3516,7 @@ h6 {
   --a_btn_active_bg: transparent;
   --a_btn_active_border_color: transparent;
   --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --a_btn_disabled_color: #fff;
+  --a_btn_disabled_color: #6c757d;
   --a_btn_disabled_border_color: transparent;
   --a_btn_disabled_bg: transparent; }
 
@@ -3532,7 +3532,7 @@ h6 {
   --a_btn_active_bg: transparent;
   --a_btn_active_border_color: transparent;
   --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --a_btn_disabled_color: #000;
+  --a_btn_disabled_color: #da6c8e;
   --a_btn_disabled_border_color: transparent;
   --a_btn_disabled_bg: transparent; }
 
@@ -3548,7 +3548,7 @@ h6 {
   --a_btn_active_bg: transparent;
   --a_btn_active_border_color: transparent;
   --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --a_btn_disabled_color: #fff;
+  --a_btn_disabled_color: #198754;
   --a_btn_disabled_border_color: transparent;
   --a_btn_disabled_bg: transparent; }
 
@@ -3564,7 +3564,7 @@ h6 {
   --a_btn_active_bg: transparent;
   --a_btn_active_border_color: transparent;
   --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --a_btn_disabled_color: #000;
+  --a_btn_disabled_color: #0DCAF0FF;
   --a_btn_disabled_border_color: transparent;
   --a_btn_disabled_bg: transparent; }
 
@@ -3580,7 +3580,7 @@ h6 {
   --a_btn_active_bg: transparent;
   --a_btn_active_border_color: transparent;
   --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --a_btn_disabled_color: #000;
+  --a_btn_disabled_color: #FFC107FF;
   --a_btn_disabled_border_color: transparent;
   --a_btn_disabled_bg: transparent; }
 
@@ -3596,7 +3596,7 @@ h6 {
   --a_btn_active_bg: transparent;
   --a_btn_active_border_color: transparent;
   --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --a_btn_disabled_color: #fff;
+  --a_btn_disabled_color: #DC3545FF;
   --a_btn_disabled_border_color: transparent;
   --a_btn_disabled_bg: transparent; }
 
@@ -3612,7 +3612,7 @@ h6 {
   --a_btn_active_bg: transparent;
   --a_btn_active_border_color: transparent;
   --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --a_btn_disabled_color: #000;
+  --a_btn_disabled_color: #f8f9fa;
   --a_btn_disabled_border_color: transparent;
   --a_btn_disabled_bg: transparent; }
 
@@ -3628,7 +3628,7 @@ h6 {
   --a_btn_active_bg: transparent;
   --a_btn_active_border_color: transparent;
   --a_btn_active_shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --a_btn_disabled_color: #fff;
+  --a_btn_disabled_color: #212529;
   --a_btn_disabled_border_color: transparent;
   --a_btn_disabled_bg: transparent; }
 
