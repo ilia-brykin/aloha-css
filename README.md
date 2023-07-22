@@ -470,6 +470,8 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_btn_small
 + .a_btn_not_active
 + .a_btn_check
++ .a_btn_switch
++ .a_btn_switch_active
 
 ### Outline buttons ###
 + .a_btn_outline_primary
@@ -481,8 +483,18 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_btn_outline_danger
 + .a_btn_outline_light
 + .a_btn_outline_dark
-+ .a_btn_switch
-+ .a_btn_switch_active
+
+
+### Transparent buttons ###
++ .a_btn_transparent_primary
++ .a_btn_transparent_secondary
++ .a_btn_transparent_tertiary
++ .a_btn_transparent_success
++ .a_btn_transparent_info
++ .a_btn_transparent_warning
++ .a_btn_transparent_danger
++ .a_btn_transparent_light
++ .a_btn_transparent_dark
 
 ### Button close ###
 + .a_btn_close
