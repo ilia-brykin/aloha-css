@@ -55,8 +55,11 @@ $a_breakpoints_grid: prepend($a_breakpoints, (class: null));
 
   @each $gab-key, $gab-value in $a_column_gabs {
     @include media-width-all($breakpoint-min, $breakpoint-max) {
-      .#{$aloha-prefix}columns_gab_#{$gab-key}#{ getBreakpointWithPrefix($breakpoint-class) } {
+      .#{$aloha-prefix}columns_gab_x_#{$gab-key}#{ getBreakpointWithPrefix($breakpoint-class) } {
         --#{$aloha-prefix}column_gap_x: #{$gab-value};
+      }
+      .#{$aloha-prefix}columns_gab_y_#{$gab-key}#{ getBreakpointWithPrefix($breakpoint-class) } {
+        --#{$aloha-prefix}column_gap_y: #{$gab-value};
       }
     }
   }
