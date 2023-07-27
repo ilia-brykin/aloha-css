@@ -83,8 +83,6 @@ $a_btn_switch_active_color:         #b8d476 !default;
 
   .a_btn_check:checked + &,
   :not(.a_btn_check) + &:active,
-  &:first-child:active,
-  &:active:not(.#{$aloha-prefix}btn_not_active),
   &.active {
     color: var(--#{$aloha-prefix}btn_active_color);
     background-color: var(--#{$aloha-prefix}btn_active_bg);
@@ -92,7 +90,6 @@ $a_btn_switch_active_color:         #b8d476 !default;
   }
 
   &.disabled,
-  &.inactive,
   &:disabled,
   fieldset:disabled & {
     color: var(--#{$aloha-prefix}btn_disabled_color);
@@ -100,11 +97,6 @@ $a_btn_switch_active_color:         #b8d476 !default;
     border-color: var(--#{$aloha-prefix}btn_disabled_border_color);
     opacity: var(--#{$aloha-prefix}btn_disabled_opacity);
     cursor: not-allowed;
-  }
-  &.disabled,
-  &:disabled,
-  fieldset:disabled & {
-    pointer-events: none;
   }
 }
 
@@ -349,7 +341,6 @@ $a_btn_switch_active_color:         #b8d476 !default;
   &[disabled],
   &:disabled {
     + .btn {
-      pointer-events: none;
       filter: none;
       opacity: .65;
     }

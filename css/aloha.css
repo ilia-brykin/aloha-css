@@ -3274,20 +3274,17 @@ h6 {
     outline: 0;
     box-shadow: var(--a_btn_focus_box_shadow); }
   .a_btn_check:checked + .a_btn,
-  :not(.a_btn_check) + .a_btn:active, .a_btn:first-child:active, .a_btn:active:not(.a_btn_not_active), .a_btn.active {
+  :not(.a_btn_check) + .a_btn:active, .a_btn.active {
     color: var(--a_btn_active_color);
     background-color: var(--a_btn_active_bg);
     border-color: var(--a_btn_active_border_color); }
-  .a_btn.disabled, .a_btn.inactive, .a_btn:disabled,
+  .a_btn.disabled, .a_btn:disabled,
   fieldset:disabled .a_btn {
     color: var(--a_btn_disabled_color);
     background-color: var(--a_btn_disabled_bg);
     border-color: var(--a_btn_disabled_border_color);
     opacity: var(--a_btn_disabled_opacity);
     cursor: not-allowed; }
-  .a_btn.disabled, .a_btn:disabled,
-  fieldset:disabled .a_btn {
-    pointer-events: none; }
 
 .a_btn_group_large > .a_btn,
 .a_btn_large {
@@ -3791,7 +3788,6 @@ h6 {
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
   .a_btn_check[disabled] + .btn, .a_btn_check:disabled + .btn {
-    pointer-events: none;
     filter: none;
     opacity: .65; }
 
