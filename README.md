@@ -663,6 +663,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_progress__bar
 + .a_progress__bar_striped
 + .a_progress__bar_striped_flow
++ .a_progress__bar_indeterminate
 
 
 ## Dropdown ##
