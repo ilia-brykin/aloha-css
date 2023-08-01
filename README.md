@@ -312,6 +312,14 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_align_self_baseline -> `baseline`
 + .a_align_self_stretch -> `stretch`
 
+### Justify self `justify-self` ###
++ .a_justify_self_auto -> `auto`
++ .a_justify_self_start -> `flex-start`
++ .a_justify_self_end -> `flex-end`
++ .a_justify_self_center -> `center`
++ .a_justify_self_baseline -> `baseline`
++ .a_justify_self_stretch -> `stretch`
+
 ### Wrap `flex-wrap` ###
 + .a_flex_wrap -> `wrap`
 + .a_flex_nowrap -> `nowrap`
