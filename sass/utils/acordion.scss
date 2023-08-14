@@ -15,7 +15,7 @@ $a_btn_focus_box_shadow:        $a_input_btn_focus_box_shadow !default;
 
 $a_accordion_padding_y:                     1rem !default;
 $a_accordion_padding_x:                     1.25rem !default;
-$a_accordion_color:                         var(--#{$aloha-prefix}color_body) !default;
+$a_accordion_color:                         var(--#{$aloha-prefix}color_text) !default;
 $a_accordion_bg:                            $a_body_bg !default;
 $a_accordion_border_width:                  $a_border_width !default;
 $a_accordion_border_color:                  var(--#{$aloha-prefix}border_color) !default;

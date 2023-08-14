@@ -3,9 +3,19 @@
 @import "color_utils";
 
 :root {
-    @each $color-key, $color-value in $a_colors_global {
-        #{ getColorVar($color-key) }: #{ $color-value };
-    }
+  @each $color-key, $color-value in $a_colors_global {
+      #{ getColorVar($color-key) }: #{ $color-value };
+  }
+  @each $color-key, $color-value in $a_theme_colors_text {
+    #{ getColorVar($color-key, "_text_emphasis") }: #{$color-value};
+  }
+  @each $color-key, $color-value in $a_theme_colors_bg_subtle {
+    #{ getColorVar($color-key, "_bg_subtle") }: #{$color-value};
+  }
+  @each $color-key, $color-value in $a_theme_colors_border_subtle {
+    #{ getColorVar($color-key, "_border_subtle") }: #{$color-value};
+  }
+  --a_color_emphasis_color: #000;
 }
 
 @each $color in $a_colors {
