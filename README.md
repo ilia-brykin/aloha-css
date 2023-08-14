@@ -483,9 +483,19 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 
 ## List group ##
 + .a_list_group
-+ .a_list_group__item
 + .a_list_group_gap
 + .a_list_group_edge
++ .a_list_group__item
++ .a_list_group__item.active
++ .a_list_group__item_primary
++ .a_list_group__item_secondary
++ .a_list_group__item_tertiary
++ .a_list_group__item_success
++ .a_list_group__item_info
++ .a_list_group__item_warning
++ .a_list_group__item_danger
++ .a_list_group__item_light
++ .a_list_group__item_dark
 
 ## Styles for `<body>` ##
 
@@ -554,7 +564,8 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_alert__parent
 + .a_alert__parent_closable
 + .a_alert__content
-+ .alert__icon
++ .a_alert__icon
++ .a_alert__link
 + .a_alert_primary
 + .a_alert_secondary
 + .a_alert_tertiary
