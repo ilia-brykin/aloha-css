@@ -4165,7 +4165,7 @@ h6 {
     height: var(--a_alert_icon_size);
     margin-right: var(--a_alert_icon_margin_right); }
 
-.a_alert_link {
+.a_alert__link {
   font-weight: 700;
   color: var(--a_alert_link_color); }
 
