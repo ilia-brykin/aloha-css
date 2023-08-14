@@ -486,6 +486,7 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_list_group_gap
 + .a_list_group_edge
 + .a_list_group__item
++ .a_list_group__item_action
 + .a_list_group__item.active
 + .a_list_group__item_primary
 + .a_list_group__item_secondary
