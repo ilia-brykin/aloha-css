@@ -16,6 +16,10 @@
     #{ getColorVar($color-key, "_border_subtle") }: #{$color-value};
   }
   --a_color_emphasis_color: #000;
+
+  --a_border_width: 1px;
+  --a_border_style: solid;
+  --a_border_color: var(--a_color_gray_300);
 }
 
 @each $color in $a_colors {
