@@ -498,6 +498,16 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_list_group__item_light
 + .a_list_group__item_dark
 
+## List columns ##
++ .a_list_columns
++ .a_list_columns_2
++ .a_list_columns_2_mobile
++ .a_list_columns_2_tablet
++ .a_list_columns_2_touch
++ .a_list_columns_2_desktop
++ .a_list_columns_2_widescreen
++ .a_list_columns_2_fullhd
+
 ## Styles for `<body>` ##
 
 ## Buttons ##
