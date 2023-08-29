@@ -83,6 +83,7 @@ $a_btn_switch_active_color:         #b8d476 !default;
 
   .a_btn_check:checked + &,
   :not(.a_btn_check) + &:active,
+  &:first-child:active,
   &.active {
     color: var(--#{$aloha-prefix}btn_active_color);
     background-color: var(--#{$aloha-prefix}btn_active_bg);
