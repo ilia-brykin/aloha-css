@@ -4096,7 +4096,7 @@ h6 {
   --a_pagination_color: var(--a_color_link);
   --a_pagination_bg: #fff;
   --a_pagination_border_width: var(--a_border_width);
-  --a_pagination_border_color: var(--a_border_color);
+  --a_pagination_border_color:  var(--a_border_color);
   --a_pagination_border_radius: var(--a_border_radius);
   --a_pagination_hover_color: var(--a_color_link_hover);
   --a_pagination_hover_bg: var(--a_color_gray_200);
