@@ -3237,8 +3237,9 @@ body {
     background-color: var(--a_dropdown_link_active_bg); }
   .a_dropdown__item.disabled, .a_dropdown__item:disabled {
     color: var(--a_dropdown_link_disabled_color);
-    pointer-events: none;
     background-color: transparent; }
+  .a_dropdown__item:disabled {
+    pointer-events: none; }
 
 .a_dropdown__item_text {
   padding: var(--a_dropdown_item_padding_y) var(--a_dropdown_item_padding_x);

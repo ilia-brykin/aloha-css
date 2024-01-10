@@ -85,8 +85,10 @@
   &.disabled,
   &:disabled {
     color: var(--a_dropdown_link_disabled_color);
-    pointer-events: none;
     background-color: transparent;
+  }
+  &:disabled {
+    pointer-events: none;
   }
 }
 .a_dropdown__item_text {
