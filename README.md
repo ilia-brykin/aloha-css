@@ -560,11 +560,6 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_btn_group_large
 + .a_btn_large
 
-## Pagination ##
-+ .a_pagination
-+ .a_pagination__item
-+ .a_pagination__item__link
-
 ## Float ##
 + .a_float_left
 + .a_float_right
