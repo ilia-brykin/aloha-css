@@ -3,7 +3,7 @@
 @import "mixins";
 @import "funktions";
 
-$a_column_gabs: (
+$a_column_gaps: (
   0: 0rem,
   1: 0.25rem,
   2: 0.5rem,
@@ -53,13 +53,15 @@ $a_breakpoints_grid: prepend($a_breakpoints, (class: null));
     }
   }
 
-  @each $gab-key, $gab-value in $a_column_gabs {
+  @each $gap-key, $gap-value in $a_column_gaps {
     @include media-width-all($breakpoint-min, $breakpoint-max) {
-      .#{$aloha-prefix}columns_gab_x_#{$gab-key}#{ getBreakpointWithPrefix($breakpoint-class) } {
-        --#{$aloha-prefix}column_gap_x: #{$gab-value};
+      .#{$aloha-prefix}columns_gap_x_#{$gap-key}#{ getBreakpointWithPrefix($breakpoint-class) },
+      .#{$aloha-prefix}columns_gab_x_#{$gap-key}#{ getBreakpointWithPrefix($breakpoint-class) } { // Will be removed in version 2.0.0
+        --#{$aloha-prefix}column_gap_x: #{$gap-value};
       }
-      .#{$aloha-prefix}columns_gab_y_#{$gab-key}#{ getBreakpointWithPrefix($breakpoint-class) } {
-        --#{$aloha-prefix}column_gap_y: #{$gab-value};
+      .#{$aloha-prefix}columns_gap_y_#{$gap-key}#{ getBreakpointWithPrefix($breakpoint-class) },
+      .#{$aloha-prefix}columns_gab_y_#{$gap-key}#{ getBreakpointWithPrefix($breakpoint-class) } { // Will be removed in version 2.0.0
+        --#{$aloha-prefix}column_gap_y: #{$gap-value};
       }
     }
   }

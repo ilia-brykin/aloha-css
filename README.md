@@ -43,6 +43,17 @@
 
 ### Columns gap ###
 #### Gap X ####
++ .a_columns_gap_x_0 -> `0`
++ .a_columns_gap_x_1 -> `0.25rem`
++ .a_columns_gap_x_2 -> `0.5rem`
++ .a_columns_gap_x_3 -> `0.75rem`
++ .a_columns_gap_x_4 -> `1rem`
++ .a_columns_gap_x_5 -> `1.25rem`
++ .a_columns_gap_x_6 -> `1.5rem`
++ .a_columns_gap_x_7 -> `1.75rem`
++ .a_columns_gap_x_8 -> `2rem`
+
+##### Will be removed in version 2.0.0 #####
 + .a_columns_gab_x_0 -> `0`
 + .a_columns_gab_x_1 -> `0.25rem`
 + .a_columns_gab_x_2 -> `0.5rem`
@@ -54,6 +65,21 @@
 + .a_columns_gab_x_8 -> `2rem`
 
 #### With breakpoints ####
++ .a_columns_gap_x_1_mobile
++ .a_columns_gap_x_1_tablet
++ .a_columns_gap_x_1_touch
++ .a_columns_gap_x_1_desktop
++ .a_columns_gap_x_1_widescreen
++ .a_columns_gap_x_1_fullhd
++ ...
++ .a_columns_gap_x_8_mobile
++ .a_columns_gap_x_8_tablet
++ .a_columns_gap_x_8_touch
++ .a_columns_gap_x_8_desktop
++ .a_columns_gap_x_8_widescreen
++ .a_columns_gap_x_8_fullhd
+
+##### Will be removed in version 2.0.0 #####
 + .a_columns_gab_x_1_mobile
 + .a_columns_gab_x_1_tablet
 + .a_columns_gab_x_1_touch
@@ -69,6 +95,17 @@
 + .a_columns_gab_x_8_fullhd
 
 #### Gap Y ####
++ .a_columns_gap_y_0 -> `0`
++ .a_columns_gap_y_1 -> `0.25rem`
++ .a_columns_gap_y_2 -> `0.5rem`
++ .a_columns_gap_y_3 -> `0.75rem`
++ .a_columns_gap_y_4 -> `1rem`
++ .a_columns_gap_y_5 -> `1.25rem`
++ .a_columns_gap_y_6 -> `1.5rem`
++ .a_columns_gap_y_7 -> `1.75rem`
++ .a_columns_gap_y_8 -> `2rem`
+
+##### Will be removed in version 2.0.0 #####
 + .a_columns_gab_y_0 -> `0`
 + .a_columns_gab_y_1 -> `0.25rem`
 + .a_columns_gab_y_2 -> `0.5rem`
@@ -80,6 +117,21 @@
 + .a_columns_gab_y_8 -> `2rem`
 
 #### With breakpoints ####
++ .a_columns_gap_y_1_mobile
++ .a_columns_gap_y_1_tablet
++ .a_columns_gap_y_1_touch
++ .a_columns_gap_y_1_desktop
++ .a_columns_gap_y_1_widescreen
++ .a_columns_gap_y_1_fullhd
++ ...
++ .a_columns_gap_y_8_mobile
++ .a_columns_gap_y_8_tablet
++ .a_columns_gap_y_8_touch
++ .a_columns_gap_y_8_desktop
++ .a_columns_gap_y_8_widescreen
++ .a_columns_gap_y_8_fullhd
+
+##### Will be removed in version 2.0.0 #####
 + .a_columns_gab_y_1_mobile
 + .a_columns_gab_y_1_tablet
 + .a_columns_gab_y_1_touch
@@ -94,7 +146,7 @@
 + .a_columns_gab_y_8_widescreen
 + .a_columns_gab_y_8_fullhd
 ```
-<div class="a_columns a_columns_gab_x_6 a_columns_gab_y_2">
+<div class="a_columns a_columns_gap_x_6 a_columns_gap_y_2">
   <div class="a_column">
     First column
   </div>
