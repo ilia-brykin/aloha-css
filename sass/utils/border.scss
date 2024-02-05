@@ -1,5 +1,12 @@
 @import "color_utils";
 
+$a_border_positions: (
+  "top": top,
+  "right": right,
+  "bottom": bottom,
+  "left": left,
+) !default;
+
 $a_border_colors: (
         "primary":    var(--a_color_primary_rgb),
         "secondary":  var(--a_color_secondary_rgb),
@@ -12,56 +19,77 @@ $a_border_colors: (
         "dark":       var(--a_color_dark_rgb),
 ) !default;
 
+$a_border_styles: (
+        "dashed":     dashed,
+        "dotted":     dotted,
+        "double":     double,
+        "groove":     groove,
+        "inherit":    inherit,
+        "solid":      solid,
+) !default;
+
+$a_border_widths: (
+        "1":          1px,
+        "2":          2px,
+        "3":          3px,
+        "4":          4px,
+        "5":          5px,
+) !default;
+
 .a_border {
+  --a_border_width: 1px;
+  --a_border_style: solid;
+  --a_border_color: var(--a_color_black);
+
   border: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important;
 }
-.a_border_top {
-  border-top: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important;
-}
-.a_border_right {
-  border-right: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important;
-}
-.a_border_bottom {
-  border-bottom: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important;
-}
-.a_border_left {
-  border-left: var(--a_border_width) var(--a_border_style) var(--a_border_color) !important;
-}
-
-@each $state, $value in $a_border_colors {
-  .a_border_#{$state} {
-    --a_border_opacity: 1;
-    border-color: rgba(#{ $value },var(--a_border_opacity)) !important;
+@each $pos-state, $pos-value in $a_border_positions {
+  .a_border_#{$pos-state} {
+    border-#{$pos-value}: var(--a_border_#{$pos-value}_width, var(--a_border_width)) var(--a_border_#{$pos-value}_style, var(--a_border_style)) var(--a_border_#{$pos-value}_color, var(--a_border_color)) !important;
   }
 }
-.a_border_1 {
-  border-width: 1px !important;
+
+
+@each $width_state, $width_value in $a_border_widths {
+  .a_border_#{$width_state} {
+    --a_border_width: #{$width_value};
+  }
+  @each $pos-state, $pos-value in $a_border_positions {
+    .a_border_#{$pos-state}_#{$width_state} {
+      --a_border_#{$pos-value}_width: #{$width_value};
+    }
+  }
 }
-.a_border_2 {
-  border-width: 2px !important;
+
+@each $style_state, $style_value in $a_border_styles {
+  .a_border_#{$style_state} {
+    --a_border_opacity: 1;
+    --a_border_style: rgba(#{ $style_value },var(--a_border_opacity));
+  }
+  @each $pos-state, $pos-value in $a_border_positions {
+    .a_border_#{$pos-state}_#{$style_state} {
+      --a_border_opacity: 1;
+      --a_border_#{$pos-value}_style: rgba(#{ $style_value },var(--a_border_opacity));
+    }
+  }
 }
-.a_border_3 {
-  border-width: 3px !important;
-}
-.a_border_4 {
-  border-width: 4px !important;
-}
-.a_border_5 {
-  border-width: 5px !important;
+
+@each $color_state, $color_value in $a_border_colors {
+  .a_border_#{$color_state} {
+    --a_border_color: #{ $color_value };
+  }
+  @each $pos-state, $pos-value in $a_border_positions {
+    .a_border_#{$pos-state}_#{$color_state} {
+      --a_border_#{$pos-value}_color: #{$color_value};
+    }
+  }
 }
 
 .a_border_0 {
   border: 0 !important;
 }
-.a_border_top_0 {
-  border-top: 0 !important;
-}
-.a_border_right_0 {
-  border-right: 0 !important;
-}
-.a_border_bottom_0 {
-  border-bottom: 0 !important;
-}
-.a_border_left_0 {
-  border-left: 0 !important;
+@each $state, $value in $a_border_positions {
+  .a_border_#{$state}_0 {
+    border-#{$value}: 0 !important;
+  }
 }
