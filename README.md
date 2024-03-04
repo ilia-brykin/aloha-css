@@ -421,10 +421,11 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_text_right_fullhd
 
 ### Wrapping ###
-+ .a_text_wrap -> `white-space: normal`
-+ .a_text_nowrap -> `white-space: nowrap`
-+ .a_text_break -> `word-wrap: break-word; word-break: break-word; hyphens: auto`
-+ .a_text_wrap_hyphens -> `hyphens: auto`
++ .a_text_wrap -> `white-space: normal !important`
++ .a_text_nowrap -> `white-space: nowrap !important`
++ .a_text_break -> `word-wrap: break-word !important; word-break: break-word !important; hyphens: auto !important`
++ .a_text_wrap_hyphens -> `hyphens: auto !important`
++ .a_text_wrap_hyphens_none -> `hyphens: none !important`
 + .text_truncate -> `overflow: hidden; text-overflow: ellipsis; white-space: nowrap`
 
 ### Transform ###
