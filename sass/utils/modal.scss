@@ -101,6 +101,7 @@
   }
 }
 .#{$aloha-prefix}modal_footer {
+  position: relative;
   display: flex;
   flex-shrink: 0;
   flex-wrap: wrap;

@@ -18,6 +18,10 @@
   hyphens: auto !important;
 }
 
+.#{$aloha-prefix}text_wrap_hyphens_none {
+  hyphens: none !important;
+}
+
 .#{$aloha-prefix}text_truncate {
   overflow: hidden;
   text-overflow: ellipsis;
