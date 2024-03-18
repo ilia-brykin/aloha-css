@@ -3520,6 +3520,9 @@ h6 {
 .a_text_wrap_hyphens {
   hyphens: auto !important; }
 
+.a_text_wrap_hyphens_none {
+  hyphens: none !important; }
+
 .a_text_truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4440,6 +4443,7 @@ h6 {
     overflow-y: auto; }
 
 .a_modal_footer {
+  position: relative;
   display: flex;
   flex-shrink: 0;
   flex-wrap: wrap;
