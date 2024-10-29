@@ -679,6 +679,14 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 ## Sizing ##
 
 ### Width ###
++ .a_width_50px -> `50px`
++ .a_width_100px -> `100px`
++ .a_width_150px -> `150px`
++ .a_width_200px -> `200px`
++ .a_width_250px -> `250px`
++ .a_width_300px -> `300px`
++ .a_width_350px -> `350px`
++ .a_width_400px -> `400px`
 + .a_width_1 -> `0.25rem`
 + .a_width_2 -> `0.5rem`
 + .a_width_3 -> `0.75rem`
@@ -691,6 +699,21 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_width_100 -> `100%`
 + .a_width_auto -> `auto`
 + .a_viewport_width_100 -> `100vw`
+
+#### With breakpoints ####
++ .a_width_50px_mobile
++ .a_width_50px_tablet
++ .a_width_50px_touch
++ .a_width_50px_desktop
++ .a_width_50px_widescreen
++ .a_width_50px_fullhd
++ ...
++ .a_width_400px_mobile
++ .a_width_400px_tablet
++ .a_width_400px_touch
++ .a_width_400px_desktop
++ .a_width_400px_widescreen
++ .a_width_400px_fullhd
 
 #### `max-width` ####
 + .a_max_width_100 -> `100%`
@@ -711,6 +734,21 @@ margin-left: calc(100% / var(--a_column_count) * 1);
 + .a_height_100 -> `100%`
 + .a_height_auto -> `auto`
 + .a_viewport_height_100 -> `100vw`
+
+#### With breakpoints ####
++ .a_height_1_mobile
++ .a_height_1_tablet
++ .a_height_1_touch
++ .a_height_1_desktop
++ .a_height_1_widescreen
++ .a_height_1_fullhd
++ ...
++ .a_height_100_mobile
++ .a_height_100_tablet
++ .a_height_100_touch
++ .a_height_100_desktop
++ .a_height_100_widescreen
++ .a_height_100_fullhd
 
 #### `max-height` ####
 + .a_max_height_100 -> `100%`
