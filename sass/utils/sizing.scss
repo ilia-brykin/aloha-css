@@ -5,17 +5,25 @@ $a_sizing_width: (
     property: width,
     class: width,
     values: (
-        1:  .25rem,
-        2:  .5rem,
-        3:  .75rem,
-        4:  1rem,
-        5:  1.5rem,
-        6:  3rem,
-        25: 25%,
-        50: 50%,
-        75: 75%,
-        100: 100%,
-        auto: auto,
+        50px:   50px,
+        100px:  100px,
+        150px:  150px,
+        200px:  200px,
+        250px:  250px,
+        300px:  300px,
+        350px:  350px,
+        400px:  400px,
+        1:      .25rem,
+        2:      .5rem,
+        3:      .75rem,
+        4:      1rem,
+        5:      1.5rem,
+        6:      3rem,
+        25:     25%,
+        50:     50%,
+        75:     75%,
+        100:    100%,
+        auto:   auto,
     ),
 ) !default;
 $a_sizing_max_width: (
@@ -93,14 +101,26 @@ $a_sizing_important_suffix: "";
 @if $a_is_sizing_important {
   $a_sizing_important_suffix: " !important";
 }
-@each $name, $sizing-value in $a_sizing {
-  $property: map-get($sizing-value, "property");
-  $class: map-get($sizing-value, "class");
-  $values: map-get($sizing-value, "values");
 
-  @each $value-key, $value in $values {
-    .#{$aloha-prefix}#{$class}_#{$value-key} {
-      #{$property}: #{ $value }#{$a_sizing_important_suffix};
+$a_breakpoints_display: prepend($a_breakpoints, (class: null));
+
+@each $breakpoint in $a_breakpoints_display {
+  $breakpoint-class: map-get($breakpoint, "class");
+  $breakpoint-min: map-get($breakpoint, "min");
+  $breakpoint-max: map-get($breakpoint, "max");
+
+  @each $name, $sizing-value in $a_sizing {
+    $property: map-get($sizing-value, "property");
+    $class: map-get($sizing-value, "class");
+    $values: map-get($sizing-value, "values");
+
+    @each $value-key, $value in $values {
+      @include media-width-all($breakpoint-min, $breakpoint-max) {
+        .#{$aloha-prefix}#{$class}_#{$value-key}#{ getBreakpointWithPrefix($breakpoint-class) } {
+          #{$property}: #{ $value }#{$a_sizing_important_suffix};
+        }
+      }
     }
   }
 }
+
