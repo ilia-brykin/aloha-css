@@ -10,29 +10,29 @@ $a_link_shade_percentage:                   20% !default;
 $a_link_hover_color:                        shift-color($a_link_color, $a_link_shade_percentage) !default;
 $a_link_hover_decoration:                   underline !default;
 
-$a_info: #0DCAF0FF !default
-$a_success: #198754 !default
-$a_warning: #FFC107FF !default
-$a_danger: #DC3545FF !default
+$a_info:                                    #0DCAF0FF !default;
+$a_success:                                 #198754 !default;
+$a_warning:                                 #FFC107FF !default;
+$a_danger:                                  #DC3545FF !default;
 
-$a_white:    #fff !default;
-$a_gray_100: #f8f9fa !default;
-$a_gray_200: #e9ecef !default;
-$a_gray_300: #dee2e6 !default;
-$a_gray_400: #ced4da !default;
-$a_gray_500: #adb5bd !default;
-$a_gray_600: #6c757d !default;
-$a_gray_700: #495057 !default;
-$a_gray_800: #343a40 !default;
-$a_gray_900: #212529 !default;
-$a_black:    #000 !default;
+$a_white:                                   #fff !default;
+$a_gray_100:                                #f8f9fa !default;
+$a_gray_200:                                #e9ecef !default;
+$a_gray_300:                                #dee2e6 !default;
+$a_gray_400:                                #ced4da !default;
+$a_gray_500:                                #adb5bd !default;
+$a_gray_600:                                #6c757d !default;
+$a_gray_700:                                #495057 !default;
+$a_gray_800:                                #343a40 !default;
+$a_gray_900:                                #212529 !default;
+$a_black:                                   #000 !default;
 
-$a_light:         $a_gray_100 !default;
-$a_dark:          $a_gray_900 !default;
+$a_light:                                   $a_gray_100 !default;
+$a_dark:                                    $a_gray_900 !default;
 
-$a_focus_color: #d0e3a4 !default;
-$a_text_color: #212529 !default;
-$a_body_bg: $a_white !default;
+$a_focus_color:                             #d0e3a4 !default;
+$a_text_color:                              #212529 !default;
+$a_body_bg:                                 $a_white !default;
 
 // rgb
 $a_primary_rgb: to-rgb($a_primary);
