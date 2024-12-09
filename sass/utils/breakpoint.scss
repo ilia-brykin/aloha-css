@@ -31,6 +31,11 @@ $a_breakpoints: (
     (
         class: "fullhd",
         min: "1408px",
+        max: "1599px",
+    ),
+    (
+        class: "large",
+        min: "1600px",
     ),
 ) !default;
 
